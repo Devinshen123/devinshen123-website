@@ -1,0 +1,85 @@
+---
+title: "What does a p-value actually tell us?"
+description: "Nine heads in ten flips reveal why a p-value is so easy to misread."
+date: 2026-09-14
+categories: [Statistics, Probability]
+format:
+  html:
+    toc: false
+    code-copy: true
+---
+
+Imagine someone hands you a coin and insists it is fair. You decide to flip it ten times and check whether either side appears suspiciously often. Nine flips come up heads. You would probably question the coin. But how much evidence do those nine heads provide?
+
+A p-value helps answer that question by asking us to imagine a world where the coin really is fair. The difficulty is keeping that imagined world separate from what we want to know about the actual coin.
+
+## Start by assuming fairness
+
+Our starting claim, called the *null hypothesis*, is that each flip has a 50% chance of heads. We also assume the flips are independent: one result does not affect the next. We fix the number of flips at ten before starting.
+
+Even a fair coin will not always produce five heads and five tails. Randomness creates uneven results. The useful question is how often it would produce an imbalance at least as large as the one we observed.
+
+That is the idea behind a p-value: assuming the null hypothesis and the statistical model hold, calculate the probability of a test result at least as extreme as the observed one. [NIST's definition](https://csrc.nist.gov/glossary/term/p_value) makes this conditional starting point explicit.
+
+## Counting the surprising outcomes
+
+Because we decided to check for bias toward either side, nine tails would be just as suspicious as nine heads. This is a *two-sided test*. Our measure of extremeness is the distance from five heads, so the outcomes we count are zero, one, nine, and ten heads.
+
+Each flip has two possible outcomes, so ten independent fair flips have $2^{10}=1,024$ equally likely sequences. The counted outcomes are:
+
+| Number of heads | Number of possible sequences |
+|---|---:|
+| 0 | 1 |
+| 1 | 10 |
+| 9 | 10 |
+| 10 | 1 |
+| **Total** | **22** |
+
+There are ten sequences with nine heads because the single tail can appear in any of ten positions. The same reasoning gives ten sequences with one head. Therefore,
+
+$$
+p = \frac{1+10+10+1}{1024} = \frac{22}{1024} \approx 0.0215.
+$$
+
+In repeated sets of ten fair flips, about 2.15% would be at least this unbalanced. We include ten heads because it would be even more extreme than nine. Counting only the exact result would leave out outcomes that provide stronger evidence against fairness.
+
+*Source: exact calculation for this hypothetical example; no observed dataset is used.*
+
+## Why the interpretation feels backward
+
+The tempting conclusion is: "There is only a 2.15% chance that the coin is fair." But the calculation began by assuming fairness. It never assigned a probability to that assumption.
+
+The distinction is between the probability of evidence given a claim and the probability of a claim given evidence. Knowing an animal is a dog makes it certain that it is a mammal. Knowing it is a mammal does not make it certain that it is a dog. Reversing the condition changes the question.
+
+We naturally start with the evidence and ask what to believe. A p-value works in the other direction, starting with a proposed explanation and asking how unusual the evidence would be. The [American Statistical Association's statement](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf) specifically warns against interpreting it as the probability that a hypothesis is true.
+
+## What should we conclude?
+
+The nine heads give us a reason to question the fair-coin model. They do not prove the coin is biased: unusual outcomes sometimes happen under a correct model.
+
+Researchers often compare p-values with 0.05, a conventional cutoff described in the [NIST handbook](https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm). In otherwise comparable studies, results of 0.049 and 0.051 provide similar evidence despite falling on opposite sides of the cutoff. The [ASA also cautions](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf) that a p-value does not measure an effect's size or practical importance. For example, a hypothetical study might detect a tiny wage increase with a large sample; deciding whether that increase matters requires examining its size.
+
+## Reproduce the calculation
+
+This Python code uses only the standard library. It counts all outcomes at least as far from five heads as the observed nine heads.
+
+```python
+from math import comb
+
+n = 10
+observed_heads = 9
+expected_heads = n / 2
+
+extreme_counts = [
+    k for k in range(n + 1)
+    if abs(k - expected_heads) >= abs(observed_heads - expected_heads)
+]
+extreme_sequences = sum(comb(n, k) for k in extreme_counts)
+p_value = extreme_sequences / (2 ** n)
+
+print(extreme_counts)     # [0, 1, 9, 10]
+print(extreme_sequences)  # 22
+print(p_value)            # 0.021484375
+```
+
+For our coin, the takeaway is precise: if it were fair and the flips independent, results at least this unbalanced would occur about 2.15% of the time. That is useful evidence when judging fairness, while leaving uncertainty about the coin itself.

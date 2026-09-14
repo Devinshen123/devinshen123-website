@@ -1,9 +1,0 @@
----
-title: "My Second Blog Post"
-date: 2026-06-16
-categories:
-  - opinion
-  - labor market
----
-
-## This is my second blog post.

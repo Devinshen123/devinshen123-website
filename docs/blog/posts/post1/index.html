@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-09-14">
+<meta name="description" content="Nine heads in ten flips reveal why a p-value is so easy to misread.">
 
-<title>AEDS 6400 Blog</title>
+<title>What does a p-value actually tell us? – AEDS 6400 Blog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +28,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-7bb31cd2f4999533cab70d7f7b501715.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,8 +111,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -85,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">AEDS 6400 Blog</span>
     </a>
   </div>
@@ -96,11 +162,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -120,14 +186,29 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AEDS 6400 Blog</h1>
-</div>
+<h1 class="title">What does a p-value actually tell us?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Statistics</div>
+    <div class="quarto-category">Probability</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Nine heads in ten flips reveal why a p-value is so easy to misread.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 14, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -137,11 +218,89 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="250"></p>
-<p>Welcome to my course website for Computational Methods for Economists.</p>
-<p><a href="./blog/index.html" class="btn btn-primary">Read the blog</a></p>
+<p>Imagine someone hands you a coin and insists it is fair. You decide to flip it ten times and check whether either side appears suspiciously often. Nine flips come up heads. You would probably question the coin. But how much evidence do those nine heads provide?</p>
+<p>A p-value helps answer that question by asking us to imagine a world where the coin really is fair. The difficulty is keeping that imagined world separate from what we want to know about the actual coin.</p>
+<section id="start-by-assuming-fairness" class="level2">
+<h2 class="anchored" data-anchor-id="start-by-assuming-fairness">Start by assuming fairness</h2>
+<p>Our starting claim, called the <em>null hypothesis</em>, is that each flip has a 50% chance of heads. We also assume the flips are independent: one result does not affect the next. We fix the number of flips at ten before starting.</p>
+<p>Even a fair coin will not always produce five heads and five tails. Randomness creates uneven results. The useful question is how often it would produce an imbalance at least as large as the one we observed.</p>
+<p>That is the idea behind a p-value: assuming the null hypothesis and the statistical model hold, calculate the probability of a test result at least as extreme as the observed one. <a href="https://csrc.nist.gov/glossary/term/p_value">NIST’s definition</a> makes this conditional starting point explicit.</p>
+</section>
+<section id="counting-the-surprising-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="counting-the-surprising-outcomes">Counting the surprising outcomes</h2>
+<p>Because we decided to check for bias toward either side, nine tails would be just as suspicious as nine heads. This is a <em>two-sided test</em>. Our measure of extremeness is the distance from five heads, so the outcomes we count are zero, one, nine, and ten heads.</p>
+<p>Each flip has two possible outcomes, so ten independent fair flips have <span class="math inline">\(2^{10}=1,024\)</span> equally likely sequences. The counted outcomes are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Number of heads</th>
+<th style="text-align: right;">Number of possible sequences</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>22</strong></td>
+</tr>
+</tbody>
+</table>
+<p>There are ten sequences with nine heads because the single tail can appear in any of ten positions. The same reasoning gives ten sequences with one head. Therefore,</p>
+<p><span class="math display">\[
+p = \frac{1+10+10+1}{1024} = \frac{22}{1024} \approx 0.0215.
+\]</span></p>
+<p>In repeated sets of ten fair flips, about 2.15% would be at least this unbalanced. We include ten heads because it would be even more extreme than nine. Counting only the exact result would leave out outcomes that provide stronger evidence against fairness.</p>
+<p><em>Source: exact calculation for this hypothetical example; no observed dataset is used.</em></p>
+</section>
+<section id="why-the-interpretation-feels-backward" class="level2">
+<h2 class="anchored" data-anchor-id="why-the-interpretation-feels-backward">Why the interpretation feels backward</h2>
+<p>The tempting conclusion is: “There is only a 2.15% chance that the coin is fair.” But the calculation began by assuming fairness. It never assigned a probability to that assumption.</p>
+<p>The distinction is between the probability of evidence given a claim and the probability of a claim given evidence. Knowing an animal is a dog makes it certain that it is a mammal. Knowing it is a mammal does not make it certain that it is a dog. Reversing the condition changes the question.</p>
+<p>We naturally start with the evidence and ask what to believe. A p-value works in the other direction, starting with a proposed explanation and asking how unusual the evidence would be. The <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">American Statistical Association’s statement</a> specifically warns against interpreting it as the probability that a hypothesis is true.</p>
+</section>
+<section id="what-should-we-conclude" class="level2">
+<h2 class="anchored" data-anchor-id="what-should-we-conclude">What should we conclude?</h2>
+<p>The nine heads give us a reason to question the fair-coin model. They do not prove the coin is biased: unusual outcomes sometimes happen under a correct model.</p>
+<p>Researchers often compare p-values with 0.05, a conventional cutoff described in the <a href="https://itl.nist.gov/div898/handbook/prc/section1/prc131.htm">NIST handbook</a>. In otherwise comparable studies, results of 0.049 and 0.051 provide similar evidence despite falling on opposite sides of the cutoff. The <a href="https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf">ASA also cautions</a> that a p-value does not measure an effect’s size or practical importance. For example, a hypothetical study might detect a tiny wage increase with a large sample; deciding whether that increase matters requires examining its size.</p>
+</section>
+<section id="reproduce-the-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="reproduce-the-calculation">Reproduce the calculation</h2>
+<p>This Python code uses only the standard library. It counts all outcomes at least as far from five heads as the observed nine heads.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> math <span class="im">import</span> comb</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>observed_heads <span class="op">=</span> <span class="dv">9</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>expected_heads <span class="op">=</span> n <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>extreme_counts <span class="op">=</span> [</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    k <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(n <span class="op">+</span> <span class="dv">1</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">abs</span>(k <span class="op">-</span> expected_heads) <span class="op">&gt;=</span> <span class="bu">abs</span>(observed_heads <span class="op">-</span> expected_heads)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>extreme_sequences <span class="op">=</span> <span class="bu">sum</span>(comb(n, k) <span class="cf">for</span> k <span class="kw">in</span> extreme_counts)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>p_value <span class="op">=</span> extreme_sequences <span class="op">/</span> (<span class="dv">2</span> <span class="op">**</span> n)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(extreme_counts)     <span class="co"># [0, 1, 9, 10]</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(extreme_sequences)  <span class="co"># 22</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p_value)            <span class="co"># 0.021484375</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For our coin, the takeaway is precise: if it were fair and the flips independent, results at least this unbalanced would occur about 2.15% of the time. That is useful evidence when judging fairness, while leaving uncertainty about the coin itself.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -548,7 +707,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><img src="./images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
+<p><img src="../../../images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></p>
 </div>   
     <div class="nav-footer-center">
 <p>© 2026 AEDS 6400 Blog</p>

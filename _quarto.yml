@@ -1,21 +1,23 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - blog/index.qmd
+    - blog/posts/post1/index.qmd
 
 website:
-  title: "Student Name"
+  title: "AEDS 6400 Blog"
 
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - bio.qmd
-      - resume.qmd
       - blog/index.qmd
 
   page-footer:
     center: |
-      © 2026 Student Name
+      © 2026 AEDS 6400 Blog
     left: |
       ![](/images/UniversityofPennsylvania_FullLogo_RGB.png){width=100px}
 

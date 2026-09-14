@@ -1,79 +1,58 @@
 [
   {
+    "objectID": "blog/posts/post1/index.html",
+    "href": "blog/posts/post1/index.html",
+    "title": "What does a p-value actually tell us?",
+    "section": "",
+    "text": "Imagine someone hands you a coin and insists it is fair. You decide to flip it ten times and check whether either side appears suspiciously often. Nine flips come up heads. You would probably question the coin. But how much evidence do those nine heads provide?\nA p-value helps answer that question by asking us to imagine a world where the coin really is fair. The difficulty is keeping that imagined world separate from what we want to know about the actual coin."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#start-by-assuming-fairness",
+    "href": "blog/posts/post1/index.html#start-by-assuming-fairness",
+    "title": "What does a p-value actually tell us?",
+    "section": "Start by assuming fairness",
+    "text": "Start by assuming fairness\nOur starting claim, called the null hypothesis, is that each flip has a 50% chance of heads. We also assume the flips are independent: one result does not affect the next. We fix the number of flips at ten before starting.\nEven a fair coin will not always produce five heads and five tails. Randomness creates uneven results. The useful question is how often it would produce an imbalance at least as large as the one we observed.\nThat is the idea behind a p-value: assuming the null hypothesis and the statistical model hold, calculate the probability of a test result at least as extreme as the observed one. NIST’s definition makes this conditional starting point explicit."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#counting-the-surprising-outcomes",
+    "href": "blog/posts/post1/index.html#counting-the-surprising-outcomes",
+    "title": "What does a p-value actually tell us?",
+    "section": "Counting the surprising outcomes",
+    "text": "Counting the surprising outcomes\nBecause we decided to check for bias toward either side, nine tails would be just as suspicious as nine heads. This is a two-sided test. Our measure of extremeness is the distance from five heads, so the outcomes we count are zero, one, nine, and ten heads.\nEach flip has two possible outcomes, so ten independent fair flips have \\(2^{10}=1,024\\) equally likely sequences. The counted outcomes are:\n\n\n\nNumber of heads\nNumber of possible sequences\n\n\n\n\n0\n1\n\n\n1\n10\n\n\n9\n10\n\n\n10\n1\n\n\nTotal\n22\n\n\n\nThere are ten sequences with nine heads because the single tail can appear in any of ten positions. The same reasoning gives ten sequences with one head. Therefore,\n\\[\np = \\frac{1+10+10+1}{1024} = \\frac{22}{1024} \\approx 0.0215.\n\\]\nIn repeated sets of ten fair flips, about 2.15% would be at least this unbalanced. We include ten heads because it would be even more extreme than nine. Counting only the exact result would leave out outcomes that provide stronger evidence against fairness.\nSource: exact calculation for this hypothetical example; no observed dataset is used."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#why-the-interpretation-feels-backward",
+    "href": "blog/posts/post1/index.html#why-the-interpretation-feels-backward",
+    "title": "What does a p-value actually tell us?",
+    "section": "Why the interpretation feels backward",
+    "text": "Why the interpretation feels backward\nThe tempting conclusion is: “There is only a 2.15% chance that the coin is fair.” But the calculation began by assuming fairness. It never assigned a probability to that assumption.\nThe distinction is between the probability of evidence given a claim and the probability of a claim given evidence. Knowing an animal is a dog makes it certain that it is a mammal. Knowing it is a mammal does not make it certain that it is a dog. Reversing the condition changes the question.\nWe naturally start with the evidence and ask what to believe. A p-value works in the other direction, starting with a proposed explanation and asking how unusual the evidence would be. The American Statistical Association’s statement specifically warns against interpreting it as the probability that a hypothesis is true."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#what-should-we-conclude",
+    "href": "blog/posts/post1/index.html#what-should-we-conclude",
+    "title": "What does a p-value actually tell us?",
+    "section": "What should we conclude?",
+    "text": "What should we conclude?\nThe nine heads give us a reason to question the fair-coin model. They do not prove the coin is biased: unusual outcomes sometimes happen under a correct model.\nResearchers often compare p-values with 0.05, a conventional cutoff described in the NIST handbook. In otherwise comparable studies, results of 0.049 and 0.051 provide similar evidence despite falling on opposite sides of the cutoff. The ASA also cautions that a p-value does not measure an effect’s size or practical importance. For example, a hypothetical study might detect a tiny wage increase with a large sample; deciding whether that increase matters requires examining its size."
+  },
+  {
+    "objectID": "blog/posts/post1/index.html#reproduce-the-calculation",
+    "href": "blog/posts/post1/index.html#reproduce-the-calculation",
+    "title": "What does a p-value actually tell us?",
+    "section": "Reproduce the calculation",
+    "text": "Reproduce the calculation\nThis Python code uses only the standard library. It counts all outcomes at least as far from five heads as the observed nine heads.\nfrom math import comb\n\nn = 10\nobserved_heads = 9\nexpected_heads = n / 2\n\nextreme_counts = [\n    k for k in range(n + 1)\n    if abs(k - expected_heads) &gt;= abs(observed_heads - expected_heads)\n]\nextreme_sequences = sum(comb(n, k) for k in extreme_counts)\np_value = extreme_sequences / (2 ** n)\n\nprint(extreme_counts)     # [0, 1, 9, 10]\nprint(extreme_sequences)  # 22\nprint(p_value)            # 0.021484375\nFor our coin, the takeaway is precise: if it were fair and the flips independent, results at least this unbalanced would occur about 2.15% of the time. That is useful evidence when judging fairness, while leaving uncertainty about the coin itself."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Student Name",
+    "title": "AEDS 6400 Blog",
     "section": "",
-    "text": "Student Name\nUniversity of Pennsylvaina\nWelcome to my personal website.\n\nQuick Links"
-  },
-  {
-    "objectID": "bio.html",
-    "href": "bio.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Write a short biography here.\nInclude:"
-  },
-  {
-    "objectID": "bio.html#education",
-    "href": "bio.html#education",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\nMaster of Applied Economics and Data Science, University of Pennsylvania (expaceted 2027) Batelor of Science, University Name 2026"
-  },
-  {
-    "objectID": "bio.html#interests",
-    "href": "bio.html#interests",
-    "title": "About Me",
-    "section": "Interests",
-    "text": "Interests\n\nEconometrics\nMachine Learning\nData Analysis"
-  },
-  {
-    "objectID": "bio.html#contact",
-    "href": "bio.html#contact",
-    "title": "About Me",
-    "section": "Contact",
-    "text": "Contact"
-  },
-  {
-    "objectID": "bio.html#studentemail.edu",
-    "href": "bio.html#studentemail.edu",
-    "title": "About Me",
-    "section": "student@email.edu",
-    "text": "student@email.edu"
+    "text": "Welcome to my course website for Computational Methods for Economists.\nRead the blog"
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "My First Blog Post\n\n\n\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nMy Second Blog Post\n\n\n\n\n\n\n\n\n\n\n\nJun 16, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/posts/post1/Untitled.html",
-    "href": "blog/posts/post1/Untitled.html",
-    "title": "My First Blog Post",
-    "section": "",
-    "text": "This is my first blog post. Example \\(\\LaTeX\\) equation: \\(\\frac{1}{2}\\sum_{i=1}^nx_i\\)"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "Download my resume here:"
-  },
-  {
-    "objectID": "resume.html#resume-pdf",
-    "href": "resume.html#resume-pdf",
-    "title": "Resume",
-    "section": "Resume PDF",
-    "text": "Resume PDF"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "What does a p-value actually tell us?\n\n\nNine heads in ten flips reveal why a p-value is so easy to misread.\n\n\n\n\n\nSep 14, 2026\n\n\n\n\n\nNo matching items"
   }
 ]
