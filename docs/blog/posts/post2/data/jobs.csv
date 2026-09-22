@@ -1,0 +1,2213 @@
+"title","company","location","workplace","experience","published","status","url","requirements","description","collected_at_utc"
+"Data Analyst","Affirm","Remote","Remote","0 - 3 years","Sep 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-428cb","What We Look For:
+
+1–3 years of experience in an analytically driven role. Relevant internships or prior experience in consumer lending, fintech, or the broader financial services industry are highly valued.
+
+Degree in Data Science, Computer Science, Engineering, Economics, or a related quantitative field.
+
+Solid working knowledge of SQL, Python, or other scripting languages.
+
+Familiarity with data mining, data visualization, and foundational statistical modeling.
+
+Basic understanding of, or deep curiosity about, consumer lending regulations, fair lending principles, and how machine learning techniques apply to real-world business problems.
+
+Exceptional communication skills, humility, and the ability to collaborate effectively with cross-functional peers.","About the Role
+
+As an Analyst I in Affirm's Risk & Analytics organization, you will join one of several analytical teams working across the customer and merchant lifecycle. While the specific problems you tackle will depend on your eventual team placement, all Analyst I roles share a common foundation: using data to understand business performance, identify opportunities, and help Affirm make better decisions.
+
+You will learn the fundamentals of consumer lending while executing scoped analytical work under the guidance of senior analysts and managers. You will leverage SQL, Python, and modern analytical tools to help optimize business strategies, monitor performance, and turn complex data into actionable insights.
+
+You are a thoughtful, driven individual eager to build a strong technical foundation, learn how to navigate exogenous market changes, and integrate modern AI tooling to solve hard problems efficiently.
+
+What You Will Do
+
+Derive Insights & Support Strategy: Leverage data analytics to uncover insights that help optimize product, risk, or growth strategies across geographies.
+
+Monitor Portfolio Health: Assist in tracking performance metrics, user behavior, and macroeconomic trends that impact business outcomes, flagging risks and anomalies to senior team members.
+
+Technical Execution: Write clean, working SQL and Python to build scalable reporting and partner with Engineering to support the deployment of machine learning and risk models.
+
+Cross-Functional Collaboration: Work closely with Product, Legal, and Compliance to understand evolving consumer lending regulations and market requirements, assisting in translating them into foundational data models and operational policies.
+
+Drive Launch Alignment: Support cross-functional discussions to ensure new product launches and market entries align with our operational capabilities and risk appetite.
+
+AI Fluency & Efficiency: Integrate AI tools such as Cursor, Claude Code, and copilots into your daily workflows to accelerate data mining and routine tasks, while carefully verifying outputs.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Payment Integrity","Optum","Remote","Remote","0 - 3 years","Sep 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-payment-integrity","Required Qualifications:
+
+2+ years of experience in a corporate setting
+
+2+ years of experience performing data analytics, including identifying trends in large data sets
+
+2+ years of experience reading and writing complex SQL statements/queries
+
+2+ years of experience with MS Excel, including pivot tables, formulas, calculations, charts, graphs, etc.
+
+2+ years of experience working from business requirements documents
+
+Preferred Qualifications:
+
+Experience in COB (Coordination of Benefits) auditing
+
+Experience in Medicare reimbursement methodology
+
+Knowledge of NAIC (National Association of Insurance Commissioners) guidelines","Primary Responsibilities:
+
+Research and identify areas for non-clinical medical cost improvements and alternative pricing strategies with government and commercial healthcare payers
+
+Interpret and analyze claims and membership data
+
+Write complex SQL queries to execute against large healthcare payer data sets
+
+Create and update automated database processes
+
+Analyze reporting utilized by internal customer groups
+
+Use logical, detail-oriented thought process to break down complex problems into individual sequential steps and identify root causes
+
+Identify and refine criteria to successfully increase efficiency of algorithm logic
+
+Contribute to analytic opportunities that may include proof of concept, functional testing, determination of yield, time to complete, and financial impact
+
+Explore potential trends identified by matrix business partners
+Use business requirements for process automation, analytic development, strategic reporting, and system navigation.
+
+Execute standalone production processes
+
+Triage anomalies observed with production processes","2026-09-22 03:37:55 UTC"
+"Data Analyst, Metrics & Reporting","Live Nation Entertainment","Remote","Remote","0 - 3 years","Sep 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-metrics-reporting","WHAT THIS PERSON WILL BRING
+
+2-4 years of experience in data analytics, business intelligence, reporting, operations analytics, cybersecurity analytics, business analytics, or a related role.
+
+Working knowledge of SQL, including joins, filtering, aggregations, and troubleshooting basic query issues.
+
+Experience building dashboards or reports in Tableau, Power BI, Domo, Looker, or a similar BI platform.
+
+Strong Excel skills, including pivot tables, formulas, data cleaning, and basic analysis.
+
+Ability to review data carefully and identify inconsistencies, missing information, or results that do not make sense.
+
+Strong attention to detail and willingness to check work before sharing it.
+
+Ability to summarize findings clearly and concisely for non-technical audiences.
+
+Ability to connect how the business operates and how data connects to real-world processes.
+
+Strong communication skills and willingness to ask questions when requirements are unclear.
+
+Ability to receive feedback, revise work, and improve over time.
+
+Comfort working independently in a remote environment while keeping stakeholders informed.
+
+Strong documentation habits, including documenting processes, tracking data sources, assumptions, logic, and open questions.
+
+Strongly Desired Qualifications
+
+Experience with Tableau.
+
+Experience with Python for data cleaning, analysis, validation, or automation.
+
+Familiarity with Databricks, Databricks SQL, notebooks, data lakes, or cloud analytics platforms.
+
+Exposure to Cyber Security, risk, compliance, technology operations, incident management, change management, vulnerability management, or IT operations.
+
+Familiarity with AI-assisted tools such as ChatGPT, GitHub Copilot, Databricks Assistant, or similar tools.
+
+Experience creating written summaries, business insights, or dashboard narratives.
+
+Experience working with multiple data sources or messy datasets.
+
+Interest in developing toward a senior BI, analytics, or data storytelling role.","THE ROLE
+
+As the Data Analyst for Cyber Security Metrics & Reporting, you will support the Strategy team by helping build, maintain, validate, and improve dashboards and reports used to understand Cyber Security performance, goals, risks, and operational trends.
+
+This role is hands-on and execution-focused, but it requires more than dashboard building. The Data Analyst will be expected to develop strong habits around data validation, quality checks, documentation, and insight development.
+
+This person will help ensure reporting outputs are accurate, clear, and connected to the operational questions the Cyber Security organization is trying to answer.
+
+The ideal candidate is not expected to be a senior analytics expert on day one. However, they must show strong analytical curiosity, a willingness to learn, accountability for quality, and the ability to explain what they see in the data. This role is remote and based in the United States.
+
+WHAT THIS ROLE WILL DO
+
+Build, update, and maintain dashboards, reports, and visualizations that support Cyber Security metrics and reporting needs.
+
+Support recurring executive and operational reporting for Cyber Security goals, KPIs, risks, trends, and performance.
+
+Gather and organize reporting requirements from stakeholders with guidance from the Strategy team.
+
+Ask clarifying questions to understand the purpose of a report, the audience, and the decision the report is intended to support.
+
+Use SQL and reporting tools to extract, clean, organize, and analyze data from multiple sources.
+
+Perform basic data validation checks before sharing dashboards or reports, including checking totals, filters, joins, date ranges, duplicates, missing values, and metric logic.
+
+Document assumptions, data sources, calculations, and known limitations in dashboards and reports.
+
+Identify when data does not look right and escalate questions or concerns before publishing or presenting results.
+
+Support exploratory analysis to identify trends, anomalies, patterns, and potential areas for follow-up.
+
+Help translate data into simple summaries that explain what changed, where it changed, and why it may matter.
+
+Partner with Cyber Security teams to better understand operational processes, source systems, and metric definitions.
+
+Assist with data cleanup, reporting automation, and process improvement efforts.
+
+Learn and apply best practices for dashboard design, data storytelling, quality control, and stakeholder communication.
+
+Use AI-assisted tools responsibly where appropriate to support learning, documentation, SQL troubleshooting, and productivity, while validating outputs before use","2026-09-22 03:37:55 UTC"
+"Junior Data Analyst","Calibrate","Remote","Remote","0 - 3 years","Sep 8, 2026","Active","https://www.dataanalyst.com/job/junior-data-analyst-b2b41","BACKGROUND & EXPERIENCE
+
+0–2 years of experience in a data analyst role, internship, academic research, or similar analytical experience
+
+Working knowledge of SQL and ability to write basic queries to extract and analyze data
+
+Experience using Excel and/or Google Sheets for data analysis and manipulation
+
+Strong attention to detail and commitment to data accuracy
+Strong analytical thinking and problem-solving skills
+
+Ability to communicate findings clearly to both technical and non-technical audiences
+
+Eagerness to learn and grow in a fast-paced, collaborative environment
+
+Preferred
+
+Exposure to Business Intelligence tools (e.g., Mode, Looker, Tableau, or similar)
+
+Experience with clinical data a plus, but not required
+Basic familiarity with Python or R
+
+Experience with and/or passion for working in the healthcare industry
+
+Familiarity with Git or version control tools
+
+Basic understanding of data warehousing or data engineering concepts
+
+Ability to work in a fully remote environment","ABOUT THE ROLE
+
+We are looking for a Junior Data Analyst to join our data team and support us in the use of analytics in both running our business and providing scorecards and insights to our clients and partners. In this role, you will help analyze operational and business data; create and maintain dashboards and scorecards for both running the company and for clients; and ensure our teams have access to timely insights.
+
+You will partner with teams across clinical, coaching, engineering, product, operations, and finance to answer questions, monitor performance, and support data-driven decision-making. This is an excellent opportunity for someone early in their data career who is eager to build strong SQL and analytics skills, gain hands-on experience with healthcare and operational data, and grow into a fully independent Data Analyst over time.
+
+KEY RESPONSIBILITIES
+
+Support regular and ad hoc analyses to help answer key business and operational questions
+
+Assist in tracking KPIs that we use to run the business, and help maintain and improve recurring reports for operating and performance metrics
+
+Build and maintain reports and dashboards, ensuring teams have access to timely and reliable data for decision-making
+
+Partner with cross-functional teams (including clinical, coaching, operations, member care, engineering and product) to help identify trends, answer questions, and surface insights
+
+Assist in monitoring data quality and flagging inconsistencies, anomalies, or potential issues
+
+Collaborate with the Data Engineering team and senior analysts to ensure data accuracy, completeness, and usability
+
+Document queries, reports, and data definitions to support transparency and reproducibility","2026-09-22 03:37:55 UTC"
+"Data Analyst, Geospatial","Bart & Associates","Remote","Remote","0 - 3 years","Aug 27, 2026","Active","https://www.dataanalyst.com/job/data-analyst-geospatial-a734f","Education and Experience
+
+· Bachelor’s degree in Geography, Geographic Information Systems, Geospatial Science, Data Science, Computer Science, Information Systems, or a related technical field is required.
+
+· 2–5 years of professional experience supporting geospatial data analysis, GIS operations, data integration, or related technical work.
+
+Required Skills
+
+· Hands-on experience with FME for geospatial data transformation, automation, validation, and workflow development.
+
+· Experience using QGIS to perform spatial analysis, create cartographic products, manage geospatial layers, and support map production.
+
+· Working knowledge of PostgreSQL; experience with PostGIS is strongly preferred.
+
+· Experience working with vector, raster, elevation, imagery, and other geospatial datasets.
+
+· Understanding of professional cartographic principles, map design techniques, symbolization, feature placement, annotation, generalization, and cartographic finishing.
+
+· Ability to apply visual hierarchy, feature prominence, scale-dependent representation, density, balance, and map composition to communicate geographic information clearly.
+
+· Strong attention to detail and demonstrated ability to perform cartographic quality control, data quality review, troubleshooting, and documentation.
+
+· Familiarity with common geospatial data formats, coordinate systems, metadata standards, portrayal rules, and data management best practices.
+
+· Strong analytical, communication, and problem-solving skills, with the ability to support both independent and team-based work.
+
+Desired Skills
+
+· Experience supporting federal government, defense, intelligence, or mission-focused programs.
+
+· Experience producing finished cartographic products in accordance with customer specifications, portrayal requirements, or established mapping standards.
+
+· Experience with PostGIS, spatial SQL, geospatial data modeling, or database performance considerations for spatial datasets.
+
+· Familiarity with geospatial automation, scripting, or repeatable workflow development.
+
+· Active security clearance is preferred but not required at start.","Job Summary
+
+B&A is seeking a detail-oriented Geospatial Data to support a federal government client on an important mission-focused program. The successful candidate will transform existing geospatial data into accurate, visually effective, and mission-ready cartographic products using FME, QGIS, PostgreSQL/PostGIS, and professional cartographic principles. This role works with vector, elevation, imagery, and other geospatial datasets to support data integration, analysis, map production, cartographic finishing, quality control, and customer-defined portrayal standards. This position will begin as remote and transition to onsite support based on program and customer requirements.
+
+Responsibilities
+
+· Transform existing geospatial datasets into accurate, readable, and finished cartographic products in accordance with established product specifications, portrayal standards, and customer requirements.
+
+· Develop, maintain, and troubleshoot spatial data workflows using FME to transform, validate, automate, and integrate geospatial information from multiple sources.
+
+· Use QGIS to perform spatial analysis, create maps, manage geospatial layers, and develop visually effective cartographic products for technical and non-technical audiences.
+
+· Apply cartographic symbolization and portrayal rules to represent geographic features based on feature type, attribution, scale, and intended product use.
+
+· Perform cartographic generalization, feature displacement, and conflict resolution to maintain geographic relationships while improving map clarity and readability at the intended production scale.
+
+· Create, edit, and position geographic names, labels, annotation, symbols, and other map elements using established placement techniques to minimize conflicts and ensure legibility.
+
+· Develop and maintain map layouts and required product elements, including grids, legends, scale information, marginalia, titles, notes, and other components necessary for final product presentation.
+
+· Manage, query, and validate spatial and tabular data using PostgreSQL and PostGIS, including data loading, data review, and basic database maintenance activities.
+
+· Perform cartographic finishing and quality control to identify and resolve symbol conflicts, annotation collisions, feature congestion, inconsistent portrayal, and other visual or technical discrepancies.
+
+· Collaborate with analysts, developers, project managers, and government stakeholders to understand requirements and deliver accurate, timely geospatial and cartographic products.","2026-09-22 03:37:55 UTC"
+"Data Analyst","CFA Institute","Remote","Remote","0 - 3 years","Aug 26, 2026","Active","https://www.dataanalyst.com/job/data-analyst-a6872","What We’re Looking For
+
+Bachelor’s degree in statistics, data science, computer science, economics, or a related field, or equivalent experience
+
+Professional experience in data analysis, reporting, or a related analytical role
+
+Foundational knowledge of statistics, data wrangling, and visualization using tools such as Excel, SQL, and Python
+
+Strong attention to detail and commitment to accuracy in data preparation and reporting
+
+Ability to follow established methods and processes, while recognizing when to escalate novel or ambiguous issues
+
+Effective written and verbal communication skills, with the ability to present findings clearly to internal stakeholders
+
+Strong organizational skills and the ability to manage multiple assigned tasks under close supervision
+
+Comfortable working in a collaborative, fast-paced environment
+
+Familiarity with AI tools such as Microsoft Co-Pilot, ChatGPT, Claude, and Cursor","What You’ll Do
+
+Clean, prepare, and document structured datasets to ensure accuracy, consistency, and usability for downstream analysis
+
+Build simple visualizations and dashboards using standard tools such as Excel, SQL, and Python
+
+Run basic statistical analyses under close supervision, applying foundational knowledge of statistics and data wrangling
+
+Execute predefined analytic tasks and templates, following established methods and processes
+
+Conduct quality assurance on reports and data pipelines to identify and correct errors before publication
+
+Investigate known data issues and follow standard troubleshooting steps; escalate novel or ambiguous questions to senior team members
+
+Contribute to the preparation of recurring data and analytics reports for internal stakeholders
+
+Support colleagues’ use of data management and reporting systems by answering routine questions and directing them to documentation
+
+Develop foundational data analysis skills and business knowledge through ongoing training, coaching, and hands-on project work​","2026-09-22 03:37:55 UTC"
+"Data Analyst","Aflac","Remote","Remote","0 - 3 years","Aug 26, 2026","Active","https://www.dataanalyst.com/job/data-analyst-9e810","What does it take to be successful in this role?
+
+• Proven analytical skills
+
+• Business Acumen.
+
+• Excellent presentation, oral, written, and interpersonal communications skills to effectively interact with all levels of management; ability to maintain professionalism.
+
+• Knowledge of the operations of the business and the insurance industry preferred.
+
+• Ability to successfully work independently or with a team.
+
+• Excellent attention to detail to ensure accuracy of data.
+
+• Ability to meet deadlines.
+
+• Microsoft PowerPoint.
+
+• Business Case Preparation.
+
+• Business Cost/Benefit Analysis.
+
+• Statistical Analysis Tools.
+
+• Data Trend Analysis & Interpretation.
+
+• Business Performance Analysis & Forecasting.
+
+• SQL, Python, DatViz Tools are a plus but not required.
+
+Education & Experience Required
+
+Bachelor's Degree in Analytics, Computer Science or a related field.
+
+0 - 2+ years of job-related experience.","Principal Duties & Responsibilities
+
+• Performs business performance research by gathering, interpreting and comparing operational data for benchmarking and provides insights/recommendations to the organization.
+
+• Develops and updates mathematical modeling tools identifying performance metrics.
+
+• Assists with special projects requiring commensurate analytical expertise and the development of executive level presentations.
+
+• Ensures appropriate measures and reports are defined and implemented to assess organizational performance and/or initiative performance.
+
+• Partners with peer group to lead the architecture, development, and deployment of analytics tools that enable efficiency and scale in discovering actionable insights.
+
+• Conduct in-depth data analysis to identify trends, patterns, and insights related to Client program performance, employee experience, and organizational effectiveness
+
+• Remains abreast of the latest software to build reports and conduct analysis efficiently, including Snowflake, Tableau, PowerBI and other analytic tools.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Research","Johns Hopkins University","Remote","Remote","0 - 3 years","Aug 26, 2026","Active","https://www.dataanalyst.com/job/data-analyst-research-f6060","Minimum Qualifications:
+
+Bachelor's Degree in a related field.
+
+Three years of related experience.
+
+Additional education may substitute for required experience to the extent permitted by the JHU equivalency formula.
+
+Technical Skills & Expected Level of Proficiency""
+
+Data Management and Analysis - Developing
+
+Data Pipeline Architecture & ETL/ELT Development - Developing
+
+Data Visualization - Developing
+
+Programming Languages - Developing
+
+Reproducible Research Practices - Developing
+
+Research Methodology - Developing
+
+Statistical Modeling - Developing
+
+Statistical Programming - Developing","We are seeking a Research Data Analyst who will provide data analysis and related activities for various types of research projects and studies. The Research Data Analyst will contribute to ongoing development, maintenance, and use of a research data pipeline that collects and analyzes data.
+
+Specific Duties & Responsibilities:
+
+Collect data and generate reports and models.
+
+Run models, analyze model results, and prepare reports on the analysis.
+
+Conduct analyses in support of the assigned research project or study.
+
+Conduct statistical analyses using standard and statistical software packages.
+
+Design and prepare tables to illustrate analytic findings.
+
+Manage or contribute to entry of data in the assigned database.
+
+May engage in other research related responsibilities.
+Other duties as assigned.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Advanced Analytics","Liberty Mutual","Remote","Remote","0 - 3 years","Aug 24, 2026","Active","https://www.dataanalyst.com/job/data-analyst-advanced-analytics-c7d70","Qualifications:
+
+Bachelor's Degree plus 2-4 years of experience, or master’s degree with no professional experience, or equivalent.
+
+Proficient in Excel, PowerPoint, and statistical software packages (SAS, Emblem).
+
+Knowledgeable in data query languages and tools (SQL and Snowflake)
+
+Must have good planning, analytical, decision-making and communication skills.
+
+Knowledge of data sources, tools, statistical principles, methodologies, and techniques.","Description
+
+The Strategy and Insights team within the Enterprise Transformation Office is actively searching for a highly motivated analyst to join the Procurement Analytics team. This position will provide analytical support and insights to Enterprise Procurement to help generate value from their supplier relationships. This person will be required to frame and answer operational and strategic questions from senior management and executive leadership. The ideal candidate possesses advanced analytical abilities and will be able to work collaboratively & independently.
+
+Responsibilities:
+
+Perform analysis and recommendations to influence Enterprise Procurement strategies and goals.
+
+May be asked to present analysis in an understandable and concise manner to effectively influence others.
+
+With guidance, develop and produce dashboards and reports to support assessment and monitoring of operational and expense/spend metrics.
+
+Assist in maintaining and improving the current reporting infrastructure.
+
+Identify issues within existing tools, processes, data sources and voice suggestions to the team to improve accuracy, decrease latency, and reduce inefficiencies.
+
+Stay informed about procurement category market trends, identifying drivers for expense saving opportunities.
+
+Maintains close working relationships with data providers and partners.
+
+Query and validate large and complex datasets to deliver analytically sound insights.
+
+Support an inclusive, equitable, and high-performing culture.","2026-09-22 03:37:55 UTC"
+"Junior Data Analyst, Health","GBMC HealthCare","Baltimore, MD","Hybrid","0 - 3 years","Aug 24, 2026","Active","https://www.dataanalyst.com/job/junior-data-analyst-health","Education:
+
+Bachelor’s degree required.
+
+Master’s degree in Business, Health Administration, Finance or related field preferred.
+
+Experience:
+
+2+ years of experience required.
+
+Experience in health administration, data analytics, or related field preferred.
+
+Skills:
+
+Data literacy (ability to read, write, and communicate data in context)
+
+Conceptual analytical and quantitative skills.
+
+Data collection, manipulation, and analysis skills.
+
+Comfort with working in a self-driven, start-up environment.
+
+Interest in and active pursuit of opportunities to learn and grow, and ability to handle multiple demands, shifting priorities, crises, and rapid change
+
+Knowledge of management, business planning, finance, and healthcare.
+
+Working knowledge of finance, accounting, financial models, healthcare data, market and competitive analysis techniques.
+
+Skill in report testing, and supporting end users in report testing process
+
+Able to manage multiple tasks in an uncertain and fast-paced environment
+
+Excellent analytical and/or operational problem-solving skills; demonstrates ability to conduct and interpret quantitative/qualitative analyses and make recommendations for improvement/changes
+
+Knowledge of health insurance claims structure and analytics, including GPRO/HEDIS Quality measures, risk adjustment methodologies, efficiency of care and utilization metrics.
+
+Experience with large data sets, clinical quality measures, and claims analysis. Advanced skills in Excel and ease with data management (i.e. MS Access, SQL)
+
+Skill in oral and written communication and time management with ability to effectively present to and facilitate groups","Principal Duties and Responsibilities:
+
+Works with claims data files and analytics tools to monitor aggregated and drilled down performance including risk adjusted efficiency and claims-based quality metrics
+
+Works with the clinical and financial teams to identify trends and patterns in these complex data sets, draws conclusions, develops graphical and narrative summaries utilizing charts, graphs and images to appropriately display the information for presentation to stakeholders
+
+Drives the design of financial and clinical outcomes reporting based on various sources including medical claims, disease registries, and electronic health records for population health activities, payer contracts, and GBMC employee health plan.
+
+Analyzes large amounts of clinical data and turns key findings into strategic recommendations for specific clinical areas.
+
+Design and develop reports, dashboards, scorecards, and other analytic results as necessary to support activities related to accountable care, managed care, and other GBHA goals.
+
+Analyzes and generates reports on performance related to overall outcomes, utilization, risk adjusted total cost of care, population health, and care coordination.
+
+Support the analysis of data from multiple sources, primarily claims files associated with value-based contracts.
+
+Provide insight for informed decision-making and planning by identifying trends/patterns within complex data sets and visualizing and deploying the data to appropriately inform stakeholders.
+
+Manage the technical related aspects of health analytics to support GBHA’s operational needs regarding data analysis and insight development.
+
+Serves as subject matter expert to support the population health needs regarding claims data, value-based payer contracts, quality data and CRISP data.
+
+Supports implementation initiatives for population health performance solutions.
+
+Maintains current industry knowledge of healthcare financial, cost, reimbursement, market, regulatory and clinical trends, nationally and locally.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Strategy","Credit Acceptance","Remote","Remote","0 - 3 years","Aug 6, 2026","Active","https://www.dataanalyst.com/job/data-analyst-strategy-e6a88","Requirements:
+
+Bachelor’s degree (Computer Science, Economics, Mathematics, Statistics, Business Analytics, etc. - preferred)
+
+2+ years’ experience in an academic or professional setting using one or more of the following analytical tools SAS, SQL, Python or R
+
+2+ years’ experience in an analytics setting, or a combination of higher education and experience
+
+Preferred:
+
+Graduate degree (Computer Science, Economics, Mathematics, Statistics, Business Analytics)
+
+Experience monitoring credit scorecards or collection scores
+
+Experience testing system implementations
+
+Knowledge of loan servicing functions
+
+Knowledge of credit risk management
+
+Experience with data analysis
+
+Experience running and creating reports in an analytical tool or in a business intelligence setting
+
+Ability to write, debug and optimize Python code","The purpose of the Analyst, Analytics – Strategy position is to perform analysis on loan servicing strategies, business policies, processes, and performance champion/challenger tests.
+
+Outcomes and Activities:
+
+This position will work from home; occasional planned travel to our Southfield, Michigan office may be required. However, this position is permitted to work at our Southfield, Michigan office if requested by the team member.
+
+Actively monitor the performance of strategies in production
+
+Analyze data to drive better business decisions
+
+Develop complex programming to extract and manipulate data
+
+Develop, monitor, and maintain complex strategies with the goal of optimizing high volume decisions to add intrinsic value to Credit Acceptance
+
+Develop and produce reports to measure the performance of champion/challenger tests, policies, and processes
+
+Perform analysis to solve business problems and drive better decisions
+
+Translate high level business goals into the tasks and technical specifications needed to accomplish the goal","2026-09-22 03:37:55 UTC"
+"Data Analyst, Sales","Workiva","Remote","Remote","0 - 3 years","Aug 6, 2026","Active","https://www.dataanalyst.com/job/data-analyst-sales-c0967","Minimum Qualifications:
+
+Undergraduate degree and a minimum of 2 years of related experience preferably within sales analytics
+
+Proficiency in using data visualization tools such as Tableau, Power BI, or Quicksight
+
+A strong knowledge of SQL as well as advanced Excel skills
+
+Experience or exposure to modern data stack tools like dbt (Data Build Tool) or cloud data warehouses (e.g., Snowflake, BigQuery, Databricks).
+
+Preferred Qualifications:
+
+Proven ability to create and present insightful visuals and commentary in presentations to senior leadership and other stakeholders
+
+Experience in the technology or SaaS industry.
+
+Strong analytical skills with the ability to translate data into actionable insights
+
+Excellent communication skills, capable of presenting complex data clearly and concisely
+
+Ability to work independently, prioritize work, and manage tasks based on clearly defined objectives
+
+Experience building productive internal working relationships across similar areas","As a Sales Data Analyst, you will support our sales team's effectiveness by creating insightful dashboards and reports using BI tools, CRM, and other reporting software. You will perform ad-hoc analyses and summarize data into presentations with clear visuals and commentary. This role requires interdepartmental collaboration, a high level of attention to detail, and interaction with internal stakeholders to ensure data-driven decision-making.
+
+What You’ll Do
+
+Develop and maintain dashboards and reports using BI tools (e.g., Tableau, Power BI, Quicksight) to provide actionable insights for the sales team and leadership
+
+Perform ad-hoc analyses using Excel and other data analysis tools to support various sales initiatives and answer key business questions
+
+Summarize data effectively into presentations, incorporating insightful visuals and commentary to communicate findings clearly
+
+Assist in tracking and reporting on global sales KPIs, ensuring data accuracy and consistency across regions
+
+Identify and implement process improvements to enhance data collection, analysis, and reporting efficiency
+
+Build productive internal relationships with team members and stakeholders across different departments, often interacting with sales and other operational leadership
+
+Ensure the integrity and accuracy of sales data by conducting regular data quality checks and validation
+
+Contribute to the creation and implementation of standardized reports, ensuring consistency and reliability in data presentation
+
+Enable data-driven decision-making by providing insights that inform sales strategies and performance","2026-09-22 03:37:55 UTC"
+"Data Analyst, GTM Analytics & BI","Pegasystems","Remote","Remote","0 - 3 years","Jul 29, 2026","Active","https://www.dataanalyst.com/job/data-analyst-gtm-analytics-bi","Who You Are:
+
+The ideal candidate has a solid foundation in reporting and analytics and contributes accurate, consistent outputs. You’re intellectually curious about data and how it drives business decisions, motivated to solve problems, and excited to continue developing your technical, analytical, and communication skills in a fast paced, collaborative environment. You take ownership of your work, actively seek learning opportunities through hands on experience, feedback, and mentorship, and contribute thoughtfully to team initiatives. You enjoy working with modern analytics tools and are energized by the opportunity to support meaningful business outcomes while steadily expanding your impact over time.
+
+Solid foundation in reporting, data analysis, and visualization, with experience building and maintaining dashboards and reports
+
+Detail-oriented with a focus on data accuracy, consistency, and alignment to defined metrics and business logic
+
+Analytical thinker who connects data outputs to business context and supports actionable insights
+
+Independently manages reporting and data-related tasks with guidance as needed
+
+Organized and able to manage multiple priorities effectively
+
+Identifies issues, asks clarifying questions, and progresses work to completion
+
+Collaborates effectively with team members and stakeholders to deliver consistent outputs
+
+Experience working with data tools across reporting, data management, and visualization
+
+Continues to build skills in data modeling and scalable reporting approaches
+
+Works in evolving problem spaces using structured, data-driven approaches
+
+What You've Accomplished:
+
+Brought new innovative ideas and approaches to looking at data and reports that led to groundbreaking new insights.
+
+Taken complex data/information and make it simple, scalable, and actionable that led to measurable business impact.
+
+Established strong stakeholder relationships and provided support to ensure success.
+
+Have turned data into trusted information used to drive decisions and actions.
+
+Identified process gaps or areas for optimization while also helping drive it from design to completion.","What You'll Do at Pega:
+
+The Go-to-Market Analytics and Insights Analyst II will partner with other internal team members, as well as partners across the Go-to-Market function. This role will be a key business partner to these teams by building and maintaining data products to support actionable insights that help drive optimal business outcomes. You will contribute to ongoing analytics initiatives, help ensure data quality and consistency, and look for opportunities to improve how data is delivered and used across the business.
+
+In this role you will:
+
+Build, maintain, and enhance dashboards, reports, and analytical data products used by GTM teams
+
+Ensure data products deliver accurate, consistent, and actionable insights aligned to standardized KPI definitions and data models
+
+Apply best practices in data visualization, performance optimization, and reporting design to improve usability and adoption
+
+Contribute to the development and enhancement of data products that improve efficiency and support decision-making
+
+Partner with stakeholders and team members to translate business needs into reporting and analytical outputs
+
+Perform ad hoc analyses to uncover insights and support business performance
+
+Contribute to the design and evolution of scalable analytical solutions and reporting approaches
+
+Define requirements, logic, and structure for dashboards and analyses with guidance and feedback from team members
+
+Help standardize reporting structures, KPI frameworks, and data product design
+
+Identify opportunities to improve analytical approaches, reporting processes, and data quality
+
+Collaborate on team initiatives exploring new tools, technologies, and analytical approaches (e.g., GenAI-enabled analytics, automation)
+
+Support continuous improvement through documentation, process enhancements, and adoption of best practices","2026-09-22 03:37:55 UTC"
+"Data Analyst, Health","Prime Therapeutics","Remote","Remote","0 - 3 years","Jul 29, 2026","Active","https://www.dataanalyst.com/job/data-analyst-health-a69ce","Minimum Qualifications:
+
+Bachelor's degree in Mathematics, Finance, or related field, or the equivalent combination of education and/or relevant work experience; HS diploma or GED is required
+
+2 years of experience in pharmacy benefits management, reporting & analytics, benefits consulting, healthcare, financial services or related field
+
+Must be eligible to work in the United States without the need for work visa or residency sponsorship
+
+Additional Qualifications:
+
+Advanced Microsoft Excel skills – ability to create complete formulas and efficient data manipulation.
+
+Intermediate troubleshooting skills, including in-depth client data research, which may involve research and drivers of utilization; understands resources needed and steps/processes on how to complete the problem; able to understand when an issue arises how-to navigate to a resolution
+
+Strong PBM industry knowledge; able to articulate the industry trends to clients and the impact of trends and changes to client financials
+
+Ability to establish rapport and effectively influence at all levels within an organization
+
+Ability to communicate effectively and present complex data to a wide variety of audiences
+
+Preferred Qualifications:
+
+Knowledge of the PBM (Pharmacy Benefit Management) industry and PBM data; understands key PBM metrics (such as PMPM, generic utilization)
+
+Experience working with large sets of pharmacy, claims, medical, and/or financial data
+
+Previous experience in a client facing or consultative role
+
+Extensive experience using analytic tools; familiarity with Alteryx","The Health Data Analyst provides information, analyses, and consultation to internal and external stakeholders. This position assesses the performance of pharmacy benefits and/or networks and develops recommendations for improvements or enhancement to support departmental and organizational objectives. This position will participate in the development of new reports, analytical models, and products/benefit programs that align with Prime's strategic imperatives.
+
+Responsibilities
+
+Assumes responsibility for moderately complex analytic and consultative work such as analyzing and interpreting client pharmacy benefit data, trends and reports and partnering with analytics team to deliver recommendations or project status updates to internal and external stakeholders; investigates follow up items or questions regarding project and/or request scope
+
+Investigates key drivers of benefit performance
+
+Create new queries using Alteryx including multiple table joins, understanding of table structures, creation of detailed formulas leveraging an understanding of Alteryx code
+
+Participates in development of analytic methodologies, models, reports and new products
+
+May be responsible for Centers for Medicaid/Medicare Services reporting and analysis, including the management of directories and bid support
+
+Other duties as assigned","2026-09-22 03:37:55 UTC"
+"Data Analyst","IQVIA","Remote","Remote","0 - 3 years","Jul 29, 2026","Active","https://www.dataanalyst.com/job/data-analyst-b71e1","An ideal candidate will have:
+
+A strong analytical record, excellent problem-solving abilities, and strong quantitative skills
+
+Exceptional communication skills and be a proven team contributor
+
+An interest in and desire to learn about the constantly evolving healthcare industry
+
+Good project management, time management and organizational skills
+
+Excellent conversational and business English (written and oral)
+
+Minimum of at least 3 years' experience in PowerPoint and Excel; PowerBI and/or SQL are a plus
+
+A willingness or ability to travel as needed (<10% on average)","As PASS Analyst you’ll be responsible for:
+
+Leveraging skills in Excel and SQL to yield trends, conclusions, and actionable recommendations for clients
+
+Contributing to internal brainstorming sessions and collaborating with account management team members throughout client engagements
+
+Evaluating secondary data on markets, physicians, patients, and pharmacies
+
+Developing and working with reporting tools such as PowerBI to derive insights and forecasting
+
+Coordinating both directly with clients as well as through the PSS account team to manage the analytics needs of the clients for both scheduled and ad hoc requests
+
+Creating reports, presentations and other client deliverables
+Presenting to client audiences via teleconference, videoconference, or in face-to-face meetings
+
+Building professional relationships with internal and external members of the client team
+
+Proactively developing knowledge of the healthcare industry and client engagement methodologies","2026-09-22 03:37:55 UTC"
+"Data Analyst, Digital Insights & Optimization","Ralph Lauren","New York, NY","In-office","0 - 3 years","Jul 22, 2026","Active","https://www.dataanalyst.com/job/data-analyst-digital-insights-optimization","Required Qualifications:
+
+2+ years of experience with Adobe Analytics and/or Customer Journey Analytics in an e-commerce environment with DTM and Adobe Launch experience
+
+Deep understanding of Adobe Analytics tools for analysis, insight generation, data presentation, solution design, implementation, rollout and quality assurance
+
+Excellent analytical and problem-solving skills with exceptional attention to detail
+
+Advanced proficiency working with Excel (including lookups, pivots, conditionals) and retail math
+
+Strong verbal and written communication skills with ability to present complex information clearly and deliver actionable recommendations based on data insights
+
+Preferred Qualifications:
+
+Experience with Content Square, Google Analytics or other digital analytics platforms
+
+Understanding of digital marketing channels, attribution models and customer segmentation","ESSENTIAL DUTIES & RESPONSIBILITIES
+
+Analytics Platform Management & Development:
+
+Develop, manage, and optimize analytics suites across Adobe Analytics, Business Intelligence platforms, and other data sources to ensure comprehensive measurement capabilities
+
+Strategic Analysis & Business Partnership:
+
+Leverage business analytics to deliver strategic recommendations on e-commerce strategy, partnering closely with Buying & Planning, Marketing, CIX, CX, and Supply Chain teams
+
+Provide in-depth analysis to support optimization initiatives across Product/Inventory, Marketing campaigns, and Technology roadmap priorities
+
+Conduct regular business reviews with stakeholders to communicate insights and drive actionable outcomes
+
+Reporting & Data Visualization:
+
+Function as a power user of Adobe Analytics (or Customer Journey Analytics) and Business Intelligence platforms to extract meaningful insights
+
+Create, maintain, and deliver comprehensive dashboards, reports, and ad-hoc analysis for key stakeholders across the organization
+
+Lead Business Intelligence reporting roadmap prioritization and implementation
+
+Innovation & Automation:
+
+Identify and implement opportunities to leverage machine learning and AI technologies to automate routine analytics tasks and enhance reporting capabilities
+
+Design and analyze A/B tests and other experiments to optimize user experience and conversion performance
+
+Establish KPIs and monitoring frameworks for continuous digital performance improvement","2026-09-22 03:37:55 UTC"
+"Data Analyst, Advanced Analytics","Hilton","McLean, VA","Hybrid","0 - 3 years","Jul 22, 2026","Active","https://www.dataanalyst.com/job/data-analyst-advanced-analytics-94646","You have these minimum qualifications:
+
+One (1) year of professional experience manipulating large datasets and extracting insights
+
+Proficiency working with SQL, R and/or Python
+
+Familiarity with causal inference including quasi-experimental research designs and time-series methods
+
+Hybrid schedule from McLean, VA or Dallas, TX
+
+It would be useful if you have:
+
+Master's degree in economics, Data Science or related field
+
+One (1) year of experience automating and maintaining workflows
+
+One (1) year of experience with project management and associated demand management tools (e.g. Jira)
+
+Understanding of AI foundations and usage
+
+Experience in the hospitality or travel industry","What you'll do during a typical day:
+
+Collect and manage project requirements with team members and stakeholders.
+
+Support test & learn initiatives.
+
+Automate and maintain data pipelines powering Commercial Analytics and associated models.
+
+Maintaining and improving portfolio of models as well as expanding current offerings.
+
+How you'll collaborate with others:
+
+Be the bridge between BI and Data Science teams and the Commercial Analytics team.
+
+Enable other Commercial Analytics teams and other SIA teams by ensuring delivery of key data and experimentation products.
+
+Weekly learning and sharing opportunities within the team to gain both business knowledge and enhance technical skills.
+
+Projects you'll take ownership of:
+
+Automate and maintain workflows which power the Commercial Analytics apparatus.
+
+Enable the measurement of impact from specific commercial actions.","2026-09-22 03:37:55 UTC"
+"Junior Data Analyst","Morgan Stanley","Dallas, TX","In-office","0 - 3 years","Jul 22, 2026","Active","https://www.dataanalyst.com/job/junior-data-analyst-9f092","What you'll bring to the role:
+
+0-3+ years of experience in data analysis, data wrangling, or related analytical roles
+
+Working knowledge of SQL or similar query languages; exposure to data tools (e.g., Python, Alteryx, Excel) is a plus
+
+Basic understanding of data validation, reconciliation, and data quality practices
+
+Strong attention to detail, particularly in data accuracy and control-oriented environments
+
+Ability to work with structured and semi-structured datasets in a regulated setting
+
+Interest in Financial Crime and Crypto-related analytics
+
+Strong communication skills with the ability to follow requirements and translate data into structured outputs
+
+Ability to manage multiple tasks and work in a team-oriented, deadline-driven environment
+
+Willingness to learn new tools, datasets, and analytical approaches in a rapidly evolving domain","What you'll do in the role:
+
+Perform foundational data wrangling and preparation across datasets related to Fraud, GFC, and blockchain transactions.
+
+Assist in data reconciliation and validation activities to ensure accuracy and completeness of investigation datasets
+
+Support the creation and maintenance of reporting outputs and recurring analytical deliverables.
+
+Work with senior analysts to prepare datasets for investigative workflows, including structuring and cleaning data for downstream use
+
+Conduct data quality checks and basic issue identification, escalating data inconsistencies or anomalies as appropriate
+
+Support cross-functional data needs by collaborating with stakeholders across Fraud, GFC, and Technology teams
+
+Assist in handling restricted datasets accessible only to US-based staff, ensuring adherence to data governance and access controls
+
+Contribute to production reporting support, including recurring data refreshes and validation tasks
+
+Document data processes, assumptions, and transformations in a clear, audit-ready format","2026-09-22 03:37:55 UTC"
+"Associate Data Analyst","ICF","Remote","Remote","0 - 3 years","Jul 20, 2026","Active","https://www.dataanalyst.com/job/associate-data-analyst-0ee7e","Requirements:
+
+Bachelor's degree
+
+2+ years of experience with data analytic tools such as Snowflake or similar tools.
+
+2+ years of experience with capturing data requirements and analyzing data.
+
+2+ years of experience using software tools like SharePoint, JIRA, MS Office, or similar systems.
+
+1+ years of experience using SQL and working with databases or data platforms.
+
+US Citizen or Green Card Holder due to federal contract requirements
+
+Must be able to obtain a Federal Public Trust clearance.
+
+MUST RESIDE IN THE United States (U.S.) and the work MUST BE PERFORMED in the United States (U.S.), as this work is for a federal contract and laws do apply.
+
+Desired Skills:
+
+Experience with data visualization technologies, such as Power BI, including developing data visualization reports and dashboards.
+
+Experience with tools such as ServiceNow
+
+Excellent oral and written communication skills
+
+Ability to work independently and within one or more teams with excellent time management, organizational, and reporting skills.
+
+Skilled at analyzing existing system documentation to summarize existing system functionality as it relates to the project at hand.","We’re looking for an Associate Data Analyst (DA) who enjoys collaborating with clients and wants to help deliver enhanced data analysis and reporting experience. The DA will collaborate closely with our clients to first define what their specific needs are and then to help build those custom data analytics and reporting solutions using our toolset. You’ll be an integral part of the team, helping to ensure data integrity is continuously maintained and resolving discrepancies as they arise. As a demonstrated self-starter, you’ll own business processes end-to-end and will lead the identification and implementation of best practices.
+
+Responsibilities:
+
+Engage with customers to understand and document data requirements for analysis and reporting.
+
+Gather data from primary and secondary sources, ensuring the best practices for data management.
+
+Work with large datasets and perform complex data analysis.
+Identify and correct errors or inconsistencies in the data set to ensure accuracy and completeness.
+
+Analyze data, identify trends, patterns, and relationships, and interpret the data.
+
+Develop data dashboards, charts, and visual aids to support decision-making.
+
+Collaborate with the data governance team and stakeholders to maintain data accuracy throughout ingestion and transformation.
+
+Partner with the development team to gather and translate requirements and conduct QA on the final product.
+
+Participate in regular agile meetings with the development and governance team.
+
+Manage user accounts, including roles, permissions, and security settings.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Audit","The Coca-Cola Company","Atlanta, GA","Hybrid","0 - 3 years","Jul 16, 2026","Active","https://www.dataanalyst.com/job/data-analyst-audit-a76e0","Qualifications and Experience
+
+Bachelor’s/Master’s Degree in Accounting, Management Information Systems (MIS) or equivalent degree/practical experience
+
+2+ years data analytics experience.
+
+Internal Audit is a plus.
+
+Demonstrated experience with operational and financial processes.
+Experience with tools, such as, SAP S/4 Hana, SAP WebIDE, Dynamics & Azure Apps, MS Power Platform Tools, Alteryx, SQL, R, or Python.
+
+Ability to organize, cleanse, understand, measure, and analyze big data to understand the relationships, inconsistencies, and unknowns.
+
+Strong attention to detail and organization skills as well as oral and written communications.","The Consultant, Audit Data Analyst, Internal Audit will be a key technical member of the Data, Strategy, Analytics, and Insights team. The team will play a critical role in providing valuable insights into audits through data, driving the automation and efficiency of the audits, empowering Internal Audit to further use analytics to bring value to the business. This team is responsible for providing the insights to the data that enables audit and the Company to understand and manage risks more effectively.
+
+The Consultant, Audit Data Analyst, Internal Audit will support the team through collecting, cleansing, and analyzing data through technical tools. This role will require the ability to tell a story, which connects the data relationships to risks and provides the capability to look at potential risks differently. The candidate should demonstrate strong leadership, curiosity, communication, and problem-solving skills with the ability to interact in a dynamic team environment and maintain accountability for individual performance objectives and goals.
+
+Key Duties and Responsibilities:
+
+Engage with audit teams and stakeholders to gather, build, and understand business requirements. Bring structure to requests and translate requirements into an analytic approach to enhance audits.
+
+Write complex programs, ad hoc queries, and reports while ensuring that all code is developed in a well-organized and well-structured style that includes sufficient comments and is easy to maintain and reuse. Use Agile to deliver quick wins and iterative improvements.
+
+Problem-solve errors and gaps in business needs while seeking sources of key data to provide the desired result. Test and delivery quality ensuring completeness and accuracy of the data.
+
+Lead the design, code, and validation phases of the projects. Explains technical considerations at meetings for internal clients and less experienced team members. Verifies code for accuracy of intended purpose.
+
+Produce compelling data visualizations to communicate insights and influence outcomes for audits driving automation and efficiencies.
+
+Actively research and advocate adoption of emerging methods and technologies in the data science field, with an eye toward continually advancing capabilities.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Pricing","Ticketmaster","Remote","Remote","0 - 3 years","Jul 16, 2026","Active","https://www.dataanalyst.com/job/data-analyst-pricing-b58d9","WHAT YOU NEED TO KNOW (or TECHNICAL SKILLS)
+
+Bachelor’s Degree in Statistics, Math, Computer Science, Information Technology, Economics, or related fields.
+
+Advanced proficiency in Python and SQL, with experience contributing to data pipelines, automations, and shared code repos.
+
+Hands-on experience building with AI/LLM APIs (e.g., Claude, OpenAI, or equivalent)—writing and chaining prompts, integrating AI into analytical workflows, and shipping AI-assisted tooling.
+
+Strong statistical foundation with experience building predictive models (forecasting, regression, classification, or ML).
+
+Experience in revenue management and pricing optimization, particularly within the live entertainment and ticketing industry, is a plus.
+
+Experience with data warehousing and visualization tools (Databricks, Tableau, Domo, Quicksight, etc.).
+
+Comfortable with PowerPoint and Excel for client deliverables.
+Resourceful problem-solving skills.
+
+Strong written and verbal communication skills with the ability to communicate technical processes and results to non-technical audiences.","THE JOB
+
+We are seeking a highly motivated and technically skilled Pricing Data Analyst to join our team and turn pricing data into pricing actions. You will be working on some of the most interesting and challenging problems in the sports, arts, family, and concert areas and you will have the opportunity to derive data-driven insights, convert them to actionable recommendations, and communicate those recommendations directly to our clients. You will help achieve these outcomes by building AI workflows that scale our analysis, developing reusable pipelines and frameworks that codify how we approach pricing problems, and partnering with our consulting and managed-service teams on pricing strategy. The ideal candidate brings strong data-minded instincts alongside analytical depth -- someone who moves quickly, builds AI-powered tools, and accelerates how we turn data into decisions.
+
+WHAT YOU WILL BE DOING
+
+Build AI-powered tools and automated workflows that replace recurring manual analytical work to help the team deliver insights faster and at greater scale.
+
+Contribute to and expand upon the team’s data pipelines using Python and SQL to ingest and transform raw pricing, inventory, sales, and demand data into curated views.
+
+Develop scalable analytical frameworks that turn ad-hoc analyses into templated notebooks, processes, and dashboards that can be applied consistently across clients.
+
+Partner with Consulting and Managed Pricing teams to develop a deep understanding of client data to identify trends and opportunities for improvement.
+
+Prototype emerging AI technologies and capabilities -- including LLMs, prompt-driven pipelines, and agentic workflows -- to keep the team’s toolkit at the forefront of what is possible.
+
+Build predictive models for sell-through and yield management optimization, using both traditional statistical methods and machine learning techniques.
+
+Use business intelligence tools to communicate insights through dashboards and reports to internal stakeholders when appropriate.
+
+Collaborate with internal stakeholders and external clients to define project scope, develop hypotheses, execute analyses, and present results.
+
+As business needs evolve, additional responsibilities and projects may be assigned.","2026-09-22 03:37:55 UTC"
+"Product Data Analyst, Acquiring Operations","NMI","Remote","Remote","0 - 3 years","Jul 14, 2026","Active","https://www.dataanalyst.com/job/product-data-analyst-acquiring-operations","NMI is looking for a highly analytical and data-obsessed Product Data Analyst to help power decision-making across our acquiring operations and merchant lifecycle products. This role sits at the intersection of product, operations, and business intelligence — transforming large datasets into actionable insights that improve operational efficiency, merchant growth, product adoption, and financial performance.
+
+You’ll partner closely with Product Managers, Operations, Engineering, Sales, Finance, and Support teams to deliver analytics and reporting across NMI’s acquiring ecosystem, including ISO management, Merchant Central, ScanX, business capital solutions, and other operational extensions.
+
+This is an ideal role for someone who loves diving deep into data, building scalable reporting frameworks, uncovering trends and anomalies, and translating complex operational metrics into clear business insights. Strong SQL skills and a passion for data visualization through Tableau are essential.
+
+If you thrive in fast-paced fintech environments and enjoy solving complex operational and product problems through data, we’d love to hear from you.","Key Responsibilities
+
+Product & Operational Analytics:
+
+Lead the collection, analysis, and interpretation of operational and product data to drive strategy, optimization, and growth across NMI’s acquiring platform and Merchant Central CRM
+
+Partner closely with Product Managers supporting ISO operations, Merchant Central, ScanX, Business Capital lending, and additional acquiring extensions.
+
+Build analytical frameworks that empower product and business teams to make data-driven decisions.
+
+Conduct opportunity sizing, forecasting, trend analysis, and operational performance analysis to support strategic planning.
+
+Dashboarding & Data Visualization:
+
+Design, build, and maintain Tableau dashboards and reporting frameworks that provide actionable visibility into KPIs, operational health, merchant performance, and product adoption.
+
+Create executive-ready visualizations and narratives that clearly communicate insights to technical and non-technical stakeholders.
+
+Develop self-service reporting capabilities that enable teams to independently explore operational and product data.
+
+Data Integrity & Operational Insights:
+
+Monitor data quality, transaction integrity, and operational reporting accuracy across the acquiring lifecycle.
+
+Investigate anomalies, breakages, settlement discrepancies, reconciliation issues, and operational incidents proactively.
+
+Analyze large transactional datasets to uncover trends, operational bottlenecks, growth opportunities, and merchant behavior insights.
+
+Partner across teams to ensure accuracy in financial reporting, ACH reconciliation, settlement operations, and partner reporting.
+
+Cross-Functional Collaboration:
+
+Collaborate with Engineering and Data teams to define event tracking, instrumentation, and data collection standards.
+
+Support business stakeholders across Product, Operations, Finance, Sales, and Support with timely insights and ad-hoc analysis.
+
+Help establish KPI cadences and operational review processes across monthly, quarterly, and annual business rhythms.
+
+Contribute to building a strong data discipline across product and operations teams through experimentation, measurement, and analytical rigor.
+
+Process Improvement & Automation:
+
+Identify inefficient operational workflows and opportunities for automation through data and reporting improvements.
+
+Help streamline operational reporting and reduce manual analysis through scalable analytics solutions and tooling.
+
+Support experimentation frameworks, A/B testing analysis, and operational performance measurement initiatives.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Product","1Password","Remote","Remote","0 - 3 years","Jul 10, 2026","Active","https://www.dataanalyst.com/job/data-analyst-product-0d1e2","What we're looking for:
+
+Naturally curious and motivated to ask good questions, dig into data, and keep learning
+
+2+ years of experience working with data in an analytics, BI, or product context
+
+Working knowledge of SQL, with a growing ability to write and troubleshoot queries independently
+
+Familiarity with clickstream and behavioral event tracking tools such as Amplitude or Mixpanel
+
+Experience building or contributing to dashboards in a BI tool (Looker, Tableau, Power BI, or similar)
+
+A developing ability to conduct, interpret, and communicate diagnostic analysis
+
+Some exposure to A/B or A/A testing concepts and how they're used to measure product changes
+
+Attention to detail and good instincts around data quality
+
+Able to clearly communicate progress, blockers, and findings to teammates and stakeholders
+
+Comfortable seeking out help, asking clarifying questions, and partnering with others to solve problems
+
+Nice to have: beginner-level Python or R, familiarity with event taxonomy or instrumentation design, exposure to SaaS or Enterprise product environments
+
+Nice to have: Familiarity with modern AI or BI tools (Omni, Claude, Dust, Hex, or similar)","What you can expect:
+
+Ownership of discrete, well-defined analytics projects from start to finish, with guidance from senior analysts
+
+Building and maintaining dashboards that help Product and Technology teams track progress against their objectives, developed collaboratively with your manager and senior teammates
+
+Working with clickstream and behavioral data, including Amplitude, to understand how users move through the product
+
+Support for your work on feature measurement and A/B testing, with increasing independence as you grow
+
+Active mentorship from senior and staff analysts invested in your technical and professional development
+
+Opportunities to contribute to team knowledge sharing, documentation, and onboarding new team members
+
+A clear path to grow into a Senior Product Analyst role as your scope, autonomy, and impact expand
+
+A team where data genuinely drives decisions, and your work connects directly to what stakeholders care about
+
+Thoughtful conversations about how to balance analytical insight with respect for user privacy, a core part of how 1Password operates","2026-09-22 03:37:55 UTC"
+"Data Analyst, Digital Workplace","American Express","Atlanta, GA","Hybrid","0 - 3 years","Jul 10, 2026","Active","https://www.dataanalyst.com/job/data-analyst-digital-workplace","Proven experience analyzing large datasets and generating actionable insights
+
+Strong proficiency in data analysis tools such as SQL, Excel, Power BI, or similar platforms
+
+Experience working with telemetry, usage analytics, or enterprise software adoption data
+
+Ability to create executive-ready dashboards, visualizations, and reports
+
+Strong communication skills, with the ability to translate technical findings into business implications
+
+Solid understanding of descriptive statistics and foundational analytical concepts
+
+Experience partnering with cross-functional stakeholders in product, technology, or operations environments
+
+Bachelor’s degree in Data Analytics, Statistics, Business, Information Systems, or a related field, or equivalent practical experience.
+
+Growth Mindset - You are committed to continuously improving your analytical craft. You seek opportunities to deepen your technical expertise while strengthening your ability to influence decisions through insight and storytelling.","What You’ll Do
+
+As part of our integrated colleague experience team, you will provide analytical expertise to measure program success, inform executive reporting, and support data-driven decision-making across digital workplace initiatives.
+
+Key responsibilities include:
+
+Analyze adoption, engagement, and behavioral telemetry data to assess product performance and value realization
+
+Develop and maintain executive-level scorecards and reporting frameworks aligned to program success metrics
+
+Partner with Power BI developers and data engineers to ensure data accuracy, consistency, and usability
+
+Identify trends, risks, and opportunities through exploratory data analysis
+
+Translate complex findings into clear, concise insights tailored for both technical and non-technical audiences
+
+Support quarterly business reviews and leadership updates with data-driven narratives
+
+Establish and document measurement methodologies and definitions to ensure reporting consistency
+
+Collaborate with UX researchers and product teams to connect quantitative signals with qualitative insights","2026-09-22 03:37:55 UTC"
+"Data Analyst, User Analytics","Fetch","Remote","Remote","0 - 3 years","Jul 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-user-analytics","Minimum Qualifications:
+
+2+ years of experience in analytics, data analysis, product analytics, marketing analytics, business analytics, or a related field.
+
+Strong proficiency in SQL for data manipulation, analysis, validation, and reporting.
+
+Experience building dashboards and visualizations in tools such as Hex, Tableau, Looker, Grafana, Mode, or similar platforms.
+
+Working knowledge of A/B testing concepts, including hypothesis creation, metric selection, sample sizing, segmentation, and result interpretation.
+
+Experience creating user segments, cohorts, or audience groups for analysis, experimentation, reporting, or targeting.
+
+Ability to analyze funnels, retention, engagement, conversion, campaign performance, app behavior, or other user/business metrics.
+
+Strong attention to detail and ability to identify data quality issues.
+
+Strong communication skills, with the ability to explain findings clearly to both technical and non-technical audiences.
+
+Ability to manage routine analytical requests independently while escalating ambiguity, blockers, or trade-offs with clear context.
+
+Comfort working in a fast-paced environment with evolving priorities and imperfect data.
+
+Preferred Qualifications:
+
+Experience with dbt or analytics engineering workflows.
+
+Experience using Git/GitHub for version control, collaboration, or code review.
+
+Experience with Python for data analysis, automation, visualization, or statistical analysis.
+
+Familiarity with martech, lifecycle marketing, campaign platforms, CDPs, attribution, or audience activation tools.
+
+Familiarity with app analytics, event-based tracking, product instrumentation, feature adoption analysis, or app engagement metrics.
+
+Experience partnering with Product, Marketing, Growth, or Engineering teams.
+
+Comfort using Google Sheets for collaboration and lightweight analysis.","About the Role:
+
+As a Data Analyst on the User Analytics & Insights team, you will help cross-functional teams make better decisions through data. This role will support one of two business areas: Marketing or Apps. In either area, you will partner with Product, Marketing, Growth, Engineering, Data, and Business teams to understand user behavior, measure performance, support experimentation, and create reporting that helps teams track progress against key goals.
+
+This role is ideal for someone who is highly analytical, comfortable working with large datasets, and able to turn business questions into clear analysis, dashboards, and recommendations. You will be responsible for building and maintaining self-service reporting, creating user segments, supporting experiment setup and analysis, and helping stakeholders understand what is happening, why it is happening, and what actions to take next.
+
+This is a full-time role that can be held from one of our US offices or remotely in the United States.
+
+Role Responsibilities:
+
+Data Analysis & Business Partnership:
+
+Partner with Product, Marketing, Growth, Engineering, and Business stakeholders to answer key questions about user behavior, performance, engagement, conversion, and retention.
+Translate business questions into structured analytical plans using SQL, visualization tools, and statistical thinking.
+
+Conduct routine and ad hoc analyses to identify trends, diagnose metric movements, and surface opportunities for improvement.
+
+Clearly communicate findings, implications, and recommended next steps to technical and non-technical stakeholders.
+
+Support decision-making by connecting data insights to user experience, business outcomes, and team priorities.
+
+Document assumptions, definitions, methodologies, and key findings so analysis is reusable and easy to understand.
+
+Dashboarding & Reporting:
+
+Build, maintain, and improve dashboards that track key business, product, marketing, app, and user behavior metrics.
+
+Create scalable self-service reporting that allows stakeholders to monitor performance and reduce one-off data requests.
+
+Ensure dashboards are accurate, clearly documented, and easy for cross-functional partners to use.
+
+Monitor core KPIs and investigate changes in trends, performance, or data quality.
+
+Partner with Analytics Engineering and Data Engineering to improve data definitions, reporting logic, and source-of-truth data assets.
+
+Experimentation & Measurement:
+
+Support experiment setup and design, including hypothesis development, metric selection, audience definition, and test-readiness checks.
+
+Conduct MDE calculations, power analysis, and sample size estimates to help teams understand experiment feasibility.
+
+Analyze A/B test results, including topline impact, segment-level performance, statistical significance, and follow-up questions.
+
+Partner with Product, Marketing, and Data Science teams to ensure experiments are measured consistently and interpreted accurately.
+
+Communicate experiment results clearly to help teams decide whether to launch, iterate, or stop an initiative.
+
+User Segmentation:
+
+Create and maintain user segments to support analysis, experimentation, lifecycle programs, product experiences, and business reporting.
+
+Analyze user cohorts based on behavioral, lifecycle, engagement, acquisition, or product usage signals.
+
+Help stakeholders understand how different user groups behave and where opportunities exist to improve engagement, conversion, retention, or monetization.
+
+Support audience sizing, segment performance tracking, and readouts for key initiatives.
+
+For marketing-focused work, support campaign and lifecycle audience creation.
+
+For apps-focused work, support segmentation related to app usage, feature adoption, engagement, and product funnels.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Molina Healthcare","Remote","Remote","0 - 3 years","Jul 2, 2026","Active","https://www.dataanalyst.com/job/data-analyst-bebde","REQUIRED QUALIFICATIONS:
+
+• At least 2 years of experience in data analysis, reporting, or healthcare analytics, or equivalent combination of relevant education and experience.
+• Analytical Problem Solving: Ability to interpret complex datasets, identify patterns, and translate findings into actionable insights.
+• Technical Proficiency: Comfortable working with SQL, Excel, and reporting/analytics tools; able to learn new technologies quickly.
+• Attention to Detail: Ensures accuracy in data validation, report development, and documentation.
+• Collaboration & Communication: Works effectively with cross functional teams to clarify requirements and present findings.
+
+PREFERRED QUALIFICATIONS:
+
+• Experience with SQL Server Reporting Services (SSRS), Crystal Reports, MedInsight, or similar tools.
+• Knowledge of healthcare utilization metrics, medical cost analysis, and performance indicators.
+• Familiarity with predictive modeling concepts and trend forecasting.
+• Microsoft certification or similar technical credentials.","Job Summary
+
+Provides support in conducting research, analysis, and reporting across healthcare and operational data to support decision‑making, cost‑containment strategies, and business performance improvement. Works with complex datasets including claims, pharmacy, lab, and operational data to design, develop, validate, and maintain reports, dashboards, and analytical tools. Partners with internal teams to gather requirements, enhance reporting processes, and ensure data accuracy, consistency, and usability.
+
+Job Duties
+
+• Analyzes healthcare and operational datasets to identify trends, anomalies, and opportunities for improvement.
+• Develops, validates, and maintains recurring and ad hoc reports using Structured Query Language (SQL), Excel, Business Intelligence (BI) tools, and other analytics platforms.
+• Organizes, documents, and maintains datasets and reporting workflows across multiple business areas.
+• Creates dashboards, queries, and reporting solutions that support utilization analysis, cost containment, and operational performance.
+• Consolidates research and analysis into clear summaries and recommendations for business stakeholders.
+• Supports regulatory, contractual, and enterprise reporting requirements, including state mandated submissions.
+• Identifies and implements enhancements or fixes to existing reports and reporting processes.
+• Collaborates with cross functional teams to define reporting requirements and maintain project/report timelines.
+• Assists with special projects and data requests from internal departments and external agencies.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Product Growth & GTM Strategy","Salesforce","New York, NY","Hybrid","0 - 3 years","Jul 2, 2026","Active","https://www.dataanalyst.com/job/data-analyst-product-growth-gtm-strategy","You're Our Person If...
+
+2+ years' of experience focused on quantitative analysis, financial modeling, and logical reasoning
+
+Bachelor's degree from an accredited university
+
+Self-starter with a high degree of motivation to go above and beyond the task at hand
+
+Exceptional problem-solving skills: demonstrated ability to structure complex problems and develop solutions
+
+High degree of comfort running complex analyses and modeling in Excel or Google Sheets
+
+Strong presentation skills, especially related to building compelling PowerPoint or Google Slides presentations
+
+Experience aggregating large datasets using SQL, Python, and/or Tableau required
+
+Familiarity with AI tools, autonomous agents, or enterprise software ecosystems is a strong plus
+
+Work experience in management consulting, finance, product management, sales strategy, solutions, or sales operations is a plus *LI-Y","About the Team:
+
+The Product GTM & Growth Strategy team is part of Salesforce's Corporate Strategy organization, and partners closely with Product Management executives to drive business growth, Go-To-Market execution, strategic planning, business analysis, and growth across our product portfolio. The Analyst role is a hybrid of traditional roles in strategic planning, sales strategy, finance, analytics and programs – requiring a mix of market & business analysis, sales optimization, and business operational support.
+
+The Experience:
+
+This analyst will work on a variety of global projects across functions and customer segments across our Data Foundations portfolio.Sample strategic projects include developing recommendations on go-to-market strategy, growth opportunities, customer segmentation, sales coverage, and investment prioritization. Operationally, the focus will be on forecasting, market sizing, performance trend analysis, sales pipeline analysis, and formulation of actionable recommendations. This person must feel comfortable interacting with senior management on a regular basis.
+
+Deliverables include detailed analytic models, custom performance analysis, building a scalable reporting infrastructure, and packaging findings into presentation-ready content for Salesforce executives. The role requires interaction with multiple functional teams (such as Sales, Solutions, Product Marketing, Product Management, and Customer Success) and provides significant exposure to senior executives. The successful candidate will have relentless curiosity and a passion for creating innovative analysis to identify opportunities. They will be comfortable diving into large datasets, excel at extracting insights from data, and converting ideas to action. They will lead with an AI-first mindset, partnering with Claude and other AI tools to work faster, more efficiently and extract deeper insights for the Data Foundations portfolio.
+
+What You'll Actually Be Doing:
+
+Lead ongoing analysis of business performance to support daily operations
+
+Design and interpret key performance metrics. Deliver key insights & recommendations.
+
+Maintain weekly forecasts of business performance for product leadership
+
+Assist in developing and delivering presentations for senior executives, crafting the messages for sales and product leadership
+
+Support strategic initiatives including evaluating areas of opportunity for the businesses
+
+Troubleshoot operational issues as they surface; propose changes to systems/processes to fix root causes
+
+Prepare analysis and recommendations for strategic decision making
+
+Partner with peer analysts to innovate and automate work processes using the latest analytics and AI tools, including Tableau Next, Claude, Slackbot, and Gemini.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Ops","Paylocity","Remote","Remote","0 - 3 years","Jun 30, 2026","Active","https://www.dataanalyst.com/job/data-analyst-ops-ca1e9","Education and Experience
+
+• Bachelor’s degree in business, computer science, information systems or equivalent work experience
+
+• Minimum 2 years’ experience
+
+• Experience working with Power BI and other relational databases
+
+• Experience working in CRM & Project Management tools such as Salesforce, Oracle, Monday.com, Netsuite, Zendesk
+
+• Experience with SQL, and statistical packages (R, SAS, Ste)
+
+• Strong MS Office skills, especially with Excel, specifically being able to import data and use pivot tables
+
+• Understanding of report writing required","Position Overview
+
+The Data Analyst Ops will design, develop and validate reports and metrics to measure business performance across Operations for management purposes. The Data Analyst is responsible for analyzing operational data to identify performance gaps and unfavorable trends. This role will also help to improve the client experience and operational capability by presenting recommendations for process improvement projects.
+
+Primary Responsibilities
+
+The below represents the primary duties of the position, others may be assigned as needed. To perform this job successfully, an individual must be able to perform each essential duty satisfactorily. The requirements listed below are representative of the knowledge, skill, and/or ability required. Reasonable accommodations may be made to enable individuals with disabilities
+
+to perform the essential functions.
+
+• Design and develop reports and databases utilized throughout Operations
+
+• Build requested reports within various systems or with data from system extracts to provide to Operations leadership for analysis
+
+• Support project teams with data collection requests and changes to existing reports and dashboards.
+
+• Identify and implement process and system improvements through an understanding of data flows and leveraging technology solutions.
+
+• Reconcile and ensure consistency of data from various sources and assist in driving the automation of reports and analytics.
+
+• Work with the team to develop and maintain recurring data analysis
+
+• Other duties as assigned","2026-09-22 03:37:55 UTC"
+"Data Analyst, Revenue","DoorDash","Remote","Remote","0 - 3 years","Jun 29, 2026","Active","https://www.dataanalyst.com/job/data-analyst-revenue","We're excited about you because…
+
+Demonstrated ability and willingness to learn quickly, adapt to changing priorities, and effectively manage multiple tasks in a fast-paced environment.
+
+Adaptable and proactive, with the ability to thrive in a fast-paced environment, manage competing priorities, and continuously develop new skills
+
+You have strong SQL proficiency and hands-on experience with Python for data analysis and building data workflows.
+
+You bring foundational knowledge of US GAAP, revenue recognition principles, and SOX/internal controls, or equivalent experience at a large, publicly traded technology company.
+
+You have experience working with data tools such as NetSuite, dbt, or Fivetran to build reports, dashboards, and data pipelines.
+
+You hold a Bachelor's degree in Accounting, Business, Computer Science, or a related field.","About the Role
+
+Our Revenue Data team is seeking a fully independent contributor who delivers reliable, high-quality data insights and supports revenue-driving decisions. They own defined problem areas, partner effectively with stakeholders, and translate data into clear, actionable insights. You will report into the Revenue Data Manager on our Accounting team within the Finance organization.
+
+You're excited about this opportunity because you will…
+Own revenue account reconciliations, accounting analyses, and data validation activities to ensure the accuracy and integrity of financial reporting.
+
+Collect, analyze, and reconcile revenue data across accounting systems, ERP platforms, and operational databases, proactively identifying and resolving data discrepancies, anomalies, and reporting issues.
+
+Support month-end, quarter-end, and year-end close processes, including revenue reporting, reconciliations, and preparation of audit-ready documentation for internal and external audits.
+
+Develop and maintain SQL queries, Python-based analyses, reports, and data extracts to investigate revenue trends, improve reporting accuracy, and deliver actionable business insights.
+
+Partner with Revenue Accounting, Finance, Business Operations, Product, and IT stakeholders to support revenue-related initiatives, new product launches, and order-to-cash processes.
+
+Contribute to process improvements by documenting business rules, automating manual reporting activities, enhancing data workflows, and strengthening data quality controls.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Bestow","Remote","Remote","0 - 3 years","Jun 24, 2026","Active","https://www.dataanalyst.com/job/data-analyst-67665","WHO YOU ARE
+
+2+ years of experience in analytics, data engineering, or a similar role with heavy SQL use.
+
+Hands-on experience with dbt (or an equivalent transformation framework) in a cloud data warehouse.
+
+Comfortable explaining technical work to non-technical partners and collaborating through code review.
+
+Self-directed: you spot problems, propose fixes, and follow through without waiting for perfect instructions.
+
+Thoughtful about data quality, governance, and how your work affects downstream dashboards and decisions.
+
+Curious about improving how you work—including practical use of AI tools with clear context and verification habits.
+
+Demonstrated experience with agentic AI coding tools (e.g., Claude Code, Cursor, Copilot) integrated into your daily workflow — not occasional use, but a deliberate practice","ABOUT THE TEAM
+
+The Bestow Analytics team is a highly visible, dedicated group working across the company to build data solutions for our carrier partners and internal teams. You will partner with analysts, engineers, and business stakeholders to turn raw data into trusted models and metrics on our modern warehouse stack (SQL, dbt, orchestration, and BI tools).
+
+WHAT YOU'LL DO
+
+Build and maintain dbt models that transform source data into clean, tested datasets for analytics and reporting.
+
+Write SQL to investigate data issues, validate new sources, and answer stakeholder questions with accurate, reproducible logic.
+
+Implement data quality checks (dbt tests, freshness, reconciliations) and help resolve production data issues, including on-call rotation.
+
+Document models, metrics, and lineage so teammates and stakeholders understand definitions and dependencies.
+
+Partner with analysts and business teams to deliver production-ready data products—not just ad hoc queries.
+
+Use modern tooling—including AI-assisted frameworks—to move faster while keeping quality and review standards high.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Technical Staff","Intermountain Health","Remote","Remote","0 - 3 years","Jun 23, 2026","Active","https://www.dataanalyst.com/job/data-analyst-technical-staff","Minimum Qualifications
+
+Intermediate skills in SQL and database tasks.
+
+Ability to create effective visualizations and dashboards.
+
+Proficiency in office applications for daily tasks
+
+Good communication skills with experience presenting data insights to peers.
+
+Knowledge of healthcare data through relevant projects
+Experience collaborating with team members and contributing to group projects.
+
+Proficiency in Product Management, Project Management, or Program Management philosophies and methodologies, and capable of applying them to data analytic projects to ensure alignment with business goals and efficient execution.
+
+Preferred Qualifications:
+
+Bachelor's degree in analytics related fields such as statistics, mathematics, information systems, computer science, finance, business management, or economics and two years of relevant experience performing statistical data analysis.
+
+Bachelor’s degree in another area of study with four years of relevant work experience in a role performing data analysis.
+
+Experience without a related degree will be considered if skill set and experience are robust.","Job Description:
+
+This role supports the development and deployment of data analytics at Intermountain Health. As a Data Analyst-Technical-Staff, you will be part of a team that contributes to strategic initiatives, clinical standards, and operational goals through data insights. Reporting to senior leaders in Digital Technology Services (DTS), you will collaborate with business and clinical leaders across Intermountain Health. The team ensures data applications are maintained, monitored, promoted, and used effectively.
+
+Essential Functions:
+
+Primary support for management level leadership of a system/regional business or clinical area.
+
+Meet regularly with leadership to provide work updates, set project priorities, and establish deliverable timelines.
+
+Partner with Healthcare Data Advisors and Data Architects to ensure the integrity and accuracy of data for the area(s) they support.
+
+Receive customer requests and develop/deliver meaningful information through data exploration, interpretation, report development and visual storytelling.
+
+Effectively communicate analytic findings and recommendations to both technical and business executives.
+
+Regularly schedule and provide analytic work demonstrations and hands-on training for customers to promote understanding and independent consumption of analytic work.
+
+Augment technical skillset through individual learning and participation in Intermountain analytic community educational offerings.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Mass General","Remote","Remote","0 - 3 years","Jun 22, 2026","Active","https://www.dataanalyst.com/job/data-analyst-40710","Education:
+
+Bachelor's Degree Analysis required or Bachelor's Degree Related Field of Study required
+
+Can this role accept experience in lieu of a degree?
+Yes
+
+Licenses and Credentials
+
+Experience:
+
+Experience working with data, preferably healthcare data 2-3 years required
+
+Knowledge, Skills and Abilities
+
+Healthcare knowledge, particularly as it pertains to electronic medical record data, is preferred but not required.
+
+Working knowledge of relational databases, SQL, data visualization, and Business Intelligence tools such as Tableau.
+
+Knowledge and application of statistical analyses, including variance analysis and statistical significance, are preferred.
+
+Project management skills and/or experience are a plus.
+
+Proficiency with Microsoft Office Suite, including Word, Excel and PowerPoint.","Essential Functions
+
+-Collects, analyzes, and reports data to support decisions on day-to-day operations, strategic planning, and/or specific business performance issues.
+
+-Collates, models, interprets, and analyzes data.
+
+-Explains variances and trends in data.
+
+-Identifies and documents enhancements to modeling techniques.
+
+-Completes thorough quality assurance procedures, ensuring accuracy, reliability, trustworthiness, and validity of work.
+
+-Performs data validation of source-to-target data for data visuals and dashboards.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Boeing","Long Beach, CA","In-office","0 - 3 years","Jun 22, 2026","Active","https://www.dataanalyst.com/job/data-analyst-ac198","Basic Qualifications (Required Skills/Experience):
+
+1+ years’ experience in data analysis, or metrics reporting, or related work
+
+1+ years’ experience developing dashboards, reports and KPIs
+
+1+ years’ experience developing data pipelines or ETL (Extract Transform Load) services
+
+1+ years' experience with designing and implementing API-driven data pipelines
+
+Bachelor's degree in Data Science, Business, Engineering, Computer Science or related fields
+
+Preferred Qualifications (Desired Skills/Experience):
+
+Basic proficiency in Excel (formulas, pivot tables, data organization)
+
+Exposure to Tableau (academic, internship or personal projects)
+
+Familiarity with Smartsheet or similar project management tools
+
+Understanding of project/program management concepts
+
+Strong communication skills with ability to translate data into insights","We are seeking a Data Analyst to support the Boeing Global Services (BGS) Commercial Modifications team in Long Beach, CA by transforming data into actionable insights that improve program Execution, schedule performance and decision-making. This role will partner with Program and Project managers, Engineering, and Supply Chain to develop dashboards, maintain data integrity, and support performance reporting across modification programs.
+
+This is an excellent opportunity for a candidate looking to build foundational experience in program analytics, data visualization, and operational performance management.
+
+Position Responsibilities:
+
+Develop and maintain dashboards and reports in Tableau and Power BI to track program performance (schedule, cost, milestones, resource utilization)
+
+Support development and administration of project tracking solutions in Smartsheet
+
+Collect, clean, and validate data from multiple sources to ensure accuracy and consistency
+
+Assist in building standardized reporting templates and data models for PMO use
+
+Analyze trends and provide insights to support program reviews and leadership decision-making
+
+Support maturity assessment efforts, scorecard development and KPI tracking
+
+Collaborate with cross-functional teams to understand data needs and reporting requirements
+
+Identify opportunities to improve data quality, reporting efficiency, and automation
+
+Implement API pipelines","2026-09-22 03:37:55 UTC"
+"Data Analyst, Advanced Analytics","Medtronic","Remote","Remote","0 - 3 years","Jun 16, 2026","Active","https://www.dataanalyst.com/job/data-analyst-advanced-analytics","Must Have: Minimum Requirements
+
+Bachelor’s degree
+
+2+ years of experience in Audit (e.g., Big 4 or similar), Internal Audit, Accounting, Finance, or another analytical role.
+
+Experience with data analysis, reporting, or analytics tools such as Excel, Power BI, Alteryx, or similar technologies.
+
+Nice to Have
+
+Bachelor's degree or Master’s degree, preferably in a STEM discipline (Science, Technology, Engineering, Mathematics).
+
+Foundational programming experience using tools or languages such as SQL or Python to support data analysis, automation, or data extraction.
+
+Basic understanding of data mining, data transformation, and data modeling concepts.
+
+Familiarity with enterprise systems such as SAP or other large ERP platforms.
+
+Basic understanding of Software Development Life Cycle (SDLC) methodologies such as Agile or Waterfall.
+
+Familiarity with version control tools (e.g., Git) and collaborative development practices.
+
+Exposure to AI‑assisted analytics or coding tools such as Copilot, ChatGPT, or similar technologies.
+
+Strong problem‑solving skills and the ability to communicate insights clearly across technical and non‑technical audiences.","A Day in the Life
+
+The Advanced Analytics Analyst is an established professional individual contributor within the Corporate Audit Data Analytics team. This role supports the execution of data analytics projects that enhance audit effectiveness, strengthen risk insights, and improve efficiency through the use of data and technology. The Advanced Analytics Analyst partners closely with audit teams and technical stakeholders to design and deliver analytical solutions that support risk‑based audits, SOX activities, and advisory projects.
+
+Medtronic is the global leader in medical technology, alleviating pain, restoring health, and extending life for millions of people around the world. As a member of the Corporate Audit team, the Advanced Analytics Analyst will contribute to our mission by leveraging data, analytics, and technology to support the independent and objective identification, assessment, and evaluation of risks and controls.
+
+At Medtronic, we bring bold ideas forward with speed and decisiveness to put patients first in everything we do. This position is remote to enhance our competitive edge and expand our cross‑functional collaboration efforts. This role may require up to 30% travel to enhance collaboration and support the successful completion of projects.
+
+Responsibilities may include the following and other duties may be assigned.
+
+Supports the design and execution of data analytics solutions that enhance risk‑based audits, SOX activities, and advisory engagements.
+
+Develops and executes data queries, data transformations, and analytical models using tools such as SQL, Python, Excel, Power BI, Alteryx, or Power Platform.
+
+Collaborates with audit teams and business partners to understand data requirements and translate business questions into analytical approaches.
+
+Creates dashboards, visualizations, and reporting solutions that clearly communicate insights to both technical and non‑technical stakeholders.
+
+Ensures appropriate documentation is maintained for analytics projects, including objectives, data sources, data models, methodologies, and testing results in accordance with department standards.
+
+Works with large enterprise datasets and evaluates data quality to support reliable analysis and conclusions.
+
+Manages multiple assignments simultaneously in an organized and structured manner while tracking tasks and escalating risks or issues when appropriate.
+
+Builds collaborative relationships across the Global Audit Department and with cross‑functional partners including IT, data teams, and business stakeholders.
+
+Demonstrates a commitment to continuous learning and development in data analytics, audit analytics, and emerging technologies.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Credit","SitusAMC","Remote","Remote","0 - 3 years","Jun 15, 2026","Active","https://www.dataanalyst.com/job/data-analyst-credit-6d4f8","Qualifications/ Requirements:
+
+Bachelor’s degree in finance, accounting or related subjects or equivalent combination of education and experience
+
+Entry level professional with 0-2 years of industry and/or relevant experience, typically at an Analyst level role or external equivalent
+
+Strong analytical and computer skills with a thorough knowledge of Excel including the ability to perform cash flow analyses.
+
+Must be able to work efficiently with large datasets to process and present results as requested
+
+Ability to work in a team environment, to think independently and generate quality work product
+
+Ability to manage multiple priorities and meet tight deadlines
+
+Adhere to processes and procedures but suggest and implement improvements when warranted
+
+Attention to detail is a must
+
+Strong reading comprehension
+
+Strong business writing, presentation, and interpersonal skills","This role will be part of the Credit Analytics team that is responsible for managing, monitoring, and reporting on the performance of a $100B+ portfolio of largely transitional commercial real estate loans. This role will involve working closely with the Situs Asset Management Team and Servicing team to deliver accurate, timely and consistently high-quality deliverables. The incumbent should possess strong analytical skills, advanced Excel skills and a basic understanding of real estate finance, terminology, and performance metrics.
+
+Essential Job Functions:
+
+Model new assets in loan performance templates that report historical and projected cash flow. Determine and coordinate customizations of templates based on negotiated loan terms or analysis parameters required by underwriters, servicing, and asset management.
+
+Review and summarize loan covenants provided under loan documents and enter those requirements in an asset management database
+
+Spread borrower-provided financial statements within financial models and advise on any emerging asset-level performance risk.
+
+Perform loan to value, debt yield and debt service coverage ratio tests and advise asset management on loan performance based on Lender requirements.
+
+Gather market data in terms of rent, occupancy, absorption, sales trends, etc. and advise asset management of any emerging market risk within assigned portfolios.
+
+Process draw requests for loans with a construction or renovation component and make recommendations to asset management on funding conditions
+
+Prepare monthly/quarterly asset-level reports in Excel and review for accuracy
+
+Support asset management team in their daily responsibilities
+
+Assist in preparation of quarterly collateral valuations
+
+Assist in preparation of various ad-hoc reports
+
+Such other activities as may be assigned by your manager","2026-09-22 03:37:55 UTC"
+"Data Analyst, US Wealth","Nomura","Philadelphia, PA","In-office","0 - 3 years","Jun 12, 2026","Active","https://www.dataanalyst.com/job/data-analyst-us-wealth","Skills, experience, qualifications and knowledge required:
+
+Bachelor's Degree in Business Analytics, Business Management, Finance, or other related field of study
+
+Background in working with large datasets with a curious and analytical mindset.
+
+Experience with excel required.
+
+Experience with Salesforce CRM strongly preferred.
+
+Some knowledge of the US Wealth intermediated (Advisor) market and understanding of client-facing capacity preferred.
+
+Some knowledge of sales and marketing support processes preferred.
+
+Experience with Tableau, PowerBI, Analytics preferred.","Role Description:
+
+The US Wealth data analyst will support the Sales Enablement team in reviewing data, ensuring accuracy and cleanliness of data/reporting while providing observations and recommendations for enhancement.
+
+Accessing external data sources and gleaning insights about prospective client opportunities and insights.
+
+Support client engagement targeting efforts through running reports, summarizing data elements into digestible and actionable insights and educating users as needed.
+
+Mapping data to client engagement activity in a way that tells a narrative to users.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Growth & Markets","EverCommerce","Remote","Remote","0 - 3 years","Jun 12, 2026","Active","https://www.dataanalyst.com/job/data-analyst-growth-markets","Skills and Experience needed for success in this role:
+
+Minimum of 2–4 years of experience in one or more of the following: strategy, growth, consulting, product marketing, financial analysis, business and/or revenue operations.
+
+SaaS or software industry experience strongly preferred
+
+Strong understanding of core SaaS metrics (ARR, churn, expansion metrics)
+
+Advanced Excel proficiency required – ability to thoughtfully parse data, not simply take it at face value
+
+Basic AI literacy — you know how to write a good prompt and incorporate AI tools into your day-to-day work
+
+Bachelor’s degree or equivalent practical experience
+
+Direct experience with software/subscription pricing and packaging models
+
+Hands-on exposure to SaaS billing systems, CRMs, or BI tools — and knowing what to do with the data that comes out of them
+
+You’ve built an AI workflow or agent to work more efficiently
+Intellectually curious: you’re genuinely interested in understanding root cause and solving the right problems, not just completing the task in front of you.
+
+Critical thinker: you thoughtfully question data to pressure-test conclusions, slowing down to get it right rather than moving fast on a flawed premise.
+
+Proactive and self-motivated: you don’t wait to be told what to do next; you identify the next question and go answer it.
+
+Comfortable with ambiguity: you can make progress and bring structure to a problem even when the path isn’t fully defined.
+
+High attention to detail: you catch the things others miss and take pride in work that is accurate and well-reasoned.
+
+Strong communicator: you can distill complex analyses into a clear “so what” and make your recommendations easy to act on.
+
+Collaborative: you’re not afraid to ask for help, and you’ll go find the right person even if you don’t know who that is yet.","We are looking for a Growth & Markets Analyst to focus on our EverPro products, reporting to the Director of Pricing and Monetization. This is a high-impact individual contributor role driving strategic analysis and data-driven insights to support EverPro’s critical priorities and growth opportunities (including but not limited to pricing, packaging, and monetization decisions).
+
+This role is a true strategic partner to business leadership, delivering insights and recommendations that support real-world actions and decisions. You’ll be expected to go beyond the analysis — understanding the operational realities of executing recommendations and thinking critically through trade-offs.
+
+Responsibilities:
+
+Frame ambiguous business problems with structured analytical approaches, defining clear paths forward even when the question isn’t fully formed.
+
+Own analyses end-to-end with limited guidance — from data aggregation and cleaning through to insight, recommendation, and communication.
+
+Aggregate and analyze customer and product data to surface trends, patterns, and opportunities that inform strategic decisions.
+Drive pricing and packaging analyses that support EverPro’s strategic growth priorities.
+
+Evaluate the operational requirements to execute strategic decisions — including researching relevant systems, scoping with cross-functional stakeholders, and critically assessing trade-offs across different approaches.
+
+Translate findings into clear, concise presentations and recommendations that make complex analyses easy to understand and act on.
+
+Collaborate cross-functionally with BI, data analytics, finance, and product teams to gather input, validate assumptions, and drive alignment.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Clinical Data Effectiveness","Clover Health","Remote","Remote","0 - 3 years","Jun 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-clinical-data-effectiveness","You should get in touch if you have:
+
+2+ years of hands-on data analytics experience, with direct exposure to healthcare data interoperability
+
+Strong hands-on experience with healthcare data standards: HL7, CCDA, and ADT messages.
+
+Proficiency in SQL and comfort working with large, complex datasets (claims, clinical logs, interoperability data).
+
+Background in analyzing interoperability networks (e.g., Carequality, CommonWell, eHealthExchange) or HIE integrations.
+Skilled at data visualization and able to present complex findings to both technical and non-technical stakeholders.
+
+Strong investigative mindset, i.e., you enjoy digging into the “why” behind missing data and diverging metrics.
+
+Self-directed and able to manage multiple analytical projects (vendor comparisons, visit-level reconciliation) without constant supervision.
+
+Preferred Qualifications:
+
+Experience with TEFCA/QHIN frameworks and evolving national interoperability standards.
+
+Familiarity with vendor-specific data exchange platforms (e.g., Bamboo Health, HSX, Particle Health, Kno2).
+
+Background in value-based care, population health, or clinical data operations.
+
+Experience with claims-clinical data reconciliation (e.g., matching EOBs to clinical encounter records).
+
+Comfort working with Python or similar tools for data manipulation and automation.","You will serve as the Subject Matter Expert (SME) for clinical data completeness and effectiveness at Counterpart Health. Sitting within the Data Products pillar, this role owns the end-to-end understanding of our clinical data lifecycle: where data comes from, where it breaks down, and how each vendor or integration pathway performs across our customer markets. Your analysis will directly shape vendor strategy, facility targeting, and data pipeline investments, thus ensuring that the clinical evidence our care teams depend on is consistently available and trustworthy.
+
+As a Data Analyst, you will:
+
+Proactively identify and monitor which healthcare facilities consistently generate high-quality, usable clinical documents (e.g., EHRs, discharge summaries, procedure notes) to precisely locate and quantify data gaps.
+
+Conduct deep-dive analyses by mapping and correlating facility-specific data across disparate sources like structured claims, clinical care summaries (CCDAs), and ADT messages to uncover systematic patterns of missingness, latency,
+
+Experience with TEFCA/QHIN frameworks and evolving national interoperability standards.
+
+Familiarity with vendor-specific data exchange platforms (e.g., Bamboo Health, HSX, Particle Health, Kno2).
+
+Background in value-based care, population health, or clinical data operations.
+
+Experience with claims-clinical data reconciliation (e.g., matching EOBs to clinical encounter records).
+
+Comfort working with Python or similar tools for data manipulation and automation. or incongruence in clinical records.
+
+Establish and maintain clear, transparent reporting on ADT coverage across key geographic, organizational, and technological dimensions (e.g., by county, facility, and underlying EMR system).
+
+Based on rigorous analysis of data flow and quality, recommend and guide the implementation of optimal technical configurations for existing data vendors (e.g., Bamboo Health, PCC, Experian, HSX).
+
+Conduct comprehensive evaluations and proof-of-concepts for potential new data integration technologies (e.g., Kno2 vs. Particle Health) to assess viability, quality improvements, and strategic fit.
+
+Systematically determine the existence and completeness of documentation associated with specific patient visits or encounters.
+
+Develop a data-driven framework for prioritizing facility targets for direct data acquisition, assessing impact, cost-effectiveness, and technical feasibility.
+
+Inform and guide vendor strategy around national initiatives such as TEFCA and QHIN adoption, ensuring Counterpart Health is positioned for compliant, high-quality data exchange.
+
+Partner cross-functionally with Product Managers to define data requirements, Engineers to implement reliable pipelines, and Clinical teams to validate data quality and clinical utility.
+
+Act as a critical liaison to identify and remove operational and technical bottlenecks, ensuring a predictable, scalable, and reliable clinical data flow across all customer markets.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Whalar","Remote","Remote","0 - 3 years","Jun 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-e2c4d","Here’s what we’re looking for:
+
+1+ years of work experience in a Data Analyst role
+
+Bachelor’s/Master’s degree in a quantitative discipline (e.g. Mathematics, Economics, Statistics, Computer Science, Engineering)
+
+Top Excel/Google sheets, Looker Dashboard, and Powerpoint/Google Slides skills
+
+Proven ability to perform data-driven analyses including insight and action communication
+
+Excellent presentation and communication skills; comfortable explaining technical topics to non-technical users
+
+Strong aptitude for learning new technologies and analytics techniques
+
+Prior digital and/or influencer marketing knowledge (Preferred)","About the role:
+
+The ideal candidate is accountable, organized, deadline-driven, and a proactive analytical thinker who will help take our work to the next level. Reporting to a Senior Measurement Manager at Whalar, the Data Analyst will be the analytical support for reporting tasks under our Client Services team.
+
+Here’s what you’ll do day-to-day:
+
+Collaborate with Client Services team to understand the diverse needs of each brand
+
+Synthesize data from a variety of platforms and provide clear actionable insights to reporting
+
+Aggregate, organize and visualize data to communicate effectively.
+
+Work closely with the greater analytics team to ensure the ongoing evolution and improvement of reporting outputs
+
+Partner with internal and external partners to measure the effectiveness of marketing campaigns and provide recommendations to the marketing team
+
+Develop ad-hoc analysis and reports","2026-09-22 03:37:55 UTC"
+"Data Analyst, Finance & Analytics","Molina Healthcare","Remote","Remote","0 - 3 years","Jun 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-finance-analytics-e8802","Required Qualifications
+
+• At least 1 year of finance experience, or equivalent combination of relevant education and experience.
+
+• Bachelor's degree in finance, accounting, or economics, or equivalent combination of education and experience.
+
+• Intermediate proficiency with complex queries, and stored procedures.
+
+• Critical-thinking skills and attention to detail.
+
+• Ability to effectively collaborate with technical and non-technical stakeholders.
+
+• Time-management skills, and ability to manage simultaneous projects and tasks to meet internal deadlines.
+
+• Effective verbal and written communication skills.
+
+• Proficient in Microsoft Office suite products, key skills in Excel (VLOOKUPs and pivot tables)/applicable software program(s) proficiency.","Essential Job Duties
+
+• Extracts and compiles information from large data sets from various systems to identify and analyze outliers.
+
+• Gains insight into key business problems and deliverables by applying statistical analysis techniques to examine structured and unstructured data from multiple disparate sources.
+
+• Provides quantitative and qualitative data analysis in the reporting of patterns, insights, and trends to decision-makers.
+
+• Collaborates across departments and with customers to define requirements and understand business problems.
+
+• Works with internal, external and enterprise clients as needed to research, develop, and document new standard reports or processes.
+
+• Uses advanced Excel, SQL querying, and reporting methods to develop solutions.
+
+• Implements and uses analytics software and systems to support department goals.
+
+• Tracks trends related to various feeds, with focus on membership, revenue, and commissions.
+
+• Identifies any deficiencies within processes; strategizes and designs improvements where possible.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Modern Health","Remote","Remote","0 - 3 years","Jun 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-2bc26","Who You Are/ Role Requirements:
+
+2+ years of experience in analytics, ideally with exposure to healthcare, health tech, or a clinical setting
+
+Proficient in SQL, Python or R, dbt, statistical data analysis, and data visualization
+
+High EQ, strong interpersonal and relationship-building skills, including comfort interfacing with internal leadership
+
+Experience with BI tooling (e.g. Looker, Tableau, Omni, or similar)
+Genuine curiosity about clinical data — you find health outcomes, member behavior, and population-level trends intrinsically interesting
+
+Comfortable working with messy, ambiguous data and capable of clearly communicating limitations and assumptions in your analyses
+
+Ability to drive execution and demonstrated interest in strategic thinking
+
+Strong problem-solving skills and a willingness to roll up your sleeves to get the job done
+
+Solution-oriented with a strong sense of ownership and drive
+
+Strong written and verbal communication skills, with the ability to present analyses concisely to non-technical stakeholders
+
+Proven success partnering with and explaining data and analytics concepts to non-technical team members at varying levels of seniority
+
+Passionate about the mental health space
+
+Humble, scrappy, highly motivated, and thrive in fast-paced environments
+
+Immigration sponsorship is not available for this position. Applicants must be able to maintain work authorization for the duration of employment without employer sponsorship or employer-provided training plans or attestations (including, for example, the Form I-983 required for STEM OPT).
+
+Bonus Points:
+
+Have a Master’s degree in a health or analytical related field
+
+Experience in a digital health setting
+
+Familiarity with healthcare compliance frameworks (e.g., Knox Keene, HIPAA)
+
+High-growth startup experience
+
+Experience developing external-facing client reporting","The Role:
+
+Modern Health is looking for a Data Analyst to join our Analytics team. The role reports into our Manager of Data Analytics and will work cross-functionally with our Go-To-Market (GTM), Clinical Strategy, and Finance teams as an embedded partner for all things data. This role is eligible for remote work within the USA, excluding Hawaii.
+
+In this role, you will:
+
+Own and expand client-facing reporting to help our customers understand the clinical and business value of their investment in Modern Health
+
+Build and maintain the data foundation that powers our analytics — including dbt models, metric definitions, and the pipelines that keep our data reliable
+
+Support our clinical analytics workstreams, including outcomes reporting, ROI analyses, and compliance-related data work
+
+Partner with stakeholders across Clinical Strategy, Customer Success, Finance, and RevOps to surface insights, build reliable reporting, and help the organization make better data-driven decisions
+
+We would love to hear from you if you have a genuine interest in health data and outcomes, are energized by turning complex data into clear and actionable insights, and are excited to grow your skills in a high-impact, mission-driven analytics team.
+
+What You'll Do:
+
+Own and expand client-facing reporting; simplify our data to allow Customer Success teams and clients to visualize the complete member journey and understand the value of their investment in Modern Health
+
+Develop and sustain our dbt codebase using SQL; write modular, well-tested models that serve as the single source of truth for key business and clinical metrics
+
+Identify which metrics matter and how to measure them, implement those definitions in our data warehouse, and report on them via our BI tool
+
+Partner with Data Engineering to improve our data platform and advocate for upstream data quality
+
+Conduct analyses using SQL and translate results into clear, actionable recommendations for clinical, GTM, and product stakeholders
+
+Partner with senior analytics team members on strategic analyses — framing the problem, performing the analysis, and recommending action
+
+Build data sources and dashboards that empower stakeholders to understand the data that matters most to them and make informed decisions
+
+Manage ad-hoc requests from cross-functional teams — Clinical Strategy, Finance, RevOps, CS, and Sales — and identify patterns in requests as inputs to future automation and self-service tooling
+
+Support clinical analytics workstreams including ROI and Value-of-Investment (VOI) performance guarantee analyses, clinical outcomes reporting, and compliance-related data work
+
+Guarantee the reliability of your work through rigorous self-review, code review, and testing practices","2026-09-22 03:37:55 UTC"
+"Data Analyst","Jump - Advisor AI","Remote","Remote","0 - 3 years","Jun 4, 2026","Active","https://www.dataanalyst.com/job/data-analyst-382a2","What We're Looking For
+Must-Have
+
+2–4 years of experience in a Data Analyst, Analytics Engineer, or similar role.
+
+Strong SQL skills and experience working in a modern cloud data warehouse.
+
+Experience performing exploratory analysis and communicating actionable insights.
+
+Experience working cross-functionally and influencing business stakeholders.
+
+Demonstrated ability to drive measurable impact through data.
+
+Experience building analytical data models — not only dashboards and ad hoc analysis.
+
+Strong written and verbal communication skills.
+
+A proactive mindset and willingness to take on projects outside your comfort zone.
+
+Familiarity with tools such as:
+
+Fivetran, Airbyte, Stitch (or similar ingestion tools)
+
+dbt, SQLMesh, or dataform
+
+A modern BI tool (Tableau, Sigma, Looker, etc)
+
+We currently use Airbyte, BigQuery, SQLMesh, Looker Studio, etc
+
+Familiarity with version-controlled analytics workflows.
+
+Familiarity with dimensional modeling concepts (fact tables, dimension tables, star schemas).
+
+Nice-to-Have
+
+Experience building predictive or inference models.
+
+Experience building and maintaining data ingestion pipelines.
+
+Experience implementing data quality testing and documentation practices.
+
+Experience working with GTM teams to define and report on GTM metrics.
+
+Exposure to event-based or product analytics data.
+
+Experience using AI effectively in your own workflow.
+
+Qualifications
+
+BS in Computer Science, Statistics, Data Science, Mathematics, Engineering, or a related quantitative field (or equivalent practical experience).
+
+2–4 years of relevant professional experience in analytics.
+
+Proficiency in SQL required; experience with modern analytics tooling strongly preferred.
+
+Demonstrated experience working cross-functionally with Product, Engineering, Customer Success, or business stakeholders.","About the Role
+
+We’re looking for a Data Analyst to help drive better decisions across the company through thoughtful analysis, clear metric definitions, and strong partnership with cross-functional teams.
+
+In this role, you’ll work closely with Product, Engineering, Operations, and GTM teams to answer high-impact business questions. You’ll translate ambiguity into structured analysis, uncover insights that shape strategy, and ensure our metrics are accurate and trustworthy.
+While this role is business-impact focused, you’ll also contribute to building and maintaining clean analytical data models that support scalable, reliable reporting.
+You’ll join a small, high-impact data team where ownership is real and your work will directly influence how we grow.
+
+What You'll Do
+
+Partner cross-functionally to define KPIs, answer strategic questions, and support decision-making.
+
+Build reporting and dashboards that drive action — not just monitoring.
+
+Present insights clearly to both technical and non-technical stakeholders.
+
+Perform data analysis to uncover trends, risks, and growth opportunities.
+
+Define and maintain core business metrics to ensure alignment across teams.
+
+Support and improve dimensional data models (fact and dimension tables) in the warehouse.
+
+Build and maintain reliable data transformations to ensure accuracy and consistency.
+
+Help improve data quality, documentation, and reporting standards.
+
+Contribute to forecasting, experimentation analysis, and predictive or inference modeling initiatives.","2026-09-22 03:37:55 UTC"
+"Data Analyst","iHeartMedia","New York, NY","In-office","0 - 3 years","Jun 2, 2026","Active","https://www.dataanalyst.com/job/data-analyst-7683e","What You'll Need:
+
+Advanced knowledge of Excel, SQL and Tableu.
+
+Strong problem solving and analytical skills.
+
+High attention to detail.
+
+Intellectual curiosity with a goal of continuous improvement.
+
+Ability to work independently or with diverse team members.
+
+Excellent oral and written communication skills.
+
+Ability to learn new systems and processes quickly.
+
+What You'll Bring:
+
+Respect for others and a strong belief that others should do this in return
+
+Accountability for own work and desire to provide guidance to new team members
+
+Ability to contribute to several projects at the same time under a moderate level of direction
+
+Application of objective judgement, technical skills and prior experience to solve business problems
+
+Strong written and verbal communication skills, including a knack for explaining complex information in a straightforward manner
+
+Desire for continued knowledge sharing and learning
+
+Understanding of impact of own decisions","What We Need:
+
+We’re looking for a strong addition to our Finance team—someone who will help shape strategy, optimize revenue and costs, and enable smarter, faster decision‑making across the business. Our team drives financial insights, builds scalable tools and processes, and empowers stakeholders to operate more effectively. This role reports directly to the VP of Podcast Finance.
+
+What You'll Do:
+
+Revenue Analysis: provide analytical support to iHeartMedia leadership, proactively identifying issues and developing data-driven answers.
+
+Business Reports, Solutions & Tools: create Excel/SQL/Tableau reports & tools to help evaluate business performance, implement initiatives, and improve operations.
+
+Processes: develop processes to streamline and optimize operations workflows
+
+Support diverse teams on data analysis.
+
+Ad hoc projects.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Northwell Health","New York, NY","In-office","0 - 3 years","May 20, 2026","Active","https://www.dataanalyst.com/job/data-analyst-3ab7e","Job Qualifications:
+
+Bachelor’s Degree required, or equivalent combination of education and related experience.
+
+1-3 years of relevant experience, required.","Job Description:
+
+Analyzes, verifies, tracks and reports on department related databases and software. Serves as a liaison between department’s analytical needs and technical data storage systems and files; collaborates with stakeholders to document requirements for reporting. Develop analytic reports and dashboards utilizing various databases and third party data files.
+
+Job Responsibility:
+
+Analyzes, verifies, tracks and reports on department related databases and software.
+
+Identifies strategies for evaluation of key performance indicators (KPI’s), quality metrics, outcomes evaluation, population management studies, etc.
+
+Develops technical and functional specifications based on business requirements and analysis of technical workflows.
+
+Identifies issues in data quality that would impact reporting (i.e. duplicate records, missing data, etc.).
+
+Identifies methods of data visualization and presentation principles to ensure effective and impactful communication of projects to management.
+
+Maintains trends and tracks various measures to fully utilize the capabilities of databases and data files.
+
+Integrates add-on programs to eliminate or streamline back end processes.
+
+Serves as a liaison between departments analytical needs and technical data storage systems and files.
+
+Operates under general guidance and work assignments are varied and require interpretation and independent decisions on course of action.
+
+Performs related duties as required. All responsibilities noted here are considered essential functions of the job under the Americans with Disabilities Act. Duties not mentioned here, but considered related are not essential functions.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Law360","Remote","Remote","0 - 3 years","May 20, 2026","Active","https://www.dataanalyst.com/job/data-analyst-de94a","Requirements:
+
+1+ years of related experience, including in data management, cleaning, and analysis. Relevant coursework may count toward this experience.
+
+Legal industry research experience preferred but not required
+
+A good teammate, collaborator and relationship builder who can also work independently
+
+Expertise using quantitative analytical tools
+
+Advanced Excel skills (e.g., Pivot Tables)
+
+Familiarity with Python and/or R programming
+
+Experience with data visualization techniques
+
+Experience working with data of varying quality and from varying sources
+
+Ability to communicate complex ideas to a wide range of audiences
+
+Familiarity with survey research methodologies is preferred
+
+Familiarity with Databricks is preferred","About the Role:
+
+This role can be performed anywhere within the United States.
+
+The Data Analyst will be part of a growing team in our Law360 newsroom, helping to conduct surveys, research and rankings that support our efforts to report on the legal industry. The Data Analyst will support the accurate, timely, relevant and efficient delivery of that research, and will work collaboratively with editors, reporters and graphic designers to analyze the results of the team’s surveys. The analyst will also work on data management, cleaning and verification. The analyst will employ statistical methods to help improve analyses and data usage. Training will be provided.
+
+Responsibilities:
+
+Help conduct surveys
+
+Help develop the methodologies used in annual reports and rankings from survey data
+
+Collaborate with editors on research projects, based on surveys and publicly available data
+
+Help create data visualizations based on surveys and publicly available data
+
+Participate in drafting and presenting key research findings to reporters and editors
+
+Combine, clean and verify data from multiple sources
+
+Help manage our data set. Work with a wide range of stakeholders in Editorial and IT with regard to data management.","2026-09-22 03:37:55 UTC"
+"Data Analyst","Regions Bank","Remote","Remote","0 - 3 years","May 16, 2026","Active","https://www.dataanalyst.com/job/data-analyst-c0078","Requirements:
+
+Master's degree in Business, Computer Science, Information Systems, Finance, Statistics, or related field and two (2) years of experience in a data analytics or related role
+
+Or, a Bachelor’s degree in Business, Computer Science, Information Systems, Finance, Statistics, or related field and four (4) years of experience in a data analytics or related role
+
+Preferences:
+
+Experience utilizing analytical software such as Structured Query Language (SQL), Statistical Analysis System (SAS), SAS Enterprise Miner, and applicable Microsoft Office applications
+
+Working knowledge of business intelligence software (e.g. Tableau, Power BI)
+
+Skills and Competencies:
+
+Demonstrated leadership capabilities
+
+Proficiency in Microsoft Office (Excel, Word, PowerPoint, Outlook, etc.)
+
+Strong verbal, written communication, and organizational skills
+
+Strong work ethic and self-motivation
+
+Preferred Skills:
+
+Strong experience in data analysis and interpretation, including KPIs, metrics, and business performance indicators.
+
+Experience designing dimensional data models (Star and Snowflake schemas) with well-structured fact and dimension tables optimized for efficient reporting.
+
+Experience using data visualization tools such as Power BI or Tableau for reporting, visualization, and design.
+
+Previous experience building and maintaining data pipelines, including data transformation and cleansing.
+
+Understanding of source systems, data lineage, and data refresh schedules.
+
+Experience working with Python, Spark, and Snowflake.
+
+Advanced SQL and data querying skills.
+
+Ability to deploy code to production using Git and CI/CD tools.","Job Description:
+
+At Regions, the Data and Analytics Analyst transforms data into a meaningful format for operational and/or decision-making purposes. Focusing on day-to-day deliverables, this role works with senior analysts and managers to gather and interpret data for leaders to make data-driven decisions.
+
+Primary Responsibilities:
+
+Modifies reports that are valuable, readable, and presentable to stakeholders
+
+Assists in the preparation of visual reports/presentations to present analysis to management
+
+Interprets, analyzes, and provides insights to teams and managers to determine operational impact, trends, and opportunities
+
+Performs data analysis to help achieve data automation
+
+Creates and maintains databases to help classify & store information
+
+Completes day-to-day deliverables and ad-hoc data reports to support business needs/projects and answer data related questions
+
+Ensures compliance by performing quality data audits, mining, and management
+
+Monitors data and analytics trends and seeks opportunities for continuous improvement
+
+May offer guidance to junior analysts, ensuring proper training and tools are provided
+
+Partners with the centralized Data Governance team to implement and support data governance and data quality requirements","2026-09-22 03:37:55 UTC"
+"Data Analyst, Provider Configuration","Molina Healthcare","Remote","Remote","0 - 3 years","May 14, 2026","Active","https://www.dataanalyst.com/job/data-analyst-provider-configuration","Required Qualifications
+
+At least 2 years of experience in health care, preferably in a customer/provider services setting, or equivalent combination of relevant education and experience.
+
+Critical-thinking skills, and attention to detail.
+
+Organizational and time-management skills; ability to manage simultaneous projects and tasks to meet internal deadlines.
+
+Customer service experience.
+
+Effective verbal and written communication skills
+
+Microsoft Office suite (including Excel) and applicable software program(s) proficiency.
+
+Must have experience in data analysis, data management.
+
+Experience working with SQL, Python is required.","Essential Job Duties
+
+• Audits loaded provider records for quality and financial accuracy, and provides documented feedback.
+
+• Assists in complex configuration issues and loading of provider information.
+
+• Generates and distributes network-related compliance, regulatory and accreditation reports.
+
+• Generates provider-related reports to facilitate and support provider services and provider issue research and resolution.","2026-09-22 03:37:55 UTC"
+"Data Analyst","UW Health","Remote","Remote","0 - 3 years","May 14, 2026","Active","https://www.dataanalyst.com/job/data-analyst-c49a8","Education:
+
+Minimum –Bachelor’s degree in Business Administration, Economics, Health Care Administration, Public Health, Industrial Engineering, Computer Sciences or related field
+
+Preferred – Master’s degree in Business Administration, Economics, Health Care Administration, Public Health, Industrial Engineering, Computer Sciences or related field
+
+Work Experience:
+
+Preferred –Three (3) years of data or analytics experience. Experience in healthcare provider or payer strongly preferred","The Wisconsin Collaborative for Healthcare Quality is seeking a Data Analyst to:
+
+Ensure successful delivery to support strategic planning initiatives, improve organizational performance and advance progress towards goals.
+
+Collaborate with colleagues to drive continuous improvement within the WCHQ Team.
+
+Leverage knowledge and skills with a variety of tools (e.g. SQL, R, Python), analytic techniques and platforms and analyze large quantities of data from multiple sources.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Sales","World's Finest Chocolate","Remote","Remote","0 - 3 years","May 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-sales-24bac","QUALIFICATIONS:
+
+Education: Bachelor’s degree in Analytics, Business, Economics, Statistics, or related field.
+
+Experience:
+
+1–3 years in CPG sales analytics, revenue growth management, or category management.
+
+Hands-on experience pulling data from retailer portals and syndicated sources (Circana, Nielsen, etc.).
+
+Proven ability to build dashboards in Tableau or Power BI.
+
+Intermediate Excel (VLOOKUP, pivot tables, index/match); intermediate SQL skills.
+
+1+ years managing projects end-to-end (charter, timeline, status updates, stakeholder alignment).
+
+PERFERRED SKILLS:
+
+Familiarity with trade promotion management (TPM) tools or TPM ROI models.
+
+Experience with workflow automation or ETL tools (e.g., Alteryx, Power Automate, Zapier, UiPath, or scripting).
+
+Strong storytelling with data; able to present to non-technical stakeholders.
+
+Experience with Smartsheet, Asana, or Microsoft Project.","Nilsen & Circana (IRI) Experience required
+
+POSITION OVERVIEW
+
+World’s Finest Chocolate is seeking a Sales Data Analyst to support our North American retail sales organization.
+This high-visibility role partners with national account teams (Walmart, Target, Costco, Kroger, etc.) to transform raw sales, syndicated, and trade-spend data into actionable insights via dashboards, ad-hoc reporting, ROI models, and trade-promotion analysis, while driving cross-functional projects from ideation to execution. The ideal candidate is a self-starter with strong Excel/SQL skills, early experience in Tableau or Power BI, project management discipline (timelines, stakeholders, deliverables), and a passion for CPG retail metrics.","2026-09-22 03:37:55 UTC"
+"Data Analyst, Marketing","NinjaOne","Remote","Remote","0 - 3 years","May 8, 2026","Active","https://www.dataanalyst.com/job/data-analyst-marketing-ff15e","About You
+
+BA/BS degree in Economics, Statistics, Mathematics, Machine Learning, Operations Research, Analytics, or Computer Science required (MS preferred)
+
+1-3 years' experience in an analytics-focused role supporting marketing / website / business reporting and analysis functions.
+SaaS company particularly in supporting marketing teams experience preferred
+
+Experience pulling data from various sources and generating sophisticated excel reports
+
+High attention to detail, stellar analytical skills, and the ability to make data-driven decisions
+
+Experience with data visualization and analysis tools is a plus: Tableau, Databricks, Python (e.g. Jupyter notebooks, pandas)
+
+You thrive in fast-paced environments, embracing ambiguity and complexity with ease","About the Role:
+
+As the Marketing Data Analyst at NinjaOne, you will be a key member of our global marketing team. You will support our global marketing team in evaluating the performance and business health of paid and non-paid campaigns and initiatives. The team will look to your insights across our datasets to investigate complex questions that come up. You will work with the content and performance marketing teams to help manage and optimize the performance of our marketing initiatives.
+
+You are a storyteller who knows how to use data to identify insights and help business stakeholders make timely and impactful decisions from your insights. You understand the importance of identifying both large-scale and incremental opportunities.
+
+Location - We are flexible on remote working from home, if you are located in the USA and reside in one of the following states - CA, CO, OR, TX, and WA.
+
+What You’ll be Doing:
+
+Work with marketing teams to analyze daily, weekly, and monthly performance, and aid in the production of internal and external reporting and dashboards
+
+Analyze enormous datasets from 10+ channels, 500+ campaigns, and a multimillion-dollar budget, and proactively discover opportunities for optimization and growth
+
+Be responsible for data collection and data processing, and build and maintain a cadence of regular reports and analysis
+
+Build self-serve data visualization and data reports for business stakeholders
+
+Conduct full funnel, multi-channel ROI analysis, and attribution analysis
+
+Other duties as assigned","2026-09-22 03:37:55 UTC"

@@ -1,0 +1,51 @@
+"company","title","url","SQL","Excel","Python","R","Tableau","Power BI"
+"Affirm","Data Analyst","https://www.dataanalyst.com/job/data-analyst-428cb",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+"Optum","Data Analyst, Payment Integrity","https://www.dataanalyst.com/job/data-analyst-payment-integrity",TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Live Nation Entertainment","Data Analyst, Metrics & Reporting","https://www.dataanalyst.com/job/data-analyst-metrics-reporting",TRUE,TRUE,TRUE,FALSE,TRUE,TRUE
+"Calibrate","Junior Data Analyst","https://www.dataanalyst.com/job/junior-data-analyst-b2b41",TRUE,TRUE,TRUE,TRUE,TRUE,FALSE
+"Bart & Associates","Data Analyst, Geospatial","https://www.dataanalyst.com/job/data-analyst-geospatial-a734f",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+"CFA Institute","Data Analyst","https://www.dataanalyst.com/job/data-analyst-a6872",TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+"Aflac","Data Analyst","https://www.dataanalyst.com/job/data-analyst-9e810",TRUE,FALSE,TRUE,FALSE,TRUE,TRUE
+"Johns Hopkins University","Data Analyst, Research","https://www.dataanalyst.com/job/data-analyst-research-f6060",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+"Liberty Mutual","Data Analyst, Advanced Analytics","https://www.dataanalyst.com/job/data-analyst-advanced-analytics-c7d70",TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+"GBMC HealthCare","Junior Data Analyst, Health","https://www.dataanalyst.com/job/junior-data-analyst-health",TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Credit Acceptance","Data Analyst, Strategy","https://www.dataanalyst.com/job/data-analyst-strategy-e6a88",TRUE,FALSE,TRUE,TRUE,FALSE,FALSE
+"Workiva","Data Analyst, Sales","https://www.dataanalyst.com/job/data-analyst-sales-c0967",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE
+"Pegasystems","Data Analyst, GTM Analytics & BI","https://www.dataanalyst.com/job/data-analyst-gtm-analytics-bi",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+"Prime Therapeutics","Data Analyst, Health","https://www.dataanalyst.com/job/data-analyst-health-a69ce",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+"IQVIA","Data Analyst","https://www.dataanalyst.com/job/data-analyst-b71e1",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
+"Ralph Lauren","Data Analyst, Digital Insights & Optimization","https://www.dataanalyst.com/job/data-analyst-digital-insights-optimization",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Hilton","Data Analyst, Advanced Analytics","https://www.dataanalyst.com/job/data-analyst-advanced-analytics-94646",TRUE,FALSE,TRUE,TRUE,FALSE,FALSE
+"Morgan Stanley","Junior Data Analyst","https://www.dataanalyst.com/job/junior-data-analyst-9f092",TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+"ICF","Associate Data Analyst","https://www.dataanalyst.com/job/associate-data-analyst-0ee7e",TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+"The Coca-Cola Company","Data Analyst, Audit","https://www.dataanalyst.com/job/data-analyst-audit-a76e0",TRUE,FALSE,TRUE,TRUE,FALSE,FALSE
+"Ticketmaster","Data Analyst, Pricing","https://www.dataanalyst.com/job/data-analyst-pricing-b58d9",TRUE,TRUE,TRUE,FALSE,TRUE,FALSE
+"NMI","Product Data Analyst, Acquiring Operations","https://www.dataanalyst.com/job/product-data-analyst-acquiring-operations",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE
+"1Password","Data Analyst, Product","https://www.dataanalyst.com/job/data-analyst-product-0d1e2",TRUE,FALSE,TRUE,TRUE,TRUE,TRUE
+"American Express","Data Analyst, Digital Workplace","https://www.dataanalyst.com/job/data-analyst-digital-workplace",TRUE,TRUE,FALSE,FALSE,FALSE,TRUE
+"Fetch","Data Analyst, User Analytics","https://www.dataanalyst.com/job/data-analyst-user-analytics",TRUE,FALSE,TRUE,FALSE,TRUE,FALSE
+"Molina Healthcare","Data Analyst","https://www.dataanalyst.com/job/data-analyst-bebde",TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Salesforce","Data Analyst, Product Growth & GTM Strategy","https://www.dataanalyst.com/job/data-analyst-product-growth-gtm-strategy",TRUE,TRUE,TRUE,FALSE,TRUE,FALSE
+"Paylocity","Data Analyst, Ops","https://www.dataanalyst.com/job/data-analyst-ops-ca1e9",TRUE,TRUE,FALSE,TRUE,FALSE,TRUE
+"DoorDash","Data Analyst, Revenue","https://www.dataanalyst.com/job/data-analyst-revenue",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+"Bestow","Data Analyst","https://www.dataanalyst.com/job/data-analyst-67665",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+"Intermountain Health","Data Analyst, Technical Staff","https://www.dataanalyst.com/job/data-analyst-technical-staff",TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+"Mass General","Data Analyst","https://www.dataanalyst.com/job/data-analyst-40710",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE
+"Boeing","Data Analyst","https://www.dataanalyst.com/job/data-analyst-ac198",FALSE,TRUE,FALSE,FALSE,TRUE,TRUE
+"Medtronic","Data Analyst, Advanced Analytics","https://www.dataanalyst.com/job/data-analyst-advanced-analytics",TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+"SitusAMC","Data Analyst, Credit","https://www.dataanalyst.com/job/data-analyst-credit-6d4f8",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Nomura","Data Analyst, US Wealth","https://www.dataanalyst.com/job/data-analyst-us-wealth",FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+"EverCommerce","Data Analyst, Growth & Markets","https://www.dataanalyst.com/job/data-analyst-growth-markets",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Clover Health","Data Analyst, Clinical Data Effectiveness","https://www.dataanalyst.com/job/data-analyst-clinical-data-effectiveness",TRUE,FALSE,TRUE,FALSE,FALSE,FALSE
+"Whalar","Data Analyst","https://www.dataanalyst.com/job/data-analyst-e2c4d",FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Molina Healthcare","Data Analyst, Finance & Analytics","https://www.dataanalyst.com/job/data-analyst-finance-analytics-e8802",TRUE,TRUE,FALSE,FALSE,FALSE,FALSE
+"Modern Health","Data Analyst","https://www.dataanalyst.com/job/data-analyst-2bc26",TRUE,FALSE,TRUE,TRUE,TRUE,FALSE
+"Jump - Advisor AI","Data Analyst","https://www.dataanalyst.com/job/data-analyst-382a2",TRUE,FALSE,FALSE,FALSE,TRUE,FALSE
+"iHeartMedia","Data Analyst","https://www.dataanalyst.com/job/data-analyst-7683e",TRUE,TRUE,FALSE,FALSE,TRUE,FALSE
+"Northwell Health","Data Analyst","https://www.dataanalyst.com/job/data-analyst-3ab7e",FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+"Law360","Data Analyst","https://www.dataanalyst.com/job/data-analyst-de94a",FALSE,TRUE,TRUE,TRUE,FALSE,FALSE
+"Regions Bank","Data Analyst","https://www.dataanalyst.com/job/data-analyst-c0078",TRUE,TRUE,TRUE,FALSE,TRUE,TRUE
+"Molina Healthcare","Data Analyst, Provider Configuration","https://www.dataanalyst.com/job/data-analyst-provider-configuration",TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+"UW Health","Data Analyst","https://www.dataanalyst.com/job/data-analyst-c49a8",TRUE,FALSE,TRUE,TRUE,FALSE,FALSE
+"World's Finest Chocolate","Data Analyst, Sales","https://www.dataanalyst.com/job/data-analyst-sales-24bac",TRUE,TRUE,FALSE,FALSE,TRUE,TRUE
+"NinjaOne","Data Analyst, Marketing","https://www.dataanalyst.com/job/data-analyst-marketing-ff15e",FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
