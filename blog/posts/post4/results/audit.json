@@ -1,0 +1,25 @@
+{
+  "node": "Node REPL",
+  "period": "2021Q1-2024Q4",
+  "observations": {
+    "MSPUS": 16,
+    "MORTGAGE30US": 208,
+    "CPIAUCSL": 48
+  },
+  "hashes": {
+    "MSPUS": "944c546c594919ace65b9b9e0964fb3a03c2570e22252a673d1cefe4285a208c",
+    "MORTGAGE30US": "e6d6fc2ffdfeabc9bae5a27160bb21c1870636b8f8ad1d7ab39248aedd6944f0",
+    "CPIAUCSL": "938b6a834e994c1a5d581b6296181dbe145b472237ba413d91a0a5e5ce535750"
+  },
+  "checks": [
+    "positive finite values",
+    "unique dates",
+    "16 complete quarters",
+    "3 CPI months per quarter",
+    "12-14 mortgage observations per quarter",
+    "baseline payment identity",
+    "constant-rate comparison identity"
+  ],
+  "baseRate": 2.875833333333333,
+  "baseCPI": 263.74233333333336
+}
