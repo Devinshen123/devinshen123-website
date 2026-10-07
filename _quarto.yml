@@ -1,12 +1,15 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - blog/posts/post4/results/quarterly.csv
   render:
     - index.qmd
     - blog/index.qmd
     - blog/posts/post1/index.qmd
     - blog/posts/post2/index.qmd
     - blog/posts/post3/index.qmd
+    - blog/posts/post4/index.qmd
 
 website:
   title: "AEDS 6400 Blog"

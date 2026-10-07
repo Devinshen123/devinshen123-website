@@ -1,0 +1,53 @@
+{
+  "base": {
+    "quarter": "2021Q1",
+    "date": "2021-01-01",
+    "price": 355000,
+    "cpi": 263.74233333333336,
+    "rate": 2.875833333333333,
+    "rate_n": 12,
+    "cpi_n": 3,
+    "price_real": 355000,
+    "price_index": 100,
+    "price_real_index": 100,
+    "payment": 1178.421141610029,
+    "payment_real": 1178.421141610029,
+    "payment_constant_rate_real": 1178.421141610029
+  },
+  "peak": {
+    "quarter": "2022Q4",
+    "date": "2022-10-01",
+    "price": 442600,
+    "cpi": 298.5416666666667,
+    "rate": 6.664615384615384,
+    "rate_n": 13,
+    "cpi_n": 3,
+    "price_real": 391008.5919888346,
+    "price_index": 124.67605633802818,
+    "price_real_index": 110.14326534896749,
+    "payment": 2276.495717401789,
+    "payment_real": 2011.1373364886704,
+    "payment_constant_rate_real": 1297.9515249318663
+  },
+  "last": {
+    "quarter": "2024Q4",
+    "date": "2024-10-01",
+    "price": 419300,
+    "cpi": 316.5876666666666,
+    "rate": 6.632307692307691,
+    "rate_n": 13,
+    "cpi_n": 3,
+    "price_real": 349309.75527578994,
+    "price_index": 118.11267605633803,
+    "price_real_index": 98.39711416219436,
+    "payment": 2149.480162879156,
+    "payment_real": 1790.685403447372,
+    "payment_constant_rate_real": 1159.5323960214541
+  },
+  "changes": {
+    "nominalFromPeak": -5.264347040216899,
+    "realFromPeak": -10.66442977658031,
+    "paymentFromBase": 51.956320216797124,
+    "ratePremium": 54.43168380560193
+  }
+}

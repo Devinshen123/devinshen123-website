@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-07T00:12:56.408Z",
+  "acquisition": "Direct FRED CSV URL",
+  "urls": [
+    {
+      "id": "MSPUS",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MSPUS&cosd=2021-01-01&coed=2024-12-31"
+    },
+    {
+      "id": "MORTGAGE30US",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE30US&cosd=2021-01-01&coed=2024-12-31"
+    },
+    {
+      "id": "CPIAUCSL",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd=2021-01-01&coed=2024-12-31"
+    }
+  ]
+}

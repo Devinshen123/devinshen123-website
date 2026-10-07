@@ -1,0 +1,27 @@
+name: Build Blog Post 4
+on:
+  push:
+    branches: [build/blog-post-4]
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.10.18
+      - name: Reproduce analysis
+        run: node blog/posts/post4/code/analyze.mjs
+      - name: Render article and blog listing
+        run: |
+          quarto render blog/posts/post4/index.qmd
+          quarto render blog/index.qmd
+      - uses: actions/upload-artifact@v4
+        with:
+          name: compiled-site
+          path: docs
