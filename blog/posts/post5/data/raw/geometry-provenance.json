@@ -1,0 +1,7 @@
+{
+  "source_url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_06_tract_500k.zip",
+  "source_sha256": "0590a3db4d9dce1f93ca9c7c3b80abb5e00a6b7b1091ba8b871435b93758a2d8",
+  "operation": "Filter COUNTYFP=037; preserve source geometry without simplification",
+  "source_crs": "EPSG:4269",
+  "tract_count": 2495
+}

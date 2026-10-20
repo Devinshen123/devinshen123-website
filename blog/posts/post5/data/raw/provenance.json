@@ -1,0 +1,33 @@
+{
+  "retrieved_utc": "2026-10-20T04:36:08.948788+00:00",
+  "acquisition": "Official public table-based Summary Files; no API key needed",
+  "survey": "2024 ACS 5-year estimates, 2020\u20132024 period, dollars in 2024 purchasing power",
+  "geography": "Los Angeles County, California (06037), census tracts",
+  "sources": [
+    {
+      "table": "B25064",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25064.dat",
+      "source_sha256": "b36e6dc1fcef36b8b307d31b37517b64c80d8b9c70d48c9b1894242860f42eb0",
+      "operation": "Filter LA County census tracts and county total; normalize published table column names"
+    },
+    {
+      "table": "B25070",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25070.dat",
+      "source_sha256": "862ccc17d913305d11e6f802ce4518d76b30585ea0b05b251cd8cf21f8661386",
+      "operation": "Filter LA County census tracts and county total; normalize published table column names"
+    },
+    {
+      "file": "acs_tracts.json",
+      "sha256": "ad0a2d26590da57560b7aeabf07cf9fc63f23c23250b8513430559ecb889c013"
+    },
+    {
+      "file": "acs_county.json",
+      "sha256": "af763fd5be2bef84eeca7793e046b8e4cb86b8ff8667f665f81e046f2c3b8a35"
+    },
+    {
+      "file": "la_tracts.geojson",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_06_tract_500k.zip",
+      "sha256": "cb1bbf84272fe8f16a421f6ec7bb6162d33c8833c907d3e9d319d98fd6cfac68"
+    }
+  ]
+}

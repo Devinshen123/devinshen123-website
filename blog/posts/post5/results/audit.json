@@ -1,0 +1,35 @@
+{
+  "inputs_sha256": {
+    "acs_tracts.json": "ad0a2d26590da57560b7aeabf07cf9fc63f23c23250b8513430559ecb889c013",
+    "acs_county.json": "af763fd5be2bef84eeca7793e046b8e4cb86b8ff8667f665f81e046f2c3b8a35",
+    "la_tracts.geojson": "cb1bbf84272fe8f16a421f6ec7bb6162d33c8833c907d3e9d319d98fd6cfac68"
+  },
+  "versions": {
+    "python": "3.14.8",
+    "geopandas": "1.2.0",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0"
+  },
+  "source_crs": "EPSG:4269",
+  "map_crs": "EPSG:3310",
+  "join": "one-to-one on 11-digit GEOID; every boundary feature matched; ACS-only areas verified to contain zero renter households",
+  "tracts": 2498,
+  "boundary_features": 2495,
+  "included_tracts": 2325,
+  "missing_geometry": [
+    "06037990100",
+    "06037990200",
+    "06037990300"
+  ],
+  "missing_geometry_renters_total": 0.0,
+  "missing_acs": [],
+  "invalid_geometry": 0,
+  "geometry_repair": "none",
+  "minimum_estimated_eligible_renters": 100,
+  "precision_note": "Cutoff is an author stability rule on estimated households, not an unweighted survey sample-size test.",
+  "moe_note": "90% MOEs; sums/differences use root-sum-of-squares approximation; subset share formula uses ratio fallback for negative radicand. Grouped approximations ignore unavailable covariances and rent-band assignment uncertainty.",
+  "censoring_note": "B25064_001E=3501 or + annotation is treated as $3,500 or more; no exact upper rent is inferred.",
+  "geographic_note": "Main map zoom is -118.78,33.68,-117.66,34.40 in WGS84. Full-county inset includes all source boundary features. Place points are orientation labels, not neighborhood boundaries."
+}

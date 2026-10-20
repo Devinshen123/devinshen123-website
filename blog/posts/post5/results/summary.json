@@ -1,0 +1,116 @@
+{
+  "period": "2020\u20132024",
+  "scope": "Los Angeles County census tracts",
+  "tracts_total": 2498,
+  "tracts_included": 2325,
+  "tracts_excluded": 173,
+  "rent_topcoded_tracts_included": 105,
+  "county": {
+    "median_gross_rent": 1954.0,
+    "renters_total": 1848466.0,
+    "not_computed": 90696.0,
+    "eligible_renters": 1757770.0,
+    "burdened_renters": 1013598.0,
+    "severely_burdened_renters": 542635.0,
+    "burden_pct": 57.66385818394898,
+    "severe_pct": 30.870648605904073,
+    "burden_moe_pp": 0.3896493562888483,
+    "severe_moe_pp": 0.3079477479890265
+  },
+  "included_renters": 1744275.0,
+  "included_share_of_county_eligible_renters": 0.9923226588233955,
+  "rent_band_results": [
+    {
+      "rent_band": "Under $1,500",
+      "tracts": 299,
+      "eligible_renters": 225564.0,
+      "burdened_renters": 133297.0,
+      "severely_burdened_renters": 72765.0,
+      "burden_pct": 59.09497969534146,
+      "severe_pct": 32.259137096345164,
+      "burden_moe_pp": 0.9959644864490657,
+      "severe_moe_pp": 0.811721817890891
+    },
+    {
+      "rent_band": "$1,500\u20131,999",
+      "tracts": 959,
+      "eligible_renters": 762301.0,
+      "burdened_renters": 457081.0,
+      "severely_burdened_renters": 247107.0,
+      "burden_pct": 59.960697939527826,
+      "severe_pct": 32.41593543757649,
+      "burden_moe_pp": 0.5589754255498264,
+      "severe_moe_pp": 0.44192710956604636
+    },
+    {
+      "rent_band": "$2,000\u20132,499",
+      "tracts": 615,
+      "eligible_renters": 482345.0,
+      "burdened_renters": 267661.0,
+      "severely_burdened_renters": 142227.0,
+      "burden_pct": 55.49160870331402,
+      "severe_pct": 29.486570815495135,
+      "burden_moe_pp": 0.7131035918728904,
+      "severe_moe_pp": 0.5664919955945353
+    },
+    {
+      "rent_band": "$2,500 or more",
+      "tracts": 452,
+      "eligible_renters": 274065.0,
+      "burdened_renters": 148044.0,
+      "severely_burdened_renters": 76714.0,
+      "burden_pct": 54.01784248262273,
+      "severe_pct": 27.991169977924944,
+      "burden_moe_pp": 1.0223682682811281,
+      "severe_moe_pp": 0.8062446870239667
+    }
+  ],
+  "sensitivity_cutoff_50": [
+    {
+      "rent_band": "Under $1,500",
+      "tracts": 305,
+      "eligible_renters": 226019.0,
+      "burdened_renters": 133486.0,
+      "severely_burdened_renters": 72879.0,
+      "burden_pct": 59.05963657922564,
+      "severe_pct": 32.24463430065614,
+      "burden_moe_pp": 0.994485064355091,
+      "severe_moe_pp": 0.8104263246202748
+    },
+    {
+      "rent_band": "$1,500\u20131,999",
+      "tracts": 967,
+      "eligible_renters": 762971.0,
+      "burdened_renters": 457459.0,
+      "severely_burdened_renters": 247294.0,
+      "burden_pct": 59.95758685454624,
+      "severe_pct": 32.411978961192496,
+      "burden_moe_pp": 0.5585669600411973,
+      "severe_moe_pp": 0.4416192260581827
+    },
+    {
+      "rent_band": "$2,000\u20132,499",
+      "tracts": 626,
+      "eligible_renters": 483267.0,
+      "burdened_renters": 268149.0,
+      "severely_burdened_renters": 142565.0,
+      "burden_pct": 55.486718522059235,
+      "severe_pct": 29.50025555231373,
+      "burden_moe_pp": 0.7119815322893235,
+      "severe_moe_pp": 0.5656863359506666
+    },
+    {
+      "rent_band": "$2,500 or more",
+      "tracts": 503,
+      "eligible_renters": 277931.0,
+      "burdened_renters": 150306.0,
+      "severely_burdened_renters": 77768.0,
+      "burden_pct": 54.08032929036344,
+      "severe_pct": 27.981045655216583,
+      "burden_moe_pp": 1.0090610892583753,
+      "severe_moe_pp": 0.796556870952414
+    }
+  ],
+  "descriptive_tract_spearman_censored_rent_ties": -0.1096633885255175,
+  "share_top_burden_quartile_also_top_rent_quartile": 0.24054982817869416
+}
