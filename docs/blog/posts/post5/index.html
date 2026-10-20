@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-7100700a5d4657facf49b32369185e6d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -157,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In Los Angeles County’s most expensive group of census tracts, 54.0% of renter households spent at least 30% of their income on rent. In tracts with median rents between $1,500 and $1,999, the share was higher: 60.0%.</p>
-<p>I wanted to know whether the places with the highest rents also had the greatest rent burden. The two maps below compare monthly rent with rent relative to income. They tell somewhat different stories, and the difference matters when deciding where housing assistance is needed.</p>
+<p>In Los Angeles County tracts with median monthly gross rents of $2,500 or more, 54.0% of renter households spent at least 30% of their income on rent. In tracts with median rents between $1,500 and $1,999, the share was 60.0%.</p>
+<p>Are the places with the highest rents also the places where tenants struggle most to pay them? I compared monthly rent with rent as a share of income. The distinction matters for housing assistance: monthly rents alone leave out how much tenants earn.</p>
 <p>I used the Census Bureau’s 2020–2024 American Community Survey estimates for Los Angeles County. Census tracts are small statistical areas, rather than official neighborhood boundaries. These are rents paid by existing occupants, including covered utilities, not today’s advertised apartment prices. The comparisons exclude households for which the Census cannot calculate a rent-to-income ratio.</p>
 <section id="the-expensive-areas-are-easier-to-spot" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-expensive-areas-are-easier-to-spot">The expensive areas are easier to spot</h2>
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>The county’s median monthly gross rent was $1,954. The map shows higher rents toward the coast and western parts of the urban area, with expensive tracts in some foothill communities too. Many central and southern tracts fall into lower rent categories.</p>
-<p>A rent map is useful when comparing the dollar cost of living in different places. It cannot tell us how much money tenants have left after paying that rent.</p>
+<p>This map shows what tenants pay each month. To see how much of their income goes toward that bill, we need a second measure.</p>
 </section>
 <section id="the-burden-has-a-different-geography" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-burden-has-a-different-geography">The burden has a different geography</h2>
@@ -179,8 +179,8 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Figure 2. Share of renter households spending at least 30% of income on gross rent, among households with a computable ratio. The geographic extent and inclusion rule match Figure 1.</figcaption>
 </figure>
 </div>
-<p>Countywide, 57.7% of eligible renter households crossed the 30% threshold. 30.9% spent at least half their income on gross rent.</p>
-<p>The second map does not simply repeat the first. Heavy burdens appear in many central and southern areas with relatively modest rents, as well as elsewhere in the county. Some expensive tracts have high burdens too; the relationship varies from place to place.</p>
+<p>Countywide, 57.7% of eligible renter households spent at least 30% of income on gross rent, and 30.9% spent at least half.</p>
+<p>Heavy burdens appear in many central and southern areas where rents are relatively modest, and in parts of the San Fernando Valley and northern county. Some expensive tracts have high burdens too. The pressure extends well beyond the high-rent areas along the coast.</p>
 <p>Income helps explain why the two measures can differ. A hypothetical household earning $3,000 a month and paying $1,500 in gross rent spends half its income on housing. Another earning $10,000 and paying $2,500 spends a quarter. The more expensive home need not take the larger share of the household budget.</p>
 </section>
 <section id="even-the-cheaper-areas-face-substantial-pressure" class="level2 page-columns page-full">
@@ -191,10 +191,10 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Figure 3. Rent burdens pooled across households in four groups of tracts, classified by tract median gross rent. The 50% group is a subset of the 30% group. Whiskers show approximate 90% margins of error; they do not account for uncertainty in rent-band assignment.</figcaption>
 </figure>
 </div>
-<p>To make the comparison easier, I grouped tracts into four rent bands and divided each group’s total burdened households by its total eligible households. This gives larger renter populations the appropriate weight.</p>
+<p>I grouped tracts into four rent bands, then calculated the burdened share of households in each group. Each household counts equally, so a tract with more renters gets more weight than one with fewer.</p>
 <p>The share spending at least 30% of income on rent exceeded half in every band. It was 59.1% in tracts with median rents below $1,500, compared with 54.0% in the $2,500-or-more group. The shares spending at least half their income were 32.3% and 28.0%, respectively.</p>
 <p>These estimates describe areas and their current renters. They do not show what would happen to the same household if it moved, or establish that a particular tract is more affordable for a new arrival. Sampling error also makes close comparisons uncertain.</p>
-<p>For housing assistance, the useful lesson is to look beyond the highest dollar rents. Relatively low-rent areas can still contain many households with little income left for other needs. A map of prices alone would miss part of that pressure.</p>
+<p>Housing assistance needs to reach renters in relatively low-rent areas too. Even in tracts with median rents below $1,500, nearly one in three eligible renter households spent at least half their income on rent. A map of monthly prices alone would miss much of that strain.</p>
 </section>
 <section id="data-and-code" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-code">Data and code</h2>

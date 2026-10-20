@@ -35,9 +35,9 @@ format:
     toc: false
 ---
 
-In Los Angeles County's most expensive group of census tracts, {{HIGH_BURDEN}}% of renter households spent at least 30% of their income on rent. In tracts with median rents between $1,500 and $1,999, the share was higher: {{MID_BURDEN}}%.
+In Los Angeles County tracts with median monthly gross rents of $2,500 or more, {{HIGH_BURDEN}}% of renter households spent at least 30% of their income on rent. In tracts with median rents between $1,500 and $1,999, the share was {{MID_BURDEN}}%.
 
-I wanted to know whether the places with the highest rents also had the greatest rent burden. The two maps below compare monthly rent with rent relative to income. They tell somewhat different stories, and the difference matters when deciding where housing assistance is needed.
+Are the places with the highest rents also the places where tenants struggle most to pay them? I compared monthly rent with rent as a share of income. The distinction matters for housing assistance: monthly rents alone leave out how much tenants earn.
 
 I used the Census Bureau's 2020–2024 American Community Survey estimates for Los Angeles County. Census tracts are small statistical areas, rather than official neighborhood boundaries. These are rents paid by existing occupants, including covered utilities, not today's advertised apartment prices. The comparisons exclude households for which the Census cannot calculate a rent-to-income ratio.
 
@@ -47,15 +47,15 @@ I used the Census Bureau's 2020–2024 American Community Survey estimates for L
 
 The county's median monthly gross rent was ${{COUNTY_MEDIAN}}. The map shows higher rents toward the coast and western parts of the urban area, with expensive tracts in some foothill communities too. Many central and southern tracts fall into lower rent categories.
 
-A rent map is useful when comparing the dollar cost of living in different places. It cannot tell us how much money tenants have left after paying that rent.
+This map shows what tenants pay each month. To see how much of their income goes toward that bill, we need a second measure.
 
 ## The burden has a different geography
 
 ![Figure 2. Share of renter households spending at least 30% of income on gross rent, among households with a computable ratio. The geographic extent and inclusion rule match Figure 1.](results/burden-map.png){.column-page fig-alt="The same Los Angeles County tract map shows rent burdens of at least 30 percent of income. Higher burdens appear across south and central urban areas, parts of the San Fernando Valley, and northern county tracts, rather than mirroring only the most expensive coastal areas."}
 
-Countywide, {{COUNTY_BURDEN}}% of eligible renter households crossed the 30% threshold. {{COUNTY_SEVERE}}% spent at least half their income on gross rent.
+Countywide, {{COUNTY_BURDEN}}% of eligible renter households spent at least 30% of income on gross rent, and {{COUNTY_SEVERE}}% spent at least half.
 
-The second map does not simply repeat the first. Heavy burdens appear in many central and southern areas with relatively modest rents, as well as elsewhere in the county. Some expensive tracts have high burdens too; the relationship varies from place to place.
+Heavy burdens appear in many central and southern areas where rents are relatively modest, and in parts of the San Fernando Valley and northern county. Some expensive tracts have high burdens too. The pressure extends well beyond the high-rent areas along the coast.
 
 Income helps explain why the two measures can differ. A hypothetical household earning $3,000 a month and paying $1,500 in gross rent spends half its income on housing. Another earning $10,000 and paying $2,500 spends a quarter. The more expensive home need not take the larger share of the household budget.
 
@@ -63,13 +63,13 @@ Income helps explain why the two measures can differ. A hypothetical household e
 
 ![Figure 3. Rent burdens pooled across households in four groups of tracts, classified by tract median gross rent. The 50% group is a subset of the 30% group. Whiskers show approximate 90% margins of error; they do not account for uncertainty in rent-band assignment.](results/rent-bands.png){.column-page fig-alt="Grouped horizontal bars show shares spending at least 30 percent and at least 50 percent of income on rent. Across rising tract rent bands, the 30-percent shares are {{LOW_BURDEN}}, {{MID_BURDEN}}, {{OTHER_BURDEN}}, and {{HIGH_BURDEN}} percent; the corresponding 50-percent shares are {{LOW_SEVERE}}, {{MID_SEVERE}}, {{OTHER_SEVERE}}, and {{HIGH_SEVERE}} percent."}
 
-To make the comparison easier, I grouped tracts into four rent bands and divided each group's total burdened households by its total eligible households. This gives larger renter populations the appropriate weight.
+I grouped tracts into four rent bands, then calculated the burdened share of households in each group. Each household counts equally, so a tract with more renters gets more weight than one with fewer.
 
 The share spending at least 30% of income on rent exceeded half in every band. It was {{LOW_BURDEN}}% in tracts with median rents below $1,500, compared with {{HIGH_BURDEN}}% in the $2,500-or-more group. The shares spending at least half their income were {{LOW_SEVERE}}% and {{HIGH_SEVERE}}%, respectively.
 
 These estimates describe areas and their current renters. They do not show what would happen to the same household if it moved, or establish that a particular tract is more affordable for a new arrival. Sampling error also makes close comparisons uncertain.
 
-For housing assistance, the useful lesson is to look beyond the highest dollar rents. Relatively low-rent areas can still contain many households with little income left for other needs. A map of prices alone would miss part of that pressure.
+Housing assistance needs to reach renters in relatively low-rent areas too. Even in tracts with median rents below $1,500, nearly one in three eligible renter households spent at least half their income on rent. A map of monthly prices alone would miss much of that strain.
 
 ## Data and code
 

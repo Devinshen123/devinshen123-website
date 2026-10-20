@@ -16,7 +16,7 @@ python -m venv .venv
 
 On macOS/Linux, replace `.venv/Scripts/python` with `.venv/bin/python`. The saved-input analysis makes no network requests. It generates both maps, the grouped comparison, all CSVs, the summary and audit, then the article's numerical references.
 
-To reacquire the original official data:
+To download a fresh source snapshot:
 
 ```sh
 .venv/Scripts/python code/fetch.py --refresh
@@ -24,7 +24,7 @@ To reacquire the original official data:
 .venv/Scripts/python code/write_post.py
 ```
 
-The full acquisition and analysis workflow was executed. `fetch.py` uses the Census Bureau's public table-based Summary Files rather than an API key. It selects Los Angeles County and its tracts from tables B25064 and B25070, preserves the published estimates and MOEs, and normalizes column names to the familiar ACS API convention. It also downloads the official California 2024 cartographic tract archive, extracts safe shapefile members locally and filters county FIPS 037 without simplifying the source geometry. Download caches in `data/raw/source-boundaries/` are excluded from Git; the compact county geometry and tabular snapshot are included. Existing snapshots are reused unless `--refresh` is supplied.
+`fetch.py` downloads Census tables B25064 and B25070 and the 2024 California tract boundaries, then selects Los Angeles County (FIPS 037). It preserves the published estimates and margins of error and uses ACS variable names. The county geometry and tabular snapshot are included in this folder; the larger download cache is excluded from Git. Existing snapshots are reused unless `--refresh` is supplied.
 
 From the website repository root, render the post and listing:
 
@@ -33,7 +33,7 @@ quarto render blog/posts/post5/index.qmd
 quarto render blog/index.qmd
 ```
 
-These targeted renders use the saved PNGs and do not execute earlier posts' R code. The website publishes the compiled `docs/` directory through GitHub Pages.
+These commands use the saved figures. GitHub Pages publishes the compiled `docs/` directory.
 
 ## Files
 
@@ -60,7 +60,7 @@ Negative missing-value sentinels become missing. Reported median values of 3501 
 
 The maps and grouped figures use 2,325 tracts with valid median rent and at least 100 estimated households with computable ratios, accounting for 99.23% of the county's eligible households. This is an author stability rule, not an unweighted sample-size threshold. A 50-household cutoff changes each band's burden rate by less than 0.063 percentage point. Group rates sum household counts first rather than averaging tract rates.
 
-Geometry joins one-to-one on 11-digit GEOID and is valid before and after conversion to California Albers (EPSG:3310). The cartographic source has 2,495 features. The three ACS-only tracts 9901.00, 9902.00 and 9903.00 each have zero renter households; no eligible area is lost. No geometry repair was required. Both maps use the same urban zoom, a full-county context inset and fixed legend classes. Place points are orientation labels, not neighborhood boundaries. Map area represents land, not household counts.
+Geometry joins one-to-one on 11-digit GEOID and is projected to California Albers (EPSG:3310). The boundary file has 2,495 features. Three tracts found only in the ACS tables (9901.00, 9902.00 and 9903.00) each have zero renter households. Both maps use the same urban zoom, a full-county inset and fixed legend classes. Place labels provide orientation. Map area represents land, not household counts.
 
 ## Uncertainty and interpretation
 
