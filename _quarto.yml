@@ -3,6 +3,8 @@ project:
   output-dir: docs
   resources:
     - blog/posts/post4/results/quarterly.csv
+    - blog/posts/post5/results/tract_results.csv
+    - blog/posts/post5/results/rent_bands.csv
   render:
     - index.qmd
     - blog/index.qmd
@@ -10,6 +12,7 @@ project:
     - blog/posts/post2/index.qmd
     - blog/posts/post3/index.qmd
     - blog/posts/post4/index.qmd
+    - blog/posts/post5/index.qmd
 
 website:
   title: "AEDS 6400 Blog"

@@ -6,6 +6,7 @@ Quarto website published through GitHub Pages from `main` / `docs`.
 - [Blog Post 2](https://devinshen123.github.io/devinshen123-website/blog/posts/post2/): R web scraping and data analyst skill mentions.
 - [Blog Post 3](https://devinshen123.github.io/devinshen123-website/blog/posts/post3/): weighted IPUMS CPS visualizations of education and employment.
 - [Blog Post 4](https://devinshen123.github.io/devinshen123-website/blog/posts/post4/): new-home prices and modeled mortgage payments. See [replication instructions](blog/posts/post4/README.md).
+- [Blog Post 5](https://devinshen123.github.io/devinshen123-website/blog/posts/post5/): maps of median rent and rent burdens in Los Angeles County. See [data, Python code, and replication instructions](blog/posts/post5/README.md).
 
 For Blog Post 2's code, data, results, and replication instructions, see [the project README](blog/posts/post2/README.md).
 
@@ -14,3 +15,5 @@ For Blog Post 3's R code, aggregate results, IPUMS data instructions, and weight
 To build the site, install Quarto and run `quarto render` from this directory. Blog Post 2 also needs R plus `knitr` and `rmarkdown` for its inline results; use the package installation instructions in its README. Rendering does not scrape websites.
 
 Blog Post 4's saved analysis uses Node.js 18 or later and no npm packages. Its article reads the saved figures, so rendering does not download data. Run its analysis separately as described in the project README.
+
+Blog Post 5's analysis uses Python and GeoPandas, with pinned packages in its project folder. Both maps and the comparison chart are generated from saved official Census data; the article's numerical results are inserted programmatically. Rendering uses the saved figures and does not download data.

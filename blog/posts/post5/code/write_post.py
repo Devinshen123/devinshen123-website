@@ -1,0 +1,92 @@
+"""Regenerate the article's numerical references from results/summary.json."""
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+summary = json.loads((ROOT / 'results/summary.json').read_text(encoding='utf-8'))
+bands = summary['rent_band_results']
+assert all(row['burden_pct'] > 50 for row in bands), 'Revisit the narrative after a change in results.'
+tokens = {
+    'COUNTY_MEDIAN': f"{summary['county']['median_gross_rent']:,.0f}",
+    'COUNTY_BURDEN': f"{summary['county']['burden_pct']:.1f}",
+    'COUNTY_SEVERE': f"{summary['county']['severe_pct']:.1f}",
+    'HIGH_BURDEN': f"{bands[3]['burden_pct']:.1f}",
+    'MID_BURDEN': f"{bands[1]['burden_pct']:.1f}",
+    'LOW_BURDEN': f"{bands[0]['burden_pct']:.1f}",
+    'HIGH_SEVERE': f"{bands[3]['severe_pct']:.1f}",
+    'LOW_SEVERE': f"{bands[0]['severe_pct']:.1f}",
+    'OTHER_BURDEN': f"{bands[2]['burden_pct']:.1f}",
+    'MID_SEVERE': f"{bands[1]['severe_pct']:.1f}",
+    'OTHER_SEVERE': f"{bands[2]['severe_pct']:.1f}",
+    'TRACTS': f"{summary['tracts_included']:,}",
+    'COVERAGE': f"{100*summary['included_share_of_county_eligible_renters']:.1f}",
+}
+
+article = '''---
+title: "Where rent takes the biggest bite in Los Angeles"
+description: "Two maps show why high monthly rents and heavy rent burdens do not always fall in the same places."
+date: 2026-10-19
+categories: [Housing, GIS]
+image: results/burden-map.png
+lightbox: true
+format:
+  html:
+    toc: false
+---
+
+In Los Angeles County's most expensive group of census tracts, {{HIGH_BURDEN}}% of renter households spent at least 30% of their income on rent. In tracts with median rents between $1,500 and $1,999, the share was higher: {{MID_BURDEN}}%.
+
+I wanted to know whether the places with the highest rents also had the greatest rent burden. The two maps below compare monthly rent with rent relative to income. They tell somewhat different stories, and the difference matters when deciding where housing assistance is needed.
+
+I used the Census Bureau's 2020–2024 American Community Survey estimates for Los Angeles County. Census tracts are small statistical areas, rather than official neighborhood boundaries. These are rents paid by existing occupants, including covered utilities, not today's advertised apartment prices. The comparisons exclude households for which the Census cannot calculate a rent-to-income ratio.
+
+## The expensive areas are easier to spot
+
+![Figure 1. Median monthly gross rent by census tract, in 2024 dollars. The main panel enlarges the urban area; the inset shows the full county and the enlarged area. Gray tracts have unavailable values or fewer than 100 estimated renter households with a computable rent-to-income ratio.](results/rent-map.png){.column-page fig-alt="A projected map of Los Angeles County census tracts shows higher median gross rents concentrated toward western and coastal areas and some foothill communities. Many central and southern urban tracts have lower rents. The full-county inset includes northern areas and offshore islands."}
+
+The county's median monthly gross rent was ${{COUNTY_MEDIAN}}. The map shows higher rents toward the coast and western parts of the urban area, with expensive tracts in some foothill communities too. Many central and southern tracts fall into lower rent categories.
+
+A rent map is useful when comparing the dollar cost of living in different places. It cannot tell us how much money tenants have left after paying that rent.
+
+## The burden has a different geography
+
+![Figure 2. Share of renter households spending at least 30% of income on gross rent, among households with a computable ratio. The geographic extent and inclusion rule match Figure 1.](results/burden-map.png){.column-page fig-alt="The same Los Angeles County tract map shows rent burdens of at least 30 percent of income. Higher burdens appear across south and central urban areas, parts of the San Fernando Valley, and northern county tracts, rather than mirroring only the most expensive coastal areas."}
+
+Countywide, {{COUNTY_BURDEN}}% of eligible renter households crossed the 30% threshold. {{COUNTY_SEVERE}}% spent at least half their income on gross rent.
+
+The second map does not simply repeat the first. Heavy burdens appear in many central and southern areas with relatively modest rents, as well as elsewhere in the county. Some expensive tracts have high burdens too; the relationship varies from place to place.
+
+Income helps explain why the two measures can differ. A hypothetical household earning $3,000 a month and paying $1,500 in gross rent spends half its income on housing. Another earning $10,000 and paying $2,500 spends a quarter. The more expensive home need not take the larger share of the household budget.
+
+## Even the cheaper areas face substantial pressure
+
+![Figure 3. Rent burdens pooled across households in four groups of tracts, classified by tract median gross rent. The 50% group is a subset of the 30% group. Whiskers show approximate 90% margins of error; they do not account for uncertainty in rent-band assignment.](results/rent-bands.png){.column-page fig-alt="Grouped horizontal bars show shares spending at least 30 percent and at least 50 percent of income on rent. Across rising tract rent bands, the 30-percent shares are {{LOW_BURDEN}}, {{MID_BURDEN}}, {{OTHER_BURDEN}}, and {{HIGH_BURDEN}} percent; the corresponding 50-percent shares are {{LOW_SEVERE}}, {{MID_SEVERE}}, {{OTHER_SEVERE}}, and {{HIGH_SEVERE}} percent."}
+
+To make the comparison easier, I grouped tracts into four rent bands and divided each group's total burdened households by its total eligible households. This gives larger renter populations the appropriate weight.
+
+The share spending at least 30% of income on rent exceeded half in every band. It was {{LOW_BURDEN}}% in tracts with median rents below $1,500, compared with {{HIGH_BURDEN}}% in the $2,500-or-more group. The shares spending at least half their income were {{LOW_SEVERE}}% and {{HIGH_SEVERE}}%, respectively.
+
+These estimates describe areas and their current renters. They do not show what would happen to the same household if it moved, or establish that a particular tract is more affordable for a new arrival. Sampling error also makes close comparisons uncertain.
+
+For housing assistance, the useful lesson is to look beyond the highest dollar rents. Relatively low-rent areas can still contain many households with little income left for other needs. A map of prices alone would miss part of that pressure.
+
+## Data and code
+
+[GitHub project and replication instructions](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post5) · [Tract calculations (CSV)](results/tract_results.csv) · [Rent-band results (CSV)](results/rent_bands.csv)
+
+The analysis uses ACS tables [B25064](https://api.census.gov/data/2024/acs/acs5/groups/B25064.html) and [B25070](https://api.census.gov/data/2024/acs/acs5/groups/B25070.html), downloaded programmatically from the official [2024 table-based Summary Files](https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html), and [2024 Census cartographic tract boundaries](https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html). Retrieval date: October 19, 2026, Pacific time. Dollars in these five-year estimates are already adjusted to 2024 purchasing power.
+
+For B25070, the denominator is total renter households minus the "not computed" category; that category includes no-rent-paid households and those with zero or negative income. The numerator sums the published bins beginning at 30%; the severe-burden numerator is the 50%-or-more bin. See the [Census subject definitions](https://www2.census.gov/programs-surveys/acs/tech_docs/subject_definitions/2024_ACSSubjectDefinitions.pdf).
+
+Both maps and the grouped comparison retain {{TRACTS}} tracts with positive reported median rent and at least 100 estimated eligible renter households, covering {{COVERAGE}}% of the county's eligible households. The cutoff is a stability rule, not a count of survey respondents. Lowering it to 50 changes each band's burden rate by less than 0.1 percentage point. County benchmarks use the published county totals.
+
+Boundaries join one-to-one on tract GEOID and use California Albers (EPSG:3310). Three ACS tracts omitted from the cartographic boundary file have zero renter households. Medians reported as $3,500+ remain open-ended; the map's highest class starts at $3,000. Large polygons represent land area, not numbers of renters. Approximate margins of error follow [Census guidance](https://www.census.gov/content/dam/Census/library/publications/2019/acs/acs_aian_handbook_2019_ch08.pdf); grouped intervals ignore unavailable covariances and uncertainty in assigning tracts to rent bands.
+'''
+for key, value in tokens.items():
+    article = article.replace('{{' + key + '}}', value)
+assert not re.search(r'\{\{[A-Z_]+\}\}', article)
+(ROOT / 'index.qmd').write_text(article, encoding='utf-8')
+prose = article.split('## Data and code')[0].split('---', 2)[2]
+prose = re.sub(r'!\[[\s\S]*?\}\n', '', prose)
+print(f'Article generated: {len(prose.split())} words before methods, captions excluded.')
