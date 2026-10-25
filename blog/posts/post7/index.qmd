@@ -1,0 +1,68 @@
+---
+title: "How much extra did 15 gallons cost in California?"
+description: "A weekly comparison with the U.S. average, 2020–2025"
+author: "Defang Shen"
+date: 2026-10-25
+categories: [Interactive visualization, Energy]
+draft: false
+format:
+  html:
+    toc: false
+---
+
+A difference of a dollar per gallon can look small on a gas-station sign. For a 15-gallon purchase, it adds $15 to the bill. I wanted to put California's price difference in these everyday terms: **from 2020 through 2025, how much more did the same 15 gallons cost in California than at the U.S. average price?**
+
+Across 313 weekly observations, the extra cost averaged **$17.59**. California's price was higher in every observed week. But that average hides a wide range: the extra cost ran from $11.84 to $36.47, depending on the date.
+
+## Making the comparison fair
+
+I use the Energy Information Administration's weekly [California](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_SCA_DPG) and [U.S.](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_NUS_DPG) prices for regular gasoline, all formulations, including taxes. Matching the same date and grade avoids comparing different products or different weeks. There are no missing dates in the matched series.
+
+Fifteen gallons is a fixed comparison quantity, not an estimate of anyone's tank size or fuel use. For each week, I calculate:
+
+**Extra for 15 gallons = 15 × (California price − U.S. price).**
+
+The national average includes California. It therefore provides a familiar benchmark, rather than the average for the other 49 states. The overall result gives each observed week equal weight; it does not estimate the average driver's spending.
+
+Start with the full period below, then choose a year. The average and the lowest and highest weeks update together. Hover over the line, or use the observation selector, to inspect the prices behind any point.
+
+```{=html}
+<iframe id="gasoline-comparison-frame" src="results/chart.html" title="Interactive EIA gasoline price comparison" style="width:100%;height:1000px;border:0;" loading="lazy"></iframe>
+<script>
+(() => {
+  const frame = document.getElementById("gasoline-comparison-frame");
+  frame.addEventListener("load", () => {
+    const body = frame.contentDocument.body;
+    const fit = () => { frame.style.height = (body.scrollHeight + 32) + "px"; };
+    new ResizeObserver(fit).observe(body);
+    fit();
+  });
+})();
+</script>
+```
+
+Figure 1. Extra cost at California's average price relative to the U.S. average, January 6, 2020–December 29, 2025. Both views use the same 313 weekly observations.
+
+## Was the extra cost similar every year?
+
+Choosing 2020 gives an average extra cost of $13.23. Choosing 2025 raises it to $19.68. For the same quantity of gasoline, the average difference was $6.45 larger in 2025. The annual average was highest in 2022, at $20.39.
+
+All amounts are nominal dollars: they describe the dollar gap at the time, without adjusting for inflation. They do not show whether the extra cost took a larger share of someone's income. That would require income and fuel-use data.
+
+## The highest pump price was not the largest gap
+
+The most revealing comparison is within 2022. On June 13, 2022, California's price reached its highest level in this dataset, $6.271 per gallon. The U.S. average was $5.006, so the extra cost for 15 gallons was $18.98.
+
+By October 3, 2022, California's price had edged down to $6.213. Meanwhile, the U.S. average had fallen to $3.782. The extra cost reached **$36.47**, the largest weekly gap in the six-year period. California gasoline was slightly cheaper than in June, yet its premium over the national price was much larger.
+
+Select 2022 and switch the chart view to pump prices to see why. The two lines show the comparison that the extra-cost line summarizes. Zooming into June through October makes this change easier to inspect. The interaction lets me check how a period average changes when I include or exclude the spike.
+
+## What I take from the chart
+
+The evidence answers how large the difference was and when it widened. It does not identify its causes. EIA [discusses](https://www.eia.gov/energyexplained/gasoline/regional-price-differences.php) taxes, fuel specifications, transport and supply conditions as contributors to regional prices, but these two series cannot separate their effects.
+
+EIA's [survey notes](https://www.eia.gov/dnav/pet/tbldefs/pet_pri_gnd_tbldef2.asp) describe Monday morning cash prices, generally self-service, with volume weights within each area. These are estimates, not prices at every station. The minimum and maximum show variation over dates, not a confidence interval.
+
+My takeaway is straightforward: over 2020–2025, buying the same 15 gallons at California's average price cost about $17.59 more than at the U.S. average. To understand that difference, I need both prices. A falling California price alone does not tell me whether the extra cost is shrinking.
+
+[Download the weekly calculations](results/weekly_comparison.csv), [code and data](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post7), or see the [replication instructions](README.md).

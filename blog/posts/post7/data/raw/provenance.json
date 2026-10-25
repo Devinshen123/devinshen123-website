@@ -1,0 +1,24 @@
+{
+  "retrieved_at_utc": "2026-10-25T19:10:06.583Z",
+  "source": "U.S. Energy Information Administration",
+  "series": {
+    "ca": "EMM_EPMR_PTE_SCA_DPG",
+    "us": "EMM_EPMR_PTE_NUS_DPG"
+  },
+  "urls": {
+    "ca": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_SCA_DPG",
+    "us": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EMM_EPMR_PTE_NUS_DPG"
+  },
+  "acquisition": "Programmatically read official EIA HTML history tables using the connected web reader. Saved year-month rows retain every 2020–2025 observation. Raw HTML was not available in this execution environment; these text snapshots are explicitly labeled extracted tables. acquire.py can refresh directly from official HTML when network access is available.",
+  "window": [
+    "2020-01-01",
+    "2025-12-31"
+  ],
+  "units": "Nominal U.S. dollars per U.S. gallon, including taxes; regular gasoline, all formulations",
+  "definitions_url": "https://www.eia.gov/dnav/pet/tbldefs/pet_pri_gnd_tbldef2.asp",
+  "notes": [
+    "National series includes California.",
+    "These are weekly Monday price observations, not weekly transaction-level averages.",
+    "All weekly observations receive equal weight in this post's period averages."
+  ]
+}

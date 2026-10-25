@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_rows_per_series": 313,
+  "comparison_windows_checked": 7,
+  "direct_source_cell_reconciliation": true,
+  "integer_browser_vs_decimal_python": true,
+  "empty_window_not_zero": true,
+  "plotly_git_blob_verified": "00ecd7ed89dda721dfd90da72ff17134f845e064",
+  "article_words": 662
+}

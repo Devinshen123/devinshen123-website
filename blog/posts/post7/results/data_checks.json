@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "313_unique_dates": true,
+    "complete_monday_panel": true,
+    "positive_observed_prices": true,
+    "exact_decimal_formula": true,
+    "source_hashes_verified": true,
+    "no_missing_observations": true
+  },
+  "source_precision": "$0.001 per gallon",
+  "zero_filling": false,
+  "interpolation": false
+}

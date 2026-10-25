@@ -1,0 +1,130 @@
+{
+  "overall": {
+    "weeks": 313,
+    "first_date": "2020-01-06",
+    "last_date": "2025-12-29",
+    "mean_extra": 17.58968051118211,
+    "median_extra": 17.145,
+    "min_extra": 11.835,
+    "min_date": "2020-06-29",
+    "max_extra": 36.465,
+    "max_date": "2022-10-03",
+    "mean_ca_price": 4.347472843450479,
+    "mean_us_price": 3.1748274760383386
+  },
+  "yearly": [
+    {
+      "year": 2020,
+      "weeks": 52,
+      "first_date": "2020-01-06",
+      "last_date": "2020-12-28",
+      "mean_extra": 13.229711538461538,
+      "median_extra": 13.32,
+      "min_extra": 11.835,
+      "min_date": "2020-06-29",
+      "max_extra": 14.61,
+      "max_date": "2020-03-16",
+      "mean_ca_price": 3.0495,
+      "mean_us_price": 2.167519230769231
+    },
+    {
+      "year": 2021,
+      "weeks": 52,
+      "first_date": "2021-01-04",
+      "last_date": "2021-12-27",
+      "mean_extra": 15.07298076923077,
+      "median_extra": 15.3375,
+      "min_extra": 12.27,
+      "min_date": "2021-02-22",
+      "max_extra": 18.15,
+      "max_date": "2021-12-27",
+      "mean_ca_price": 4.012596153846154,
+      "mean_us_price": 3.0077307692307693
+    },
+    {
+      "year": 2022,
+      "weeks": 52,
+      "first_date": "2022-01-03",
+      "last_date": "2022-12-26",
+      "mean_extra": 20.389903846153846,
+      "median_extra": 19.1925,
+      "min_extra": 15.555,
+      "min_date": "2022-02-14",
+      "max_extra": 36.465,
+      "max_date": "2022-10-03",
+      "mean_ca_price": 5.310596153846154,
+      "mean_us_price": 3.9512692307692308
+    },
+    {
+      "year": 2023,
+      "weeks": 52,
+      "first_date": "2023-01-02",
+      "last_date": "2023-12-25",
+      "mean_extra": 18.81230769230769,
+      "median_extra": 17.025,
+      "min_extra": 12.915,
+      "min_date": "2023-01-23",
+      "max_extra": 31.545,
+      "max_date": "2023-10-02",
+      "mean_ca_price": 4.772788461538462,
+      "mean_us_price": 3.5186346153846153
+    },
+    {
+      "year": 2024,
+      "weeks": 53,
+      "first_date": "2024-01-01",
+      "last_date": "2024-12-30",
+      "mean_extra": 18.335943396226416,
+      "median_extra": 18.435,
+      "min_extra": 13.29,
+      "min_date": "2024-07-29",
+      "max_extra": 24.645,
+      "max_date": "2024-04-15",
+      "mean_ca_price": 4.526245283018868,
+      "mean_us_price": 3.3038490566037737
+    },
+    {
+      "year": 2025,
+      "weeks": 52,
+      "first_date": "2025-01-06",
+      "last_date": "2025-12-29",
+      "mean_extra": 19.682884615384616,
+      "median_extra": 19.8825,
+      "min_extra": 16.545,
+      "min_date": "2025-01-20",
+      "max_extra": 22.92,
+      "max_date": "2025-05-12",
+      "mean_ca_price": 4.4096730769230765,
+      "mean_us_price": 3.0974807692307693
+    }
+  ],
+  "highest_ca_price": {
+    "date": "2022-06-13",
+    "ca_price": 6.271,
+    "us_price": 5.006,
+    "gap_per_gallon": 1.265,
+    "extra_15_gallons": 18.975,
+    "premium_pct": 25.269676388334
+  },
+  "highest_us_price": {
+    "date": "2022-06-13",
+    "ca_price": 6.271,
+    "us_price": 5.006,
+    "gap_per_gallon": 1.265,
+    "extra_15_gallons": 18.975,
+    "premium_pct": 25.269676388334
+  },
+  "largest_gap": {
+    "date": "2022-10-03",
+    "ca_price": 6.213,
+    "us_price": 3.782,
+    "gap_per_gallon": 2.431,
+    "extra_15_gallons": 36.465,
+    "premium_pct": 64.2781597038604
+  },
+  "all_weeks_ca_above_us": true,
+  "gallons": 15,
+  "currency": "Nominal U.S. dollars",
+  "period_weighting": "Each observed week has equal weight; no transaction-volume weighting across weeks.",
+  "population": "EIA regular gasoline, all formulations, including taxes. U.S. includes California."
+}

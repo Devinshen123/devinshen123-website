@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "data/raw/california_history_extracted.txt": "4d4d22002f1c64394c16edfe705e2ea301dcfaaf0c914d67379b1464d8f22216",
+    "data/raw/us_history_extracted.txt": "f18da7e7c82fe0ac9218086e2ab68dfd3041fc6f268d17add31e87d5a42973bd",
+    "data/processed/weekly_prices.csv": "a6600529cbdd0a1c377b405fe7dd6fff75f80fe80e58280b79f8277e2888e12d",
+    "assets/plotly-basic-3.0.1.min.js": "9750237b42d97af386c25ad644d858ac5b7735dd65e8583e32c9234d551db7f4"
+  },
+  "observations": 313,
+  "source": "EIA"
+}

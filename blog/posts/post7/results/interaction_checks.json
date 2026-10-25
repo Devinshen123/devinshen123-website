@@ -1,0 +1,487 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "offline_review_served",
+      "passed": true,
+      "details": {
+        "http": 200,
+        "length": 1655122
+      }
+    },
+    {
+      "name": "actual_plotly_loaded",
+      "passed": true,
+      "details": {
+        "version": "3.0.1",
+        "url": "http://127.0.0.1:41089/results/Blog_Post_7_Review.html",
+        "body": "AEDS 6400 · Computational Methods for Economists\nBLOG POST 7\nHow much extra did 15 gallons cost in California?\n\nA weekly comparison with the U.S. average, 2020–2025\n\nDefang Shen · October 25, 2026\n\nA difference of a dollar per gallon can look small on a gas-station sign. For a 15-gallon purchase, it",
+        "error": ""
+      }
+    },
+    {
+      "name": "full_window_313_and_mean",
+      "passed": true,
+      "details": {
+        "summary": {
+          "count": 313,
+          "mean": 17.58968051118211,
+          "minimum": 11.835,
+          "maximum": 36.465,
+          "minDate": "2020-06-29",
+          "maxDate": "2022-10-03"
+        },
+        "mean": "$17.59",
+        "low": "$11.84",
+        "high": "$36.47",
+        "traces": 1
+      }
+    },
+    {
+      "name": "year_2020",
+      "passed": true,
+      "details": {
+        "count": 52,
+        "mean": 13.229711538461538,
+        "minimum": 11.835,
+        "maximum": 14.61,
+        "minDate": "2020-06-29",
+        "maxDate": "2020-03-16"
+      }
+    },
+    {
+      "name": "year_2021",
+      "passed": true,
+      "details": {
+        "count": 52,
+        "mean": 15.07298076923077,
+        "minimum": 12.27,
+        "maximum": 18.15,
+        "minDate": "2021-02-22",
+        "maxDate": "2021-12-27"
+      }
+    },
+    {
+      "name": "year_2022",
+      "passed": true,
+      "details": {
+        "count": 52,
+        "mean": 20.389903846153846,
+        "minimum": 15.555,
+        "maximum": 36.465,
+        "minDate": "2022-02-14",
+        "maxDate": "2022-10-03"
+      }
+    },
+    {
+      "name": "year_2023",
+      "passed": true,
+      "details": {
+        "count": 52,
+        "mean": 18.81230769230769,
+        "minimum": 12.915,
+        "maximum": 31.545,
+        "minDate": "2023-01-23",
+        "maxDate": "2023-10-02"
+      }
+    },
+    {
+      "name": "year_2024",
+      "passed": true,
+      "details": {
+        "count": 53,
+        "mean": 18.335943396226416,
+        "minimum": 13.29,
+        "maximum": 24.645,
+        "minDate": "2024-07-29",
+        "maxDate": "2024-04-15"
+      }
+    },
+    {
+      "name": "year_2025",
+      "passed": true,
+      "details": {
+        "count": 52,
+        "mean": 19.682884615384616,
+        "minimum": 16.545,
+        "maximum": 22.92,
+        "minDate": "2025-01-20",
+        "maxDate": "2025-05-12"
+      }
+    },
+    {
+      "name": "pump_price_view_two_real_series",
+      "passed": true,
+      "details": [
+        {
+          "name": "California",
+          "points": 52
+        },
+        {
+          "name": "U.S. average",
+          "points": 52
+        }
+      ]
+    },
+    {
+      "name": "custom_window_and_peak",
+      "passed": true,
+      "details": {
+        "count": 9,
+        "mean": 27.065,
+        "minimum": 19.605,
+        "maximum": 36.465,
+        "minDate": "2022-09-05",
+        "maxDate": "2022-10-03"
+      }
+    },
+    {
+      "name": "native_plotly_zoom_updates_summary",
+      "passed": true,
+      "details": {
+        "count": 5,
+        "mean": 29.853,
+        "minimum": 23.535,
+        "maximum": 36.465,
+        "minDate": "2022-10-31",
+        "maxDate": "2022-10-03"
+      }
+    },
+    {
+      "name": "empty_window_is_not_zero",
+      "passed": true,
+      "details": {
+        "summary": null,
+        "mean": "—",
+        "low": "—",
+        "high": "—",
+        "traces": 2
+      }
+    },
+    {
+      "name": "reversed_dates_rejected",
+      "passed": true
+    },
+    {
+      "name": "reset_restores_full_data",
+      "passed": true,
+      "details": {
+        "summary": {
+          "count": 313,
+          "mean": 17.58968051118211,
+          "minimum": 11.835,
+          "maximum": 36.465,
+          "minDate": "2020-06-29",
+          "maxDate": "2022-10-03"
+        },
+        "mean": "$17.59",
+        "low": "$11.84",
+        "high": "$36.47",
+        "traces": 1
+      }
+    },
+    {
+      "name": "pointer_hover_shows_prices_and_extra",
+      "passed": true,
+      "details": "2022-10-03California: $6.213/galU.S.: $3.782/galGap: $2.431/gal$36.47 extra for 15 gallons"
+    },
+    {
+      "name": "weekly_selector_matches_hover",
+      "passed": true,
+      "details": "California $6.213/gal · U.S. $3.782/gal · $36.47 extra for 15 gallons"
+    },
+    {
+      "name": "weekly_selector_keyboard_operable",
+      "passed": true,
+      "details": "2022-10-10"
+    },
+    {
+      "name": "selected_csv_export_has_52_weeks",
+      "passed": true,
+      "details": {
+        "file": "gasoline-comparison-2025-01-01-to-2025-12-31.csv",
+        "rows": 52,
+        "first": "2025-01-06,4.154,3.047,1.107,16.605"
+      }
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "plotWidth": 358
+      }
+    },
+    {
+      "name": "no_javascript_exceptions",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "offline_no_external_requests",
+      "passed": true,
+      "details": [
+        "http://127.0.0.1:41089/favicon.ico",
+        "http://127.0.0.1:41089/blog/posts/post7/index.html",
+        "http://127.0.0.1:41089/site_libs/quarto-nav/quarto-nav.js",
+        "http://127.0.0.1:41089/site_libs/quarto-nav/headroom.min.js",
+        "http://127.0.0.1:41089/site_libs/clipboard/clipboard.min.js",
+        "http://127.0.0.1:41089/site_libs/quarto-search/autocomplete.umd.js",
+        "http://127.0.0.1:41089/site_libs/quarto-search/fuse.min.js",
+        "http://127.0.0.1:41089/site_libs/quarto-search/quarto-search.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/quarto.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/tabsets/tabsets.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/popper.min.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/tippy.umd.min.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/anchor.min.js",
+        "http://127.0.0.1:41089/site_libs/quarto-html/tippy.css",
+        "http://127.0.0.1:41089/site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+        "http://127.0.0.1:41089/site_libs/bootstrap/bootstrap.min.js",
+        "http://127.0.0.1:41089/site_libs/bootstrap/bootstrap-icons.css",
+        "http://127.0.0.1:41089/site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css",
+        "http://127.0.0.1:41089/styles.css",
+        "http://127.0.0.1:41089/images/UniversityofPennsylvania_FullLogo_RGB.png",
+        "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap",
+        "https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXg.woff2",
+        "https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+        "http://127.0.0.1:41089/blog/posts/post7/results/chart.html",
+        "http://127.0.0.1:41089/listings.json",
+        "data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP",
+        "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJXaW5kb3dUZXh0IiBkPSJNMjAgM2gtMVYxaC0ydjJIN1YxSDV2Mkg0Yy0xLjEgMC0yIC45LTIgMnYxNmMwIDEuMS45IDIgMiAyaDE2YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMThINFY4aDE2djEzeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz4=",
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28204.36, 208.68, 213%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+      ]
+    },
+    {
+      "name": "quarto_page_actual_iframe_loaded",
+      "passed": true
+    },
+    {
+      "name": "page_title_author_footer",
+      "passed": true,
+      "details": {
+        "title": "How much extra did 15 gallons cost in California?",
+        "author": "\n             Defang Shen \n          ",
+        "footer": "\n  \n    \n\n   \n    \n© 2026 Defang Shen\n\n    \n       \n    \n  \n",
+        "date": "October 25, 2026"
+      }
+    },
+    {
+      "name": "published_layout_1280",
+      "passed": true,
+      "details": {
+        "viewport": 1280,
+        "pageWidth": 1265,
+        "frameHeight": 1059,
+        "contentHeight": 1027,
+        "observations": 313
+      }
+    },
+    {
+      "name": "published_layout_390",
+      "passed": true,
+      "details": {
+        "viewport": 390,
+        "pageWidth": 390,
+        "frameHeight": 1248,
+        "contentHeight": 1216,
+        "observations": 313
+      }
+    },
+    {
+      "name": "published_iframe_year_and_view_controls",
+      "passed": true,
+      "details": {
+        "summary": {
+          "count": 52,
+          "mean": 20.389903846153846,
+          "minimum": 15.555,
+          "maximum": 36.465,
+          "minDate": "2022-02-14",
+          "maxDate": "2022-10-03"
+        },
+        "traces": 2
+      }
+    },
+    {
+      "name": "published_no_javascript_exceptions",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "exceptions": [],
+  "local_requests": [
+    {
+      "name": "/results/Blog_Post_7_Review.html",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/blog/posts/post7/results/Blog_Post_7_Review.html",
+      "exists": true
+    },
+    {
+      "name": "/results/Blog_Post_7_Review.html",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/blog/posts/post7/results/Blog_Post_7_Review.html",
+      "exists": true
+    },
+    {
+      "name": "/favicon.ico",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/blog/posts/post7/favicon.ico",
+      "exists": false
+    },
+    {
+      "name": "/blog/posts/post7/index.html",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/blog/posts/post7/index.html",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-nav/quarto-nav.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-nav/quarto-nav.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-nav/headroom.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-nav/headroom.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/clipboard/clipboard.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/clipboard/clipboard.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-search/autocomplete.umd.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-search/autocomplete.umd.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-search/fuse.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-search/fuse.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-search/quarto-search.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-search/quarto-search.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/tippy.css",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/tippy.css",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/bootstrap/bootstrap-icons.css",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/bootstrap/bootstrap-icons.css",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/bootstrap/bootstrap-92404dd89b1444827012a9e3a58cda88.min.css",
+      "exists": true
+    },
+    {
+      "name": "/styles.css",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/styles.css",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/quarto.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/quarto.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/tabsets/tabsets.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/tabsets/tabsets.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/popper.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/popper.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/tippy.umd.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/tippy.umd.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/quarto-html/anchor.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/quarto-html/anchor.min.js",
+      "exists": true
+    },
+    {
+      "name": "/site_libs/bootstrap/bootstrap.min.js",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/site_libs/bootstrap/bootstrap.min.js",
+      "exists": true
+    },
+    {
+      "name": "/images/UniversityofPennsylvania_FullLogo_RGB.png",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/images/UniversityofPennsylvania_FullLogo_RGB.png",
+      "exists": true
+    },
+    {
+      "name": "/blog/posts/post7/results/chart.html",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/docs/blog/posts/post7/results/chart.html",
+      "exists": true
+    },
+    {
+      "name": "/listings.json",
+      "file": "/home/runner/work/devinshen123-website/devinshen123-website/blog/posts/post7/listings.json",
+      "exists": false
+    }
+  ],
+  "browser_version": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/155.0.8059.39",
+    "revision": "@3ff7ac5a9224be9156d7f8703a06e22890aafd34",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "jsVersion": "15.5.35.20"
+  },
+  "initial_targets": [
+    {
+      "targetId": "F9E80A13896B11365E4DDF70D3049340",
+      "type": "page",
+      "title": "",
+      "url": "http://127.0.0.1:41089/results/Blog_Post_7_Review.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "414AB3BC60FDF7DC368D774D19B357E4"
+    },
+    {
+      "targetId": "0873B89D47399FE4A41E294C61E8A40D",
+      "type": "browser_ui",
+      "title": "",
+      "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "414AB3BC60FDF7DC368D774D19B357E4"
+    },
+    {
+      "targetId": "1CFA9D583794E51E1FA1D8D182C4F3A7",
+      "type": "browser_ui",
+      "title": "",
+      "url": "chrome://omnibox-popup.top-chrome/",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "414AB3BC60FDF7DC368D774D19B357E4"
+    },
+    {
+      "targetId": "6A7A2E184C441FB0EEB56491230CA57C",
+      "type": "background_page",
+      "title": "Google Hangouts",
+      "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "414AB3BC60FDF7DC368D774D19B357E4"
+    }
+  ],
+  "navigation": {
+    "url": "http://127.0.0.1:41089/results/Blog_Post_7_Review.html",
+    "method": "Chrome initial page"
+  },
+  "engine": "Headless Google Chrome, actual vendored Plotly.js 3.0.1",
+  "external_requests": 0,
+  "completed_at": "2026-10-25T19:42:10.310Z"
+}
