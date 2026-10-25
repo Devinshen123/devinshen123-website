@@ -236,5 +236,40 @@
     "title": "Does one year’s pay tell the whole story?",
     "section": "Sources",
     "text": "Sources\nNLS data, family linkage, earnings definitions, and annual CPI-U."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html",
+    "href": "blog/posts/post7/index.html",
+    "title": "How much extra did 15 gallons cost in California?",
+    "section": "",
+    "text": "A difference of a dollar per gallon can look small on a gas-station sign. For a 15-gallon purchase, it adds $15 to the bill. I wanted to put California’s price difference in these everyday terms: from 2020 through 2025, how much more did the same 15 gallons cost in California than at the U.S. average price?\nAcross 313 weekly observations, the extra cost averaged $17.59. California’s price was higher in every observed week. But that average hides a wide range: the extra cost ran from $11.84 to $36.47, depending on the date."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#making-the-comparison-fair",
+    "href": "blog/posts/post7/index.html#making-the-comparison-fair",
+    "title": "How much extra did 15 gallons cost in California?",
+    "section": "Making the comparison fair",
+    "text": "Making the comparison fair\nI use the Energy Information Administration’s weekly California and U.S. prices for regular gasoline, all formulations, including taxes. Matching the same date and grade avoids comparing different products or different weeks. There are no missing dates in the matched series.\nFifteen gallons is a fixed comparison quantity, not an estimate of anyone’s tank size or fuel use. For each week, I calculate:\nExtra for 15 gallons = 15 × (California price − U.S. price).\nThe national average includes California. It therefore provides a familiar benchmark, rather than the average for the other 49 states. The overall result gives each observed week equal weight; it does not estimate the average driver’s spending.\nStart with the full period below, then choose a year. The average and the lowest and highest weeks update together. Hover over the line, or use the observation selector, to inspect the prices behind any point.\n\n\nFigure 1. Extra cost at California’s average price relative to the U.S. average, January 6, 2020–December 29, 2025. Both views use the same 313 weekly observations."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#was-the-extra-cost-similar-every-year",
+    "href": "blog/posts/post7/index.html#was-the-extra-cost-similar-every-year",
+    "title": "How much extra did 15 gallons cost in California?",
+    "section": "Was the extra cost similar every year?",
+    "text": "Was the extra cost similar every year?\nChoosing 2020 gives an average extra cost of $13.23. Choosing 2025 raises it to $19.68. For the same quantity of gasoline, the average difference was $6.45 larger in 2025. The annual average was highest in 2022, at $20.39.\nAll amounts are nominal dollars: they describe the dollar gap at the time, without adjusting for inflation. They do not show whether the extra cost took a larger share of someone’s income. That would require income and fuel-use data."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#the-highest-pump-price-was-not-the-largest-gap",
+    "href": "blog/posts/post7/index.html#the-highest-pump-price-was-not-the-largest-gap",
+    "title": "How much extra did 15 gallons cost in California?",
+    "section": "The highest pump price was not the largest gap",
+    "text": "The highest pump price was not the largest gap\nThe most revealing comparison is within 2022. On June 13, 2022, California’s price reached its highest level in this dataset, $6.271 per gallon. The U.S. average was $5.006, so the extra cost for 15 gallons was $18.98.\nBy October 3, 2022, California’s price had edged down to $6.213. Meanwhile, the U.S. average had fallen to $3.782. The extra cost reached $36.47, the largest weekly gap in the six-year period. California gasoline was slightly cheaper than in June, yet its premium over the national price was much larger.\nSelect 2022 and switch the chart view to pump prices to see why. The two lines show the comparison that the extra-cost line summarizes. Zooming into June through October makes this change easier to inspect. The interaction lets me check how a period average changes when I include or exclude the spike."
+  },
+  {
+    "objectID": "blog/posts/post7/index.html#what-i-take-from-the-chart",
+    "href": "blog/posts/post7/index.html#what-i-take-from-the-chart",
+    "title": "How much extra did 15 gallons cost in California?",
+    "section": "What I take from the chart",
+    "text": "What I take from the chart\nThe evidence answers how large the difference was and when it widened. It does not identify its causes. EIA discusses taxes, fuel specifications, transport and supply conditions as contributors to regional prices, but these two series cannot separate their effects.\nEIA’s survey notes describe Monday morning cash prices, generally self-service, with volume weights within each area. These are estimates, not prices at every station. The minimum and maximum show variation over dates, not a confidence interval.\nMy takeaway is straightforward: over 2020–2025, buying the same 15 gallons at California’s average price cost about $17.59 more than at the U.S. average. To understand that difference, I need both prices. A falling California price alone does not tell me whether the extra cost is shrinking.\nDownload the weekly calculations, code and data, or see the replication instructions."
   }
 ]

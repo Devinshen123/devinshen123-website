@@ -21,3 +21,5 @@ Blog Post 4's saved analysis uses Node.js 18 or later and no npm packages. Its a
 Blog Post 5's analysis uses Python and GeoPandas, with pinned packages in its project folder. Both maps and the comparison chart are generated from saved official Census data; the article's numerical results are inserted programmatically. Rendering uses the saved figures and does not download data.
 
 Blog Post 6 uses Python with SQLite and statsmodels. Its acquisition script retrieves the official NLSY79 records for local analysis; the public companion notebook contains executed queries and aggregate figures. See its README for source downloads and pinned dependencies.
+
+Blog Post 7 compares the extra cost of 15 gallons of regular gasoline in California with the U.S. average for 2020-2025. See [the interactive article](https://devinshen123.github.io/devinshen123-website/blog/posts/post7/) and [the code, EIA data and replication instructions](blog/posts/post7/README.md). Its saved-input build needs only Python and Node.js; Plotly.js is vendored locally.

@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "scope": "Actual chart.js event handlers exercised with a controlled DOM and Plotly API stub. No SVG rendering, native pointer hover or visual-layout claim.",
+  "checks": [
+    {
+      "name": "initial_313",
+      "passed": true
+    },
+    {
+      "name": "year_2020",
+      "passed": true
+    },
+    {
+      "name": "year_2021",
+      "passed": true
+    },
+    {
+      "name": "year_2022",
+      "passed": true
+    },
+    {
+      "name": "year_2023",
+      "passed": true
+    },
+    {
+      "name": "year_2024",
+      "passed": true
+    },
+    {
+      "name": "year_2025",
+      "passed": true
+    },
+    {
+      "name": "price_view_two_series",
+      "passed": true
+    },
+    {
+      "name": "custom_nine_weeks",
+      "passed": true
+    },
+    {
+      "name": "native_range_event_five_weeks",
+      "passed": true
+    },
+    {
+      "name": "empty_window_em_dash",
+      "passed": true
+    },
+    {
+      "name": "invalid_dates_do_not_change_state",
+      "passed": true
+    },
+    {
+      "name": "reset",
+      "passed": true
+    },
+    {
+      "name": "weekly_detail_exact_values",
+      "passed": true
+    },
+    {
+      "name": "export_triggered",
+      "passed": true
+    },
+    {
+      "name": "exported_csv_has_52_selected_weeks",
+      "passed": true
+    },
+    {
+      "name": "hover_template_contains_prices_gap_extra",
+      "passed": true
+    }
+  ]
+}

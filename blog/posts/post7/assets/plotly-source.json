@@ -1,0 +1,8 @@
+{
+  "repository": "plotly/plotly.js",
+  "ref": "v3.0.1",
+  "path": "dist/plotly-basic.min.js",
+  "git_blob_sha": "00ecd7ed89dda721dfd90da72ff17134f845e064",
+  "license": "MIT",
+  "use": "Vendored browser runtime for an offline standalone Plotly figure; no pip or npm package installation."
+}

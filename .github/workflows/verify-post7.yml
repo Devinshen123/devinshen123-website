@@ -1,0 +1,36 @@
+name: Verify Blog Post 7
+on:
+  push:
+    branches: [publish-blog7-gasoline]
+  pull_request:
+    paths:
+      - 'blog/posts/post7/**'
+      - 'docs/blog/posts/post7/**'
+      - '.github/workflows/verify-post7.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify saved EIA data and calculations
+        run: |
+          python3 blog/posts/post7/code/analyze.py
+          node blog/posts/post7/code/verify_data.cjs
+          node blog/posts/post7/code/verify_controls.cjs
+      - name: Exercise actual Plotly in existing Chrome
+        run: |
+          node --version
+          google-chrome --version
+          CHROME_PATH="$(command -v google-chrome)" POST7_WEB_ROOT="$PWD/docs" node blog/posts/post7/code/verify_browser.cjs
+      - name: Save browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: post7-browser-evidence
+          path: |
+            blog/posts/post7/results/interaction_checks.json
+            blog/posts/post7/qa/*.png
+          retention-days: 7

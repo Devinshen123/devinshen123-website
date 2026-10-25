@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "checks": [],
+  "exceptions": [],
+  "error": "Error: Chrome exited 4294930433: [1025/122012.525:ERROR:third_party\\crashpad\\crashpad\\util\\win\\registration_protocol_win.cc:136] TransactNamedPipe: The pipe has been ended. (0x6D)\r\n[1025/122012.553:ERROR:third_party\\crashpad\\crashpad\\client\\crashpad_client_win.cc:145] crash server failed to launch, self-terminating\r\n\n    at ChildProcess.<anonymous> (C:\\Users\\devin\\.codex\\.chatgpt-projects\\g-p-6ac5662b3d7081918bd19e9a749a85c8\\repo-post6\\site\\blog\\posts\\post7\\code\\verify_browser.cjs:47:98)\n    at ChildProcess.emit (node:events:509:20)\n    at ChildProcess._handle.onexit (node:internal/child_process:294:12)"
+}
