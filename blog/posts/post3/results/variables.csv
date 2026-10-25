@@ -1,0 +1,17 @@
+name,label,start,end,implied_decimals
+YEAR,Survey year,1,4,0
+SERIAL,Household serial number,5,9,0
+MONTH,Month,10,11,0
+HWTFINL,"Household weight, Basic Monthly",12,21,4
+CPSID,"CPSID, household record",22,35,0
+ASECFLAG,Flag for ASEC,36,36,0
+PERNUM,Person number in sample unit,37,38,0
+WTFINL,Final Basic Weight,39,52,4
+CPSIDP,"CPSID, person record",53,66,0
+CPSIDV,Validated Longitudinal Identifier,67,81,0
+AGE,Age,82,83,0
+EMPSTAT,Employment status,84,85,0
+AHRSWORKT,Hours worked last week,86,88,0
+EDUC,Educational attainment recode,89,91,0
+TELWRKPAY,"In the last week, telework or work at home for pay",92,92,0
+TELWRKHR,"In the last week, total number of hours telework or work at home for pay",93,95,0

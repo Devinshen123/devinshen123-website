@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "method": "Separate pandas fixed-width import and vectorized masks",
+  "eligible_records": 545259,
+  "maximum_absolute_difference_annual_average_people": 1.4901161193847656e-08,
+  "some_hours_share_pct": 52.330890182722335,
+  "all_hours_share_pct": 47.669109817277665,
+  "unclassifiable_hours": {
+    "total_hours=2, telework_hours=0": 1,
+    "total_hours=1, telework_hours=0": 1
+  },
+  "inference": "No confidence intervals or tests of monthly differences were estimated."
+}

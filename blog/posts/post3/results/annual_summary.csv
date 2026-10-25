@@ -1,0 +1,6 @@
+year,category,person_month_records,annual_average_people,share_of_people_at_work_pct,share_of_classifiable_teleworkers_pct
+2024,No telework,422387,120526172.66521667,77.20507667992254,
+2024,Some hours teleworked,64399,18622013.71505,11.928645579732432,52.330890182722335
+2024,All hours teleworked,58471,16963113.253033333,10.866008854926536,47.669109817277665
+2024,Telework hours invalid or missing,2,419.76165,0.00026888541848548667,
+2024,Telework status unavailable,0,0.0,0.0,

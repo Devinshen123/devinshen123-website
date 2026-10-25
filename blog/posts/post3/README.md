@@ -1,68 +1,81 @@
-# Blog Post 3: education and jobs
+# Post 3: working from home in 2024
 
-Question: How do unemployment, labor-force participation, and employment differ by education among civilians ages 25–64 in 2019 and 2024?
+Question: **Among U.S. workers who worked from home in 2024, was it more common to work all hours at home or only some hours?**
 
-## Files
+This directory contains the article source, replication code, and aggregate results for Blog Post 3. The article was rewritten around 2024 telework hours on October 25, 2026. The previous unemployment article was retained in a separate local backup; its older R files are not part of this analysis.
 
-- `index.qmd`: article; numerical results are inserted from the saved CSV using R.
-- `code/analyze.R`: imports IPUMS microdata, checks samples, recodes, weights, aggregates, and draws three figures.
-- `data/README.md`: instructions for obtaining the source data yourself.
-- `results/annual_rates.csv`: eight education/year rows, weighted annual-average population levels and percentage rates.
-- `results/monthly_totals.csv`: weighted components and unweighted record counts for all 96 education/year/month cells.
-- `results/sample_audit.csv`, `observed_codes.csv`, and `code-labels.txt`: sample and recode checks.
-- `results/*.png`: programmatically generated figures.
-- `results/session-info.txt`: R and package versions used.
+## Source and extract
+
+- IPUMS CPS, University of Minnesota; underlying CPS data from the U.S. Census Bureau and Bureau of Labor Statistics.
+- Extract number 2, created October 25, 2026 at the user's request.
+- Twelve **Basic Monthly** samples, January–December 2024. No ASEC samples.
+- Original compressed fixed-width data: `data/raw/cps_00002.dat.gz`.
+- Original DDI codebook: `data/raw/cps_00002.xml`.
+- 1,187,356 person-month records and 16 variables, including 10 preselected technical fields.
+- These are repeated survey observations, not 1,187,356 distinct people.
+
+The original files remain local and are excluded by `.gitignore`. Replicators should obtain their own IPUMS extract. Raw files, account-specific XML, and signed download URLs must not be published.
+
+## Request the same data
+
+1. Sign in at [IPUMS CPS](https://cps.ipums.org/).
+2. Deselect default samples. Select Basic Monthly and all twelve months of 2024; keep ASEC unselected.
+3. Add **AGE, EMPSTAT, AHRSWORKT, EDUC, TELWRKPAY, TELWRKHR**. Retain preselected YEAR, MONTH, SERIAL, PERNUM, ASECFLAG, WTFINL, CPSID, CPSIDP, CPSIDV, and HWTFINL.
+4. Use rectangular cross-sectional, fixed-width `.dat` output. Request all cases; age/status filtering occurs in code.
+5. Download both the compressed data and DDI XML, keeping matching filenames in `data/raw/`. If a new extract has a different number, adjust the two filenames in the scripts.
+
+## Definitions and checks
+
+The study population is civilian adults ages 16+ **at work during the reference week**, identified by `EMPSTAT == 10`. People employed but absent all week are outside the telework question's universe.
+
+- `TELWRKPAY`: 1 = yes, 2 = no, 0 = not in universe. Codes are checked against this extract's DDI.
+- `TELWRKHR`: hours of paid telework in the reference week; 999 is not in universe.
+- `AHRSWORKT`: actual total hours worked across all jobs that same week.
+- Some hours at home: positive telework hours smaller than valid actual hours.
+- All hours at home: positive telework hours equal to valid actual hours.
+- Two telework responses have incomplete/inconsistent hours and remain an explicit unknown category. They are excluded only from calculations requiring a complete hours split.
+- `WTFINL` in raw fixed-width data has four implied decimals. The parser divides by 10,000 once. Libraries such as `ipumsr` already perform that adjustment.
+- ASECFLAG is structurally blank outside March. These blanks must not cause non-March Basic Monthly records to be discarded.
+- Annual population levels average the twelve weighted monthly totals; annual percentages are ratios of those average levels, not unweighted averages of monthly percentages.
+- The within-teleworker denominator is valid some-hours plus all-hours teleworkers. Figure 1 instead uses everyone at work as its denominator.
+- January 2024 telework linking keys were revised by IPUMS; this is a fresh extract, not an old telework snapshot. See [IPUMS revisions](https://cps.ipums.org/cps-action/revisions).
+
+The data describe hours in one reference week. They do not identify permanent employment contracts, preference for remote work, or the location of remaining work hours. Telework covers all jobs and cannot be attributed to a particular job for multiple jobholders. No seasonal adjustment, causal estimates, confidence intervals, or significance tests are claimed. CPS respondents recur across months, so naive independent-row standard errors would be inappropriate.
 
 ## Reproduce
 
-Install R and these packages:
+Python 3.11+ is required. Install `matplotlib`, `pandas`, `nbformat`, `nbclient`, and `ipykernel` for the complete workflow. The core data check uses only the standard library.
 
-```r
-install.packages(c("ipumsr", "dplyr", "ggplot2", "knitr", "rmarkdown"))
-```
-
-Obtain the data as described in `data/README.md`, then run from this post's directory:
+From this directory:
 
 ```sh
-Rscript code/analyze.R data/raw/cps_00001.xml
+python -m pip install -r requirements.txt
+python code/check_data.py
+python code/verify_data.py
+python code/make_figures.py
+python code/write_post.py
+quarto render index.qmd --to html
 ```
 
-Replace the filename if your extract has a different number. Keep its matching `.dat.gz` alongside the XML. `ipumsr` reads the compressed file and applies implied weight decimals automatically; do not divide the imported weight by 10,000 again.
+The check notebook `code/data_checks.ipynb` provides the same data checks and shows saved figures. Use a Python environment containing the listed packages.
 
-Install Quarto, then run `quarto render` from the website repository root. Rendering reads saved aggregate results, so it does not need access to the private microdata or contact IPUMS. To reproduce the estimates, run the analysis first.
+## Files to review
 
-## Methods and checks
+- `index.qmd` / `article.md`: the English rewrite; numeric values are generated from saved results.
+- `results/telework-status.svg`: shares doing no, some, or all work at home.
+- `results/telework-intensity.svg`: distribution of the fraction of working hours spent at home.
+- `results/telework-monthly.svg`: whether the annual split also appears within individual months.
+- `results/annual_summary.csv`, `monthly_summary.csv`, `remote_fraction_distribution.csv`: exact chart inputs.
+- `results/variables.csv`, `sample_counts.csv`, `inventory.json`: source-file and sample checks, hashes, and data limitations.
+- `results/independent_reconciliation.json`: separate pandas import compared with the standard-library parser.
+- `results/word-count.txt`: word count and inclusion rules.
 
-The extract contains 24 Basic Monthly samples, all months of 2019 and 2024; no ASEC. YEAR and MONTH identify monthly samples. ASECFLAG must not equal 1. March Basic is coded 2. The code checks that each year contains all twelve months.
+## Official documentation
 
-Restrict AGE to 25–64. Education groups use EDUC codes:
+- [TELWRKPAY](https://cps.ipums.org/cps-action/variables/TELWRKPAY)
+- [TELWRKHR](https://cps.ipums.org/cps-action/variables/TELWRKHR)
+- [AHRSWORKT](https://cps.ipums.org/cps-action/variables/AHRSWORKT)
+- [WTFINL](https://cps.ipums.org/cps-action/variables/WTFINL)
+- [BLS telework definitions and questions](https://www.bls.gov/cps/telework.htm)
+- [IPUMS citation guidance](https://cps.ipums.org/cps/citation.shtml)
 
-| Group | Codes |
-|---|---|
-| Less than high school | 002, 010, 020, 030, 040, 050, 060, 071 |
-| High school diploma or equivalent | 073 |
-| Some college / associate degree | 081, 091, 092 |
-| Bachelor's or higher | 111, 123, 124, 125 |
-
-EMPSTAT 10 and 12 are employed; 20, 21, and 22 are unemployed; 30–36 are outside the labor force. The actual modern samples use 21/22 and 32/34/36. Code 1 (Armed Forces) and 0 (not in universe) are excluded. Missing education/status and nonpositive/nonfinite weights are excluded. In this extract, 1,331,759 records met the age restriction; 7,093 Armed Forces records were excluded, leaving 1,324,666 person-month observations. No other age-eligible records were excluded. These are repeated observations, not this many distinct individuals.
-
-For every month and education group, sum **WTFINL**, the Basic Monthly person weight, for population (P), employed (E), unemployed (U), and labor force (L = E + U). Average the twelve monthly totals for each year. Calculate:
-
-- unemployment rate = 100 × U / L;
-- participation rate = 100 × L / P;
-- employment-to-population ratio = 100 × E / P.
-
-Ratios of annual-average levels are equivalent to using WTFINL/12 on pooled monthly records. They are not the unweighted average of twelve monthly rates. Retain nonparticipants in P. The code checks the identity E/P = (L/P) × (1 − U/L).
-
-All estimates are unadjusted descriptive annual averages for the civilian noninstitutional population in the age range. No regression, seasonal adjustment, or confidence intervals are used. CPS respondents recur across months; naive independent-observation standard errors would be inappropriate. Education groups have different demographic compositions, and the comparisons do not identify a causal effect of schooling. Small year-to-year differences are not claims of statistical significance.
-
-## Source
-
-Flood et al. (2025), *IPUMS CPS: Version 13.0*. https://doi.org/10.18128/D030.V13.0. Full citation in the article. Extract generated September 28, 2026, Pacific time (XML production date September 29 UTC).
-
-- https://cps.ipums.org/cps-action/variables/WTFINL
-- https://cps.ipums.org/cps-action/variables/EDUC
-- https://cps.ipums.org/cps-action/variables/EMPSTAT
-- https://cps.ipums.org/cps/resources/cpr/tp66.pdf (annual-average method, printed p. 10–15)
-
-The public repository contains aggregate results and code. Raw IPUMS files and account-specific XML metadata are kept locally and excluded from Git.

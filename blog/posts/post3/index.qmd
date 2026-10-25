@@ -1,75 +1,55 @@
 ---
-title: "Education and jobs: what the unemployment rate leaves out"
-description: "Three views of the labor market for adults ages 25–64, comparing 2019 and 2024."
+title: "Does working from home mean staying home all week?"
+description: "A close split between partial and full-week home working in the 2024 CPS."
 date: 2026-09-28
-categories: [Labor market, Data visualization]
-image: results/employment.png
-execute:
-  echo: false
-  warning: false
-  message: false
+date-modified: 2026-10-25
+categories: [Work arrangements, Data visualization]
+image: results/telework-status.png
 format:
   html:
     toc: false
+resources:
+  - README.md
+  - results/annual_summary.csv
+  - results/monthly_summary.csv
+  - results/remote_fraction_distribution.csv
+  - code/data_checks.ipynb
 ---
 
-```{r}
-rates <- read.csv("results/annual_rates.csv")
-value <- function(year, education, measure) {
-  rates[rates$YEAR == year & rates$education == education, measure]
-}
-less <- "Less than high school"
-college <- "Bachelor's or higher"
-pct <- function(year, education, measure) {
-  sprintf("%.1f%%", value(year, education, measure))
-}
-gap <- function(year, measure) {
-  sprintf("%.1f", value(year, college, measure) - value(year, less, measure))
-}
-```
+Someone who works from home for a few hours on Friday and someone who stays home all week can both be counted as teleworkers. That makes “working from home” a surprisingly broad label. Before drawing conclusions about how much work has moved home, it helps to ask how much of the working week people actually spend there.
 
-When I think about whether education helps people find work, the unemployment rate seems like a reasonable place to start. But it leaves out people who are neither working nor looking for a job. That can make a big difference to the picture.
+**Among U.S. workers who worked from home in 2024, was it more common to do all their work at home or only some of it?**
 
-I used IPUMS CPS data to ask: **How do employment outcomes differ by education, and did those gaps change between 2019 and 2024?** Looking at unemployment, labor-force participation, and employment together gives a fuller answer.
+I used all twelve 2024 Basic Monthly samples from [IPUMS CPS](https://cps.ipums.org/), covering civilians ages 16 and older who worked during the survey reference week. The survey asks whether they worked from home for pay, how many hours they did so, and their total hours worked. I applied the person-level WTFINL weights so that the results describe the population rather than just the respondents.
 
-## The data and the weights
+## A little over half combined home and other working hours
 
-I combined all twelve Basic Monthly CPS samples in each year and focused on civilian adults ages 25 to 64 living outside institutions. This avoids much of the schooling and retirement that shape employment at younger and older ages. I grouped people into four education levels, from less than high school to a bachelor's degree or higher.
+![Shares of people at work, ages 16 and older. All figures use IPUMS CPS weights.](results/telework-status.svg){#fig-status fig-alt="Horizontal bars show 77.2 percent did no telework, 11.9 percent worked some hours at home, and 10.9 percent worked all hours at home in 2024."}
 
-Each observation received its [WTFINL sampling weight](https://cps.ipums.org/cps-action/variables/WTFINL). A person in the sample represents many people in the population, so counting everyone equally would give the wrong comparison. I averaged the twelve monthly weighted population totals, then calculated the annual rates from those totals. The figures are not seasonally adjusted.
+Across 2024, about 22.8% of people at work did at least some paid work from home. @fig-status separates that group into people who worked only some hours at home and those who worked every hour there. Both groups were much smaller than the group doing no telework.
 
-## Unemployment is lower with more education
+Among teleworkers whose hours could be classified, 52.3% worked only some hours at home, while 47.7% worked all their hours there. The split was close. A slight majority had a mixed week, but working entirely from home was also common. Calling every teleworker fully remote would overlook more than half of this group.
 
-![Figure 1. Unemployment rates by education in 2019 and 2024. The denominator is the civilian labor force ages 25–64.](results/unemployment.png){fig-alt="Paired points show unemployment increasing between 2019 and 2024 in all four education groups. In 2024, rates range from 2.3 percent for bachelor's or higher to 6.3 percent for less than high school."}
+## A remote week could contain very different amounts of home working
 
-In 2024, the unemployment rate was `r pct(2024, college, "unemployment_rate")` for adults with at least a bachelor's degree, compared with `r pct(2024, less, "unemployment_rate")` for those without a high school diploma. The two middle groups fell between them. The same ordering appeared in 2019.
+![Distribution of the share of actual working hours spent at home, among teleworkers with valid hours.](results/telework-intensity.svg){#fig-intensity fig-alt="Five bars show the share of teleworkers by the fraction of working hours spent at home: 14.5 percent below one quarter, 16.9 percent from one quarter to under one half, 13.8 percent from one half to under three quarters, 7.2 percent from three quarters to under all hours, and 47.7 percent all hours."}
 
-Unemployment was a little higher in every group in 2024. For adults without a high school diploma, it rose from `r pct(2019, less, "unemployment_rate")` to `r pct(2024, less, "unemployment_rate")`. Still, the gaps across education levels were much larger than most of the changes over time.
+For each teleworker, I divided hours worked at home by total hours worked that week. Someone who worked 40 hours in total and 16 hours at home, for example, would have a home-working share of 40%.
 
-## Who is missing from that comparison?
+@fig-intensity shows why the yes-or-no telework question leaves considerable variation hidden. About 31.3% of teleworkers spent less than half their working time at home. Others spent most of their week there, and the largest single category worked entirely from home. Sharing the same teleworker label therefore tells us relatively little about two people's weekly routines.
 
-![Figure 2. Labor-force participation by education. The denominator includes all civilian adults ages 25–64, including people outside the labor force.](results/participation.png){fig-alt="Labor-force participation was slightly higher in 2024 in all four groups. In 2024 it was 63.1 percent for less than high school, 73.7 for high school, 79.2 for some college or associate, and 86.5 for bachelor's or higher."}
+These are shares of hours, so they cannot tell us how many whole days someone stayed home. A few hours at home each evening could add up to the same total as two complete days.
 
-The unemployment rate only covers people in the labor force. Someone who stays home to care for family and is not seeking work is outside that denominator. The CPS also counts people on temporary layoff as unemployed, even when they are not actively searching.
+## The close split appeared throughout the year
 
-Figure 2 adds the people outside the labor force. In 2024, participation was `r pct(2024, college, "participation_rate")` among college graduates and `r pct(2024, less, "participation_rate")` among adults without a high school diploma. That is a `r gap(2024, "participation_rate")` percentage-point gap. Participation rose slightly in all four groups between the two years, even though unemployment also rose.
+![Monthly share of teleworkers doing only some hours at home. The dashed line marks an equal split.](results/telework-monthly.svg){#fig-monthly fig-alt="The share of teleworkers doing some rather than all hours at home remains above 50 percent in every month of 2024, ranging from 50.2 percent in July to 53.9 percent in December. The vertical axis runs from 40 to 60 percent."}
 
-## Putting the two pieces together
+The annual result could conceal differences across months. @fig-monthly checks this by calculating the split separately for each survey month. The partial-home group had the larger point estimate in all twelve months. July was almost evenly divided at 50.2%; December's estimate was 53.9%.
 
-![Figure 3. The share of civilian adults ages 25–64 who were employed, by education.](results/employment.png){fig-alt="Employment-to-population ratios in 2024 were 59.1 percent for less than high school, 70.5 for high school, 76.5 for some college or associate, and 84.5 for bachelor's or higher. Changes from 2019 were small."}
+These monthly estimates are not seasonally adjusted, and I have not tested whether the small differences are statistically significant. The useful finding is how close the two groups remained, rather than a claim that preferences changed during the year.
 
-The employment-to-population ratio answers a direct question: out of all adults in a group, how many have a job? In 2024, about `r sprintf("%.0f", value(2024, college, "employment_ratio"))` out of 100 college graduates were employed, compared with `r sprintf("%.0f", value(2024, less, "employment_ratio"))` out of 100 adults without a high school diploma.
+The main takeaway is that paid work at home often occupied only part of a person's working week. Debates about workplace attendance should make that distinction explicit. The CPS records what happened during one reference week; it does not identify a permanent hybrid contract, the location of the remaining hours, or whether someone preferred that arrangement.
 
-This figure combines the first two measures: the employment share equals participation multiplied by one minus the unemployment rate, with rates written as fractions. Higher participation can therefore offset higher unemployment. That helps explain why the employment share for adults without a high school diploma increased from `r pct(2019, less, "employment_ratio")` to `r pct(2024, less, "employment_ratio")`, despite their higher unemployment rate.
+## Data and replication
 
-These are descriptive comparisons. Education groups differ in age, health, family responsibilities, and other characteristics, so the charts cannot show how much of the gap education itself causes. I also have not estimated confidence intervals; the small changes should not be read as statistically significant.
-
-For me, the main takeaway is to check participation before judging the labor market from unemployment alone. The education gap in having a job remained large in both years, and much of it was connected to whether people were in the labor force at all. A discussion of employment support needs to consider barriers to participation as well as help with finding a job.
-
-## Data and code
-
-[GitHub repository and replication instructions](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post3) · [Weighted results (CSV)](results/annual_rates.csv)
-
-Data: Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. *IPUMS CPS: Version 13.0* [dataset]. Minneapolis, MN: IPUMS, 2025. [doi:10.18128/D030.V13.0](https://doi.org/10.18128/D030.V13.0). Extracted September 28, 2026 (Pacific time).
-
-Definitions: [EMPSTAT](https://cps.ipums.org/cps-action/variables/EMPSTAT) and [EDUC](https://cps.ipums.org/cps-action/variables/EDUC). Annual-average method: [CPS Technical Paper 66](https://cps.ipums.org/cps/resources/cpr/tp66.pdf), printed page 10–15.
+Source: IPUMS CPS, University of Minnesota; underlying data from the U.S. Census Bureau and Bureau of Labor Statistics. [Definitions](https://www.bls.gov/cps/telework.htm) · [Aggregate results](results/annual_summary.csv) · [Replication instructions](README.md).

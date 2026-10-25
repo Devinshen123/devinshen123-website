@@ -1,0 +1,90 @@
+{
+  "checked_at_utc": "2026-10-25T20:29:20.727076+00:00",
+  "extract_number": 2,
+  "files": [
+    {
+      "file": "cps_00002.dat.gz",
+      "bytes": 21513676,
+      "sha256": "a01129469d8a4c74cec2b5d2c951aa9888d20c5e0e62253cfc7c1dc305f2bacc"
+    },
+    {
+      "file": "cps_00002.xml",
+      "bytes": 43355,
+      "sha256": "017b8e861d07848bd706fce28909d1f3128a9984e8f1f688ea85d4ffc6f9a015"
+    }
+  ],
+  "year": 2024,
+  "monthly_samples": 12,
+  "person_month_records": 1187356,
+  "variables": 16,
+  "at_work_age_16_plus_records": 545259,
+  "observed_asec_flags": {
+    "0": 1092045,
+    "2": 95311
+  },
+  "observed_telework_codes_at_work": {
+    "2": 422387,
+    "1": 122872
+  },
+  "checks": {
+    "telework_yes_invalid_hours": 2
+  },
+  "annual_preview": [
+    {
+      "year": 2024,
+      "category": "No telework",
+      "person_month_records": 422387,
+      "annual_average_people": 120526172.66521667,
+      "share_of_people_at_work_pct": 77.20507667992254,
+      "share_of_classifiable_teleworkers_pct": null
+    },
+    {
+      "year": 2024,
+      "category": "Some hours teleworked",
+      "person_month_records": 64399,
+      "annual_average_people": 18622013.71505,
+      "share_of_people_at_work_pct": 11.928645579732432,
+      "share_of_classifiable_teleworkers_pct": 52.330890182722335
+    },
+    {
+      "year": 2024,
+      "category": "All hours teleworked",
+      "person_month_records": 58471,
+      "annual_average_people": 16963113.253033333,
+      "share_of_people_at_work_pct": 10.866008854926536,
+      "share_of_classifiable_teleworkers_pct": 47.669109817277665
+    },
+    {
+      "year": 2024,
+      "category": "Telework hours invalid or missing",
+      "person_month_records": 2,
+      "annual_average_people": 419.76165,
+      "share_of_people_at_work_pct": 0.00026888541848548667,
+      "share_of_classifiable_teleworkers_pct": null
+    },
+    {
+      "year": 2024,
+      "category": "Telework status unavailable",
+      "person_month_records": 0,
+      "annual_average_people": 0.0,
+      "share_of_people_at_work_pct": 0.0,
+      "share_of_classifiable_teleworkers_pct": null
+    }
+  ],
+  "sources": [
+    "https://cps.ipums.org/cps-action/variables/TELWRKPAY",
+    "https://cps.ipums.org/cps-action/variables/TELWRKHR",
+    "https://cps.ipums.org/cps-action/variables/AHRSWORKT",
+    "https://cps.ipums.org/cps-action/variables/WTFINL",
+    "https://www.bls.gov/cps/telework.htm"
+  ],
+  "limitations": [
+    "Person-month records are not distinct people; CPS respondents recur across months.",
+    "The data describe the reference week, not a permanent remote/hybrid employment contract.",
+    "Some hours teleworked does not prove that remaining work occurred in an office.",
+    "Telework hours cover all jobs; remote work cannot be assigned to a specific job.",
+    "Employed people absent all week are outside the telework universe.",
+    "Unknown telework status/hours remain separate from no telework.",
+    "Rates are unadjusted ratios of annual-average weighted levels; no inference is estimated."
+  ]
+}

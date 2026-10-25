@@ -1,0 +1,61 @@
+month,category,person_month_records,weighted_people,share_of_people_at_work_pct
+1,No telework,34802,118998410.3542,77.11454266689064
+1,Some hours teleworked,5346,18197199.3806,11.792331543558866
+1,All hours teleworked,5006,17118228.1469,11.093125789550493
+1,Telework hours invalid or missing,0,0.0,0.0
+1,Telework status unavailable,0,0.0,0.0
+2,No telework,35482,120633523.4395,77.34150133059309
+2,Some hours teleworked,5398,18396475.6773,11.794491344586218
+2,All hours teleworked,4888,16945151.823,10.86400732482069
+2,Telework hours invalid or missing,0,0.0,0.0
+2,Telework status unavailable,0,0.0,0.0
+3,No telework,33930,120507429.1147,77.08799287821023
+3,Some hours teleworked,5296,18853530.6159,12.06050817385107
+3,All hours teleworked,4691,16961668.7578,10.850293712260003
+3,Telework hours invalid or missing,1,1884.0788,0.0012052356786911979
+3,Telework status unavailable,0,0.0,0.0
+4,No telework,36120,123820334.3981,78.50417843174876
+4,Some hours teleworked,5204,17776112.7928,11.270355045417134
+4,All hours teleworked,4641,16128067.4421,10.22546652283411
+4,Telework hours invalid or missing,0,0.0,0.0
+4,Telework status unavailable,0,0.0,0.0
+5,No telework,36256,122867206.7867,78.27343873035578
+5,Some hours teleworked,5122,17911867.9821,11.410884463883576
+5,All hours teleworked,4650,16189548.011,10.31366812554848
+5,Telework hours invalid or missing,1,3153.061,0.002008680212166179
+5,Telework status unavailable,0,0.0,0.0
+6,No telework,34849,120004572.0639,77.69584182729159
+6,Some hours teleworked,5071,17799692.7796,11.524245209939055
+6,All hours teleworked,4747,16650039.5846,10.779912962769359
+6,Telework hours invalid or missing,0,0.0,0.0
+6,Telework status unavailable,0,0.0,0.0
+7,No telework,34465,117536332.7561,77.0520906813231
+7,Some hours teleworked,5000,17573853.8107,11.520711474402331
+7,All hours teleworked,4956,17431206.8163,11.427197844274573
+7,Telework hours invalid or missing,0,0.0,0.0
+7,Telework status unavailable,0,0.0,0.0
+8,No telework,35545,119549346.8686,77.20648986980619
+8,Some hours teleworked,5173,18044979.2763,11.653677298863135
+8,All hours teleworked,4981,17249323.748,11.139832831330676
+8,Telework hours invalid or missing,0,0.0,0.0
+8,Telework status unavailable,0,0.0,0.0
+9,No telework,35306,120495856.0387,76.26071383327545
+9,Some hours teleworked,5791,19891745.9636,12.589302208758994
+9,All hours teleworked,5014,17617548.9882,11.149983957965553
+9,Telework hours invalid or missing,0,0.0,0.0
+9,Telework status unavailable,0,0.0,0.0
+10,No telework,35035,119950098.8846,76.24541088258553
+10,Some hours teleworked,5786,19940171.1969,12.674825282465275
+10,All hours teleworked,5025,17430803.4049,11.0797638349492
+10,Telework hours invalid or missing,0,0.0,0.0
+10,Telework status unavailable,0,0.0,0.0
+11,No telework,35311,120851798.1512,76.73755227470778
+11,Some hours teleworked,5635,19529656.2486,12.40079204621363
+11,All hours teleworked,4958,17105713.9667,10.861655679078584
+11,Telework hours invalid or missing,0,0.0,0.0
+11,Telework status unavailable,0,0.0,0.0
+12,No telework,35286,121099163.1263,76.94791262115477
+12,Some hours teleworked,5577,19548878.8562,12.421600473816401
+12,All hours teleworked,4914,16730058.3469,10.63048690502883
+12,Telework hours invalid or missing,0,0.0,0.0
+12,Telework status unavailable,0,0.0,0.0

@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "blog/posts/post3/index.html",
-    "href": "blog/posts/post3/index.html",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "",
-    "text": "When I think about whether education helps people find work, the unemployment rate seems like a reasonable place to start. But it leaves out people who are neither working nor looking for a job. That can make a big difference to the picture.\nI used IPUMS CPS data to ask: How do employment outcomes differ by education, and did those gaps change between 2019 and 2024? Looking at unemployment, labor-force participation, and employment together gives a fuller answer."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#the-data-and-the-weights",
-    "href": "blog/posts/post3/index.html#the-data-and-the-weights",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "The data and the weights",
-    "text": "The data and the weights\nI combined all twelve Basic Monthly CPS samples in each year and focused on civilian adults ages 25 to 64 living outside institutions. This avoids much of the schooling and retirement that shape employment at younger and older ages. I grouped people into four education levels, from less than high school to a bachelor’s degree or higher.\nEach observation received its WTFINL sampling weight. A person in the sample represents many people in the population, so counting everyone equally would give the wrong comparison. I averaged the twelve monthly weighted population totals, then calculated the annual rates from those totals. The figures are not seasonally adjusted."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#unemployment-is-lower-with-more-education",
-    "href": "blog/posts/post3/index.html#unemployment-is-lower-with-more-education",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "Unemployment is lower with more education",
-    "text": "Unemployment is lower with more education\n\n\n\nFigure 1. Unemployment rates by education in 2019 and 2024. The denominator is the civilian labor force ages 25–64.\n\n\nIn 2024, the unemployment rate was 2.3% for adults with at least a bachelor’s degree, compared with 6.3% for those without a high school diploma. The two middle groups fell between them. The same ordering appeared in 2019.\nUnemployment was a little higher in every group in 2024. For adults without a high school diploma, it rose from 5.5% to 6.3%. Still, the gaps across education levels were much larger than most of the changes over time."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#who-is-missing-from-that-comparison",
-    "href": "blog/posts/post3/index.html#who-is-missing-from-that-comparison",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "Who is missing from that comparison?",
-    "text": "Who is missing from that comparison?\n\n\n\nFigure 2. Labor-force participation by education. The denominator includes all civilian adults ages 25–64, including people outside the labor force.\n\n\nThe unemployment rate only covers people in the labor force. Someone who stays home to care for family and is not seeking work is outside that denominator. The CPS also counts people on temporary layoff as unemployed, even when they are not actively searching.\nFigure 2 adds the people outside the labor force. In 2024, participation was 86.5% among college graduates and 63.1% among adults without a high school diploma. That is a 23.4 percentage-point gap. Participation rose slightly in all four groups between the two years, even though unemployment also rose."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#putting-the-two-pieces-together",
-    "href": "blog/posts/post3/index.html#putting-the-two-pieces-together",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "Putting the two pieces together",
-    "text": "Putting the two pieces together\n\n\n\nFigure 3. The share of civilian adults ages 25–64 who were employed, by education.\n\n\nThe employment-to-population ratio answers a direct question: out of all adults in a group, how many have a job? In 2024, about 85 out of 100 college graduates were employed, compared with 59 out of 100 adults without a high school diploma.\nThis figure combines the first two measures: the employment share equals participation multiplied by one minus the unemployment rate, with rates written as fractions. Higher participation can therefore offset higher unemployment. That helps explain why the employment share for adults without a high school diploma increased from 58.2% to 59.1%, despite their higher unemployment rate.\nThese are descriptive comparisons. Education groups differ in age, health, family responsibilities, and other characteristics, so the charts cannot show how much of the gap education itself causes. I also have not estimated confidence intervals; the small changes should not be read as statistically significant.\nFor me, the main takeaway is to check participation before judging the labor market from unemployment alone. The education gap in having a job remained large in both years, and much of it was connected to whether people were in the labor force at all. A discussion of employment support needs to consider barriers to participation as well as help with finding a job."
-  },
-  {
-    "objectID": "blog/posts/post3/index.html#data-and-code",
-    "href": "blog/posts/post3/index.html#data-and-code",
-    "title": "Education and jobs: what the unemployment rate leaves out",
-    "section": "Data and code",
-    "text": "Data and code\nGitHub repository and replication instructions · Weighted results (CSV)\nData: Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams. IPUMS CPS: Version 13.0 [dataset]. Minneapolis, MN: IPUMS, 2025. doi:10.18128/D030.V13.0. Extracted September 28, 2026 (Pacific time).\nDefinitions: EMPSTAT and EDUC. Annual-average method: CPS Technical Paper 66, printed page 10–15."
-  },
-  {
     "objectID": "blog/posts/post1/index.html",
     "href": "blog/posts/post1/index.html",
     "title": "What does a p-value actually tell us?",
@@ -271,5 +229,40 @@
     "title": "How much extra did 15 gallons cost in California?",
     "section": "What I take from the chart",
     "text": "What I take from the chart\nThe evidence answers how large the difference was and when it widened. It does not identify its causes. EIA discusses taxes, fuel specifications, transport and supply conditions as contributors to regional prices, but these two series cannot separate their effects.\nEIA’s survey notes describe Monday morning cash prices, generally self-service, with volume weights within each area. These are estimates, not prices at every station. The minimum and maximum show variation over dates, not a confidence interval.\nMy takeaway is straightforward: over 2020–2025, buying the same 15 gallons at California’s average price cost about $17.59 more than at the U.S. average. To understand that difference, I need both prices. A falling California price alone does not tell me whether the extra cost is shrinking.\nDownload the weekly calculations, code and data, or see the replication instructions."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html",
+    "href": "blog/posts/post3/index.html",
+    "title": "Does working from home mean staying home all week?",
+    "section": "",
+    "text": "Someone who works from home for a few hours on Friday and someone who stays home all week can both be counted as teleworkers. That makes “working from home” a surprisingly broad label. Before drawing conclusions about how much work has moved home, it helps to ask how much of the working week people actually spend there.\nAmong U.S. workers who worked from home in 2024, was it more common to do all their work at home or only some of it?\nI used all twelve 2024 Basic Monthly samples from IPUMS CPS, covering civilians ages 16 and older who worked during the survey reference week. The survey asks whether they worked from home for pay, how many hours they did so, and their total hours worked. I applied the person-level WTFINL weights so that the results describe the population rather than just the respondents."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#a-little-over-half-combined-home-and-other-working-hours",
+    "href": "blog/posts/post3/index.html#a-little-over-half-combined-home-and-other-working-hours",
+    "title": "Does working from home mean staying home all week?",
+    "section": "A little over half combined home and other working hours",
+    "text": "A little over half combined home and other working hours\n\n\n\n\n\n\nFigure 1: Shares of people at work, ages 16 and older. All figures use IPUMS CPS weights.\n\n\n\nAcross 2024, about 22.8% of people at work did at least some paid work from home. Figure 1 separates that group into people who worked only some hours at home and those who worked every hour there. Both groups were much smaller than the group doing no telework.\nAmong teleworkers whose hours could be classified, 52.3% worked only some hours at home, while 47.7% worked all their hours there. The split was close. A slight majority had a mixed week, but working entirely from home was also common. Calling every teleworker fully remote would overlook more than half of this group."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#a-remote-week-could-contain-very-different-amounts-of-home-working",
+    "href": "blog/posts/post3/index.html#a-remote-week-could-contain-very-different-amounts-of-home-working",
+    "title": "Does working from home mean staying home all week?",
+    "section": "A remote week could contain very different amounts of home working",
+    "text": "A remote week could contain very different amounts of home working\n\n\n\n\n\n\nFigure 2: Distribution of the share of actual working hours spent at home, among teleworkers with valid hours.\n\n\n\nFor each teleworker, I divided hours worked at home by total hours worked that week. Someone who worked 40 hours in total and 16 hours at home, for example, would have a home-working share of 40%.\nFigure 2 shows why the yes-or-no telework question leaves considerable variation hidden. About 31.3% of teleworkers spent less than half their working time at home. Others spent most of their week there, and the largest single category worked entirely from home. Sharing the same teleworker label therefore tells us relatively little about two people’s weekly routines.\nThese are shares of hours, so they cannot tell us how many whole days someone stayed home. A few hours at home each evening could add up to the same total as two complete days."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#the-close-split-appeared-throughout-the-year",
+    "href": "blog/posts/post3/index.html#the-close-split-appeared-throughout-the-year",
+    "title": "Does working from home mean staying home all week?",
+    "section": "The close split appeared throughout the year",
+    "text": "The close split appeared throughout the year\n\n\n\n\n\n\nFigure 3: Monthly share of teleworkers doing only some hours at home. The dashed line marks an equal split.\n\n\n\nThe annual result could conceal differences across months. Figure 3 checks this by calculating the split separately for each survey month. The partial-home group had the larger point estimate in all twelve months. July was almost evenly divided at 50.2%; December’s estimate was 53.9%.\nThese monthly estimates are not seasonally adjusted, and I have not tested whether the small differences are statistically significant. The useful finding is how close the two groups remained, rather than a claim that preferences changed during the year.\nThe main takeaway is that paid work at home often occupied only part of a person’s working week. Debates about workplace attendance should make that distinction explicit. The CPS records what happened during one reference week; it does not identify a permanent hybrid contract, the location of the remaining hours, or whether someone preferred that arrangement."
+  },
+  {
+    "objectID": "blog/posts/post3/index.html#data-and-replication",
+    "href": "blog/posts/post3/index.html#data-and-replication",
+    "title": "Does working from home mean staying home all week?",
+    "section": "Data and replication",
+    "text": "Data and replication\nSource: IPUMS CPS, University of Minnesota; underlying data from the U.S. Census Bureau and Bureau of Labor Statistics. Definitions · Aggregate results · Replication instructions."
   }
 ]
