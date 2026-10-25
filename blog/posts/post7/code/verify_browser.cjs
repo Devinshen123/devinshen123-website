@@ -44,8 +44,7 @@ class CDP{
   const initialUrl=targetUrl||origin+"/results/Blog_Post_7_Review.html";
   const executable=process.env.CHROME_PATH||(process.platform==="win32"?"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe":"/usr/bin/google-chrome");
   assert(fs.existsSync(executable),"An existing Chrome installation is required");
-  chrome=spawn(executable,["--headless=new","--disable-gpu","--disable-crashpad-for-testing","--disable-crash-reporter","--disable-breakpad","--noerrdialogs","--no-first-run","--no-default-browser-check",
-   "--disable-background-networking","--disable-component-update","--disable-sync","--disable-default-apps",
+  chrome=spawn(executable,["--headless=new","--no-first-run","--no-default-browser-check",
    "--remote-debugging-port=0","--user-data-dir="+path.join(qa,"chrome-profile"),initialUrl],
    {windowsHide:true,stdio:["ignore","ignore","pipe"]});
   let stderr="";
@@ -69,6 +68,7 @@ class CDP{
   const send=(m,p={})=>cdp.send(m,p,sid);
   const evaluate=async code=>{const r=await send("Runtime.evaluate",{expression:"(async()=>{"+code+"})()",awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
   await send("Page.enable");await send("Runtime.enable");await send("Network.enable");
+  await send("Runtime.runIfWaitingForDebugger");
   await send("Emulation.setDeviceMetricsOverride",{width:1280,height:1100,deviceScaleFactor:1,mobile:false});
   record.navigation={url:initialUrl,method:"Chrome initial page"};
   let ready=false;for(let i=0;i<100;i++){await delay(100);ready=await evaluate("return window.gasReady===true;");if(ready)break;}
