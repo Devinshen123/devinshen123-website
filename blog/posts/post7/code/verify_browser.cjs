@@ -30,6 +30,7 @@ class CDP{
    const isSiteAsset=/^\/(blog\/|site_libs\/|images\/|styles\.css)/.test(name);
    const servedRoot=path.resolve(isSiteAsset&&process.env.POST7_WEB_ROOT?process.env.POST7_WEB_ROOT:root);
    const file=path.resolve(servedRoot,"."+name);
+   (record.local_requests||(record.local_requests=[])).push({name,file,exists:fs.existsSync(file)});
    if(!file.startsWith(servedRoot+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);return res.end("Not found");}
    const mime={".html":"text/html; charset=utf-8",".csv":"text/csv",".css":"text/css",".js":"text/javascript",".json":"application/json",".png":"image/png",".svg":"image/svg+xml",".woff":"font/woff",".woff2":"font/woff2"};
    const type=mime[path.extname(file)]||"application/octet-stream";
@@ -37,6 +38,9 @@ class CDP{
   });
   await new Promise(r=>server.listen(0,"127.0.0.1",r));
   const origin="http://127.0.0.1:"+server.address().port;
+  const response=await fetch(origin+"/results/Blog_Post_7_Review.html");
+  const served=await response.text();
+  check("offline_review_served",response.ok&&served.includes('id="gas-explorer"'),{http:response.status,length:served.length});
   const executable=process.env.CHROME_PATH||(process.platform==="win32"?"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe":"/usr/bin/google-chrome");
   assert(fs.existsSync(executable),"An existing Chrome installation is required");
   chrome=spawn(executable,["--headless=new","--disable-gpu","--disable-crashpad-for-testing","--disable-crash-reporter","--disable-breakpad","--noerrdialogs","--no-first-run","--no-default-browser-check",
@@ -62,9 +66,9 @@ class CDP{
   const evaluate=async code=>{const r=await send("Runtime.evaluate",{expression:"(async()=>{"+code+"})()",awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
   await send("Page.enable");await send("Runtime.enable");await send("Network.enable");
   await send("Emulation.setDeviceMetricsOverride",{width:1280,height:1100,deviceScaleFactor:1,mobile:false});
-  await send("Page.navigate",{url:targetUrl||origin+"/results/Blog_Post_7_Review.html"});
+  record.navigation=await send("Page.navigate",{url:targetUrl||origin+"/results/Blog_Post_7_Review.html"});
   let ready=false;for(let i=0;i<100;i++){await delay(100);ready=await evaluate("return window.gasReady===true;");if(ready)break;}
-  check("actual_plotly_loaded",ready,await evaluate("return {version:window.Plotly&&Plotly.version,error:document.getElementById('chart-error').textContent};"));
+  check("actual_plotly_loaded",ready,await evaluate("return {version:window.Plotly&&Plotly.version,url:location.href,body:document.body?.innerText.slice(0,300),error:document.getElementById('chart-error')?.textContent};"));
   const snapshot=()=>evaluate("await window.gasRenderComplete;return {summary:gasApp.summary(),mean:document.getElementById('stat-mean').textContent,low:document.getElementById('stat-low').textContent,high:document.getElementById('stat-high').textContent,traces:document.getElementById('gas-chart').data.length};");
   let view=await snapshot();
   check("full_window_313_and_mean",view.summary.count===313&&Math.abs(view.summary.mean-expected.overall.mean_extra)<1e-9,view);
