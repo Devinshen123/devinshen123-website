@@ -1,0 +1,43 @@
+name: Verify published Post 6
+on:
+  push:
+    branches: [verify-post6-public-e944dad]
+jobs:
+  public-page:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read the published page, figures and notebook
+        run: |
+          python3 - <<'PY'
+          import html, json, re, urllib.request
+          from urllib.parse import urljoin
+          base = "https://devinshen123.github.io/devinshen123-website/blog/posts/post6/"
+          def fetch(url):
+              request = urllib.request.Request(url, headers={"Cache-Control": "no-cache", "User-Agent": "Post6-public-link-check"})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  assert response.status == 200, (url, response.status)
+                  return response.read()
+          page = fetch(base + "?verify=e944dad4d8ae").decode("utf-8")
+          title = html.unescape(re.search(r'<h1 class="title">(.*?)</h1>', page, re.S).group(1))
+          assert title.replace("\u2019", "'") == "Does one year's pay tell the whole story?", title
+          assert '<meta name="author" content="Defang Shen">' in page
+          assert "\u00a9 2026 Defang Shen" in page
+          assert '<meta name="dcterms.date" content="2026-10-23">' in page
+          assert "October 23, 2026" in page
+          assert "document exclusions, top-coding" not in page
+          figures = re.findall(r'<img[^>]+src="([^"]+)"', page)
+          checked = []
+          for name in ["annual-versus-average.svg", "income-age.svg"]:
+              matches = [source for source in figures if source.endswith(name)]
+              assert len(matches) == 1, (name, matches)
+              url = urljoin(base, matches[0])
+              assert b"<svg" in fetch(url)
+              checked.append(url)
+          assert "code/tutorial.ipynb" in page
+          notebook_url = urljoin(base, "code/tutorial.ipynb")
+          notebook = json.loads(fetch(notebook_url))
+          assert notebook["nbformat"] == 4 and notebook["cells"]
+          assert any(cell.get("cell_type") == "code" for cell in notebook["cells"])
+          print(json.dumps({"page":base,"title":title,"author":"Defang Shen","footer":"Defang Shen","date":"2026-10-23","figures":checked,"notebook":notebook_url,"checks":"all passed","published_commit":"e944dad4d8ae51f8de87b86e3cf347c37c1edc45"}))
+          PY
