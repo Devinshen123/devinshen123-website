@@ -1,8 +1,9 @@
 {
   "status": "passed",
-  "standalone_quarto_render": true,
-  "author": true,
+  "targeted_quarto_render": true,
+  "author": "Defang Shen",
+  "date": "2026-10-25",
   "one_iframe": true,
-  "rendered_title": true,
-  "other_blog_outputs_touched": false
+  "rendered_title": "How much extra did 15 gallons cost in California?",
+  "other_blog_outputs_published": false
 }

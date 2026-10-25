@@ -120,7 +120,7 @@ class CDP{
   check("mobile_no_horizontal_overflow",layout.pageWidth<=layout.viewport+1,layout);
   png=await send("Page.captureScreenshot",{format:"png",captureBeyondViewport:false});fs.writeFileSync(path.join(qa,"mobile.png"),Buffer.from(png.data,"base64"));
   check("no_javascript_exceptions",exceptions.length===0,exceptions);
-  check("offline_no_external_requests",requests.every(u=>u.startsWith(origin)||u.startsWith("data:")),requests);
+  check("offline_no_external_requests",requests.every(u=>u.startsWith(origin)||u.startsWith("data:")),requests.slice());
   if(process.env.POST7_SITE_URL || process.env.POST7_WEB_ROOT){
    const pageUrl=process.env.POST7_SITE_URL||origin+"/blog/posts/post7/index.html";
    await send("Emulation.setDeviceMetricsOverride",{width:1280,height:1100,deviceScaleFactor:1,mobile:false});
@@ -149,7 +149,8 @@ class CDP{
    check("published_no_javascript_exceptions",exceptions.length===0,exceptions);
   }
   record.status="passed";record.engine="Headless Google Chrome, actual vendored Plotly.js 3.0.1";
-  record.external_requests=0;record.completed_at=new Date().toISOString();
+  record.offline_external_requests=0;
+  record.site_page=process.env.POST7_SITE_URL||"locally served Quarto page";record.completed_at=new Date().toISOString();
   await cdp.send("Browser.close").catch(()=>{});
  }catch(error){record.status="failed";record.error=error.stack||String(error);process.exitCode=1;}
  finally{
