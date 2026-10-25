@@ -41,11 +41,12 @@ class CDP{
   const response=await fetch(origin+"/results/Blog_Post_7_Review.html");
   const served=await response.text();
   check("offline_review_served",response.ok&&served.includes('id="gas-explorer"'),{http:response.status,length:served.length});
+  const initialUrl=targetUrl||origin+"/results/Blog_Post_7_Review.html";
   const executable=process.env.CHROME_PATH||(process.platform==="win32"?"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe":"/usr/bin/google-chrome");
   assert(fs.existsSync(executable),"An existing Chrome installation is required");
   chrome=spawn(executable,["--headless=new","--disable-gpu","--disable-crashpad-for-testing","--disable-crash-reporter","--disable-breakpad","--noerrdialogs","--no-first-run","--no-default-browser-check",
    "--disable-background-networking","--disable-component-update","--disable-sync","--disable-default-apps",
-   "--remote-debugging-port=0","--user-data-dir="+path.join(qa,"chrome-profile"),"about:blank"],
+   "--remote-debugging-port=0","--user-data-dir="+path.join(qa,"chrome-profile"),initialUrl],
    {windowsHide:true,stdio:["ignore","ignore","pipe"]});
   let stderr="";
   const endpoint=await new Promise((resolve,reject)=>{
@@ -57,8 +58,10 @@ class CDP{
   ws=new WebSocket(endpoint);await new Promise((resolve,reject)=>{ws.addEventListener("open",resolve,{once:true});ws.addEventListener("error",reject,{once:true});});
   const cdp=new CDP(ws);
   record.browser_version=await cdp.send("Browser.getVersion");
-  const initialUrl=targetUrl||origin+"/results/Blog_Post_7_Review.html";
-  const target=await cdp.send("Target.createTarget",{url:initialUrl});
+  const targets=await cdp.send("Target.getTargets");
+  record.initial_targets=targets.targetInfos;
+  const target=targets.targetInfos.find(t=>t.type==="page"&&t.url===initialUrl)||targets.targetInfos.find(t=>t.type==="page");
+  assert(target,"Chrome did not open its initial page");
   const attached=await cdp.send("Target.attachToTarget",{targetId:target.targetId,flatten:true});
   const sid=attached.sessionId;
   cdp.listeners.push(m=>{if(m.sessionId!==sid)return;if(m.method==="Runtime.exceptionThrown")exceptions.push(m.params.exceptionDetails.text+" "+JSON.stringify(m.params.exceptionDetails.exception));
@@ -67,7 +70,7 @@ class CDP{
   const evaluate=async code=>{const r=await send("Runtime.evaluate",{expression:"(async()=>{"+code+"})()",awaitPromise:true,returnByValue:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;};
   await send("Page.enable");await send("Runtime.enable");await send("Network.enable");
   await send("Emulation.setDeviceMetricsOverride",{width:1280,height:1100,deviceScaleFactor:1,mobile:false});
-  record.navigation={url:initialUrl,method:"Target.createTarget"};
+  record.navigation={url:initialUrl,method:"Chrome initial page"};
   let ready=false;for(let i=0;i<100;i++){await delay(100);ready=await evaluate("return window.gasReady===true;");if(ready)break;}
   check("actual_plotly_loaded",ready,await evaluate("return {version:window.Plotly&&Plotly.version,url:location.href,body:document.body?.innerText.slice(0,300),error:document.getElementById('chart-error')?.textContent};"));
   const snapshot=()=>evaluate("await window.gasRenderComplete;return {summary:gasApp.summary(),mean:document.getElementById('stat-mean').textContent,low:document.getElementById('stat-low').textContent,high:document.getElementById('stat-high').textContent,traces:document.getElementById('gas-chart').data.length};");
