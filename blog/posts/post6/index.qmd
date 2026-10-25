@@ -1,6 +1,7 @@
 ---
-title: "Matching mothers and children: why the income year matters"
-description: "A SQL and Python tutorial on linking generations, averaging earnings, and checking when income is measured."
+title: "Does one year's pay tell the whole story?"
+description: "Match mothers and children with SQL in Python, then test how income averaging and measurement age change the estimated earnings link."
+author: "Defang Shen"
 date: 2026-10-23
 categories: [SQL, Economic mobility]
 image: results/income-age.png
@@ -10,15 +11,15 @@ format:
     toc: false
 ---
 
-Does averaging earnings across years change the measured link between mothers and their adult children? I matched 822 children to 669 mothers in the NLSY79 and Child/Young Adult surveys. The estimated elasticity was 0.097 using annual records and 0.103 using averages.
+Does a single year's pay tell us how closely children's earnings track their mothers'? Using 822 children linked to 669 mothers, I find little change when I replace annual earnings with averages. Measuring children at different ages also changes the estimates, but those differences are uncertain.
 
-An intergenerational elasticity measures a percentage association. The averaged estimate associates 10% higher maternal earnings with roughly 1.0% higher adult-child earnings, after common adjustments. It does not measure a causal parental effect.
+This tutorial uses the NLSY79 and its Child/Young Adult study. Here, income means wages, salaries and military pay, rather than total household resources. Using the same definition avoids comparing a mother's family budget with a child's own paycheck. The [notebook](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6/code/tutorial.ipynb) runs the complete Python and SQL workflow; the steps below explain the matching and comparisons.
 
 ## Build one row per child
 
-The [companion notebook](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6/code/tutorial.ipynb) loads the extracts into SQLite tables `mothers`, `children`, and `source_income`. Python cleans missing codes and assigns the income reference year. SQL converts earnings to 2020 dollars and creates `stage_income`.
+Start with the identifiers. A child's `CPUBID` identifies that child; `MPUBID` identifies their biological mother and matches her `CASEID` in NLSY79. Siblings share a mother ID. A household number alone cannot establish this relationship because household membership changes.
 
-`SELECT` chooses fields. `GROUP BY` combines records for each person and age window. `AVG` averages earnings; `COUNT` checks the number of distinct observed years:
+Python loads the extracts into SQLite, cleans missing codes and assigns amounts to the year earned. SQL adjusts earnings to 2020 dollars. From `stage_income`, summarize each person's age window:
 
 ```sql
 SELECT generation, person_id, stage,
@@ -28,7 +29,7 @@ FROM stage_income
 GROUP BY generation, person_id, stage;
 ```
 
-These summaries become `stage_averages`. `JOIN` connects each child to adult earnings through their own ID and maternal earnings through their mother ID:
+`SELECT` chooses columns; `GROUP BY` collects person-window records; `AVG` and `COUNT` calculate mean earnings and observed years. Save these as `stage_averages`. Then `JOIN` links each child to both generations' summaries:
 
 ```sql
 SELECT c.child_id, c.mother_id,
@@ -40,13 +41,13 @@ JOIN stage_averages AS a
   ON a.person_id = c.child_id AND a.stage = 'child30s';
 ```
 
-Aggregating before joining prevents survey years from multiplying matches. The full SQL applies sample rules and creates `matched`, one row per child. Siblings can share a mother.
+Summarizing first prevents repeated survey years from multiplying matches. The full query applies eligibility rules and creates `matched`, with one row per child. Check that child IDs are unique after matching; duplicates would give some children extra weight in the regression.
 
-## Compare annual records with averages
+## Compare annual earnings with averages
 
-I average real earnings at ages 30–39 before taking logarithms, requiring at least three observed years for mothers and two for children. Years need not be consecutive. Genuine zeros stay in averages; missing answers do not become zeros. Logarithms require positive measures.
+Compare the annual observation nearest age 35 with average earnings at ages 30–39. Mothers need at least three observed years; children need at least two. Years need not be consecutive. Average inflation-adjusted amounts before taking logs. Include genuine zeros in averages, exclude missing answers, and require positive measures for logarithms.
 
-With pandas, NumPy and statsmodels imported, Python reads the SQL result and estimates the averaged specification:
+With pandas, NumPy and statsmodels imported, estimate the averaged model:
 
 ```python
 sample = pd.read_sql_query("SELECT * FROM matched", connection)
@@ -62,22 +63,24 @@ fit = sm.OLS(np.log(sample.adult_mean), sm.add_constant(x)).fit(
     use_t=True)
 ```
 
-The `log_mother` coefficient is the elasticity. All specifications keep the same children and adjustment variables, including both generations' thirties-window mean ages. Intervals cluster by mother to account for siblings.
+The `log_mother` coefficient is the intergenerational earnings elasticity (IGE). An estimate of 0.103 associates 10% higher maternal earnings with roughly 1.0% higher child earnings. This is an association, not a causal effect. Keep children and adjustments fixed across models; cluster uncertainty by mother because siblings share a parent.
 
-![Annual and averaged earnings estimates. Every specification uses the same matched children; bars show 95% mother-clustered intervals.](results/annual-versus-average.svg){fig-alt="Three elasticities compare annual records, averaged maternal earnings with annual child earnings, and averages in both generations."}
+![Figure 1. IGE using annual or averaged earnings for the same 822 children. Bars show 95% confidence intervals clustered by mother.](results/annual-versus-average.svg){fig-alt="Three elasticities compare annual earnings, averaged maternal earnings with annual child earnings, and averages in both generations."}
 
-Averaging mothers' earnings alone gives 0.113; averaging both gives 0.103. The paired confidence interval for the change includes zero; this sample does not clearly establish a change in the elasticity. A bonus, job loss or time out of work can dominate one annual reading. Averaging reduces the influence of those temporary changes without guaranteeing a higher estimate.
+Figure 1 gives 0.097 with annual earnings, 0.113 after averaging mothers' earnings, and 0.103 after averaging both generations. The confidence interval for the change includes zero, so the difference is uncertain. Averaging spreads a temporary bonus or job loss across several observations, improving the proxy for longer-run earnings. It does not guarantee a higher IGE.
 
 ## Check the child's age
 
-For an exploratory age check, I fix maternal average earnings and show every five-year band from 20–24 through 35–39. Each child contributes the annual record nearest each band's midpoint, selected before checking positivity. Both figures use the same children.
+Hold maternal averages and adjustments fixed. Select each child's annual observation nearest the midpoint of each five-year band, from 20–24 to 35–39. Keep the same children throughout, so changing participants cannot explain differences.
 
-![Child-age sensitivity with maternal averages and adjustments fixed. All four bands use identical pairs; bars show 95% mother-clustered intervals.](results/income-age.svg){fig-alt="Elasticities for child income measured at ages 20 to 24, 25 to 29, 30 to 34, and 35 to 39."}
+![Figure 2. IGE at four child-age bands, holding maternal averages fixed. The sample and confidence-interval method match Figure 1.](results/income-age.svg){fig-alt="Elasticities for child income measured at ages 20 to 24, 25 to 29, 30 to 34, and 35 to 39."}
 
-The estimates are 0.063, 0.125, 0.097, 0.129, in age order. The paired oldest-minus-youngest confidence interval includes zero, so the apparent age difference is uncertain. [Haider and Solon](https://public.websites.umich.edu/~gsolon/workingpapers/haider.pdf) explain that people with higher lifetime earnings can have faster earnings growth. An early reading can compress the eventual earnings gap. Our uncertain age profile cannot establish that mechanism or reveal the true lifetime elasticity.
+The estimates are 0.063, 0.125, 0.097, 0.129, in age order. The oldest-minus-youngest confidence interval includes zero, so the apparent age difference is uncertain. [Haider and Solon](https://public.websites.umich.edu/~gsolon/workingpapers/haider.pdf) explain the life-cycle problem: people with higher lifetime earnings can have faster earnings growth, so early earnings can understate eventual differences. Figure 2 checks sensitivity to age; it cannot measure bias against unobserved lifetime income.
 
-The sample requires positive selected annual earnings in every displayed band and enough repeated observations. These selected, unweighted comparisons are not national mobility estimates. Earnings include wages, salaries and military pay, excluding business income. Age and calendar periods also change together. Before interpreting an elasticity, check which people and income years enter it.
+Check both how many income observations were used and when they were measured. Averaging addresses short-term fluctuations; it does not automatically fix life-cycle bias.
 
-## Data and replication
+These unweighted results describe selected families with repeated observations and positive selected annual earnings in every age band. They are not national mobility estimates. Earnings exclude self-employment, and age changes alongside calendar time.
 
-[Full code and README](https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6) document exclusions, top-coding and the larger-sample sensitivity check. Sources: [official NLS downloads](https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts), [mother–child linkage](https://www.nlsinfo.org/content/cohorts/nlsy79-children/using-and-understanding-the-data/linking-children-young-adults-and), [income definitions](https://nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/income/introduction), and the Minneapolis Fed's [annual CPI-U table](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-).
+## Sources
+
+[NLS data](https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts), [family linkage](https://www.nlsinfo.org/content/cohorts/nlsy79-children/using-and-understanding-the-data/linking-children-young-adults-and), [earnings definitions](https://nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/income/introduction), and [annual CPI-U](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-).
