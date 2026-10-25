@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Defang Shen">
 <meta name="dcterms.date" content="2026-10-23">
-<meta name="description" content="A SQL and Python tutorial on linking generations, averaging earnings, and checking when income is measured.">
+<meta name="description" content="Match mothers and children with SQL in Python, then test how income averaging and measurement age change the estimated earnings link.">
 
-<title>Matching mothers and children: why the income year matters – AEDS 6400 Blog</title>
+<title>Does one year’s pay tell the whole story? – AEDS 6400 Blog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -160,7 +161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Matching mothers and children: why the income year matters</h1>
+<h1 class="title">Does one year’s pay tell the whole story?</h1>
   <div class="quarto-categories">
     <div class="quarto-category">SQL</div>
     <div class="quarto-category">Economic mobility</div>
@@ -169,13 +170,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    A SQL and Python tutorial on linking generations, averaging earnings, and checking when income is measured.
+    Match mothers and children with SQL in Python, then test how income averaging and measurement age change the estimated earnings link.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Defang Shen </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -192,18 +199,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Does averaging earnings across years change the measured link between mothers and their adult children? I matched 822 children to 669 mothers in the NLSY79 and Child/Young Adult surveys. The estimated elasticity was 0.097 using annual records and 0.103 using averages.</p>
-<p>An intergenerational elasticity measures a percentage association. The averaged estimate associates 10% higher maternal earnings with roughly 1.0% higher adult-child earnings, after common adjustments. It does not measure a causal parental effect.</p>
+<p>Does a single year’s pay tell us how closely children’s earnings track their mothers’? Using 822 children linked to 669 mothers, I find little change when I replace annual earnings with averages. Measuring children at different ages also changes the estimates, but those differences are uncertain.</p>
+<p>This tutorial uses the NLSY79 and its Child/Young Adult study. Here, income means wages, salaries and military pay, rather than total household resources. Using the same definition avoids comparing a mother’s family budget with a child’s own paycheck. The <a href="https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6/code/tutorial.ipynb">notebook</a> runs the complete Python and SQL workflow; the steps below explain the matching and comparisons.</p>
 <section id="build-one-row-per-child" class="level2">
 <h2 class="anchored" data-anchor-id="build-one-row-per-child">Build one row per child</h2>
-<p>The <a href="https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6/code/tutorial.ipynb">companion notebook</a> loads the extracts into SQLite tables <code>mothers</code>, <code>children</code>, and <code>source_income</code>. Python cleans missing codes and assigns the income reference year. SQL converts earnings to 2020 dollars and creates <code>stage_income</code>.</p>
-<p><code>SELECT</code> chooses fields. <code>GROUP BY</code> combines records for each person and age window. <code>AVG</code> averages earnings; <code>COUNT</code> checks the number of distinct observed years:</p>
+<p>Start with the identifiers. A child’s <code>CPUBID</code> identifies that child; <code>MPUBID</code> identifies their biological mother and matches her <code>CASEID</code> in NLSY79. Siblings share a mother ID. A household number alone cannot establish this relationship because household membership changes.</p>
+<p>Python loads the extracts into SQLite, cleans missing codes and assigns amounts to the year earned. SQL adjusts earnings to 2020 dollars. From <code>stage_income</code>, summarize each person’s age window:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> generation, person_id, stage,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">AVG</span>(real_income) <span class="kw">AS</span> mean_income,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>       <span class="fu">COUNT</span>(<span class="kw">DISTINCT</span> income_year) <span class="kw">AS</span> observed_years</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> stage_income</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> generation, person_id, stage;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>These summaries become <code>stage_averages</code>. <code>JOIN</code> connects each child to adult earnings through their own ID and maternal earnings through their mother ID:</p>
+<p><code>SELECT</code> chooses columns; <code>GROUP BY</code> collects person-window records; <code>AVG</code> and <code>COUNT</code> calculate mean earnings and observed years. Save these as <code>stage_averages</code>. Then <code>JOIN</code> links each child to both generations’ summaries:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> c.child_id, c.mother_id,</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>       m.mean_income <span class="kw">AS</span> mother_mean, a.mean_income <span class="kw">AS</span> adult_mean</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> children <span class="kw">AS</span> c</span>
@@ -211,12 +218,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">ON</span> m.person_id <span class="op">=</span> c.mother_id <span class="kw">AND</span> m.stage <span class="op">=</span> <span class="st">'mother30s'</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> stage_averages <span class="kw">AS</span> a</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">ON</span> a.person_id <span class="op">=</span> c.child_id <span class="kw">AND</span> a.stage <span class="op">=</span> <span class="st">'child30s'</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Aggregating before joining prevents survey years from multiplying matches. The full SQL applies sample rules and creates <code>matched</code>, one row per child. Siblings can share a mother.</p>
+<p>Summarizing first prevents repeated survey years from multiplying matches. The full query applies eligibility rules and creates <code>matched</code>, with one row per child. Check that child IDs are unique after matching; duplicates would give some children extra weight in the regression.</p>
 </section>
-<section id="compare-annual-records-with-averages" class="level2">
-<h2 class="anchored" data-anchor-id="compare-annual-records-with-averages">Compare annual records with averages</h2>
-<p>I average real earnings at ages 30–39 before taking logarithms, requiring at least three observed years for mothers and two for children. Years need not be consecutive. Genuine zeros stay in averages; missing answers do not become zeros. Logarithms require positive measures.</p>
-<p>With pandas, NumPy and statsmodels imported, Python reads the SQL result and estimates the averaged specification:</p>
+<section id="compare-annual-earnings-with-averages" class="level2">
+<h2 class="anchored" data-anchor-id="compare-annual-earnings-with-averages">Compare annual earnings with averages</h2>
+<p>Compare the annual observation nearest age 35 with average earnings at ages 30–39. Mothers need at least three observed years; children need at least two. Years need not be consecutive. Average inflation-adjusted amounts before taking logs. Include genuine zeros in averages, exclude missing answers, and require positive measures for logarithms.</p>
+<p>With pandas, NumPy and statsmodels imported, estimate the averaged model:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> pd.read_sql_query(<span class="st">"SELECT * FROM matched"</span>, connection)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"log_mother"</span>: np.log(sample.mother_mean),</span>
@@ -228,30 +235,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>fit <span class="op">=</span> sm.OLS(np.log(sample.adult_mean), sm.add_constant(x)).fit(</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    cov_type<span class="op">=</span><span class="st">"cluster"</span>, cov_kwds<span class="op">=</span>{<span class="st">"groups"</span>: sample.mother_id},</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    use_t<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The <code>log_mother</code> coefficient is the elasticity. All specifications keep the same children and adjustment variables, including both generations’ thirties-window mean ages. Intervals cluster by mother to account for siblings.</p>
+<p>The <code>log_mother</code> coefficient is the intergenerational earnings elasticity (IGE). An estimate of 0.103 associates 10% higher maternal earnings with roughly 1.0% higher child earnings. This is an association, not a causal effect. Keep children and adjustments fixed across models; cluster uncertainty by mother because siblings share a parent.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="results/annual-versus-average.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Annual and averaged earnings estimates. Every specification uses the same matched children; bars show 95% mother-clustered intervals."><img src="results/annual-versus-average.svg" class="img-fluid figure-img" alt="Three elasticities compare annual records, averaged maternal earnings with annual child earnings, and averages in both generations."></a></p>
-<figcaption>Annual and averaged earnings estimates. Every specification uses the same matched children; bars show 95% mother-clustered intervals.</figcaption>
+<p><a href="results/annual-versus-average.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1. IGE using annual or averaged earnings for the same 822 children. Bars show 95% confidence intervals clustered by mother."><img src="results/annual-versus-average.svg" class="img-fluid figure-img" alt="Three elasticities compare annual earnings, averaged maternal earnings with annual child earnings, and averages in both generations."></a></p>
+<figcaption>Figure 1. IGE using annual or averaged earnings for the same 822 children. Bars show 95% confidence intervals clustered by mother.</figcaption>
 </figure>
 </div>
-<p>Averaging mothers’ earnings alone gives 0.113; averaging both gives 0.103. The paired confidence interval for the change includes zero; this sample does not clearly establish a change in the elasticity. A bonus, job loss or time out of work can dominate one annual reading. Averaging reduces the influence of those temporary changes without guaranteeing a higher estimate.</p>
+<p>Figure 1 gives 0.097 with annual earnings, 0.113 after averaging mothers’ earnings, and 0.103 after averaging both generations. The confidence interval for the change includes zero, so the difference is uncertain. Averaging spreads a temporary bonus or job loss across several observations, improving the proxy for longer-run earnings. It does not guarantee a higher IGE.</p>
 </section>
 <section id="check-the-childs-age" class="level2">
 <h2 class="anchored" data-anchor-id="check-the-childs-age">Check the child’s age</h2>
-<p>For an exploratory age check, I fix maternal average earnings and show every five-year band from 20–24 through 35–39. Each child contributes the annual record nearest each band’s midpoint, selected before checking positivity. Both figures use the same children.</p>
+<p>Hold maternal averages and adjustments fixed. Select each child’s annual observation nearest the midpoint of each five-year band, from 20–24 to 35–39. Keep the same children throughout, so changing participants cannot explain differences.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="results/income-age.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Child-age sensitivity with maternal averages and adjustments fixed. All four bands use identical pairs; bars show 95% mother-clustered intervals."><img src="results/income-age.svg" class="img-fluid figure-img" alt="Elasticities for child income measured at ages 20 to 24, 25 to 29, 30 to 34, and 35 to 39."></a></p>
-<figcaption>Child-age sensitivity with maternal averages and adjustments fixed. All four bands use identical pairs; bars show 95% mother-clustered intervals.</figcaption>
+<p><a href="results/income-age.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 2. IGE at four child-age bands, holding maternal averages fixed. The sample and confidence-interval method match Figure 1."><img src="results/income-age.svg" class="img-fluid figure-img" alt="Elasticities for child income measured at ages 20 to 24, 25 to 29, 30 to 34, and 35 to 39."></a></p>
+<figcaption>Figure 2. IGE at four child-age bands, holding maternal averages fixed. The sample and confidence-interval method match Figure 1.</figcaption>
 </figure>
 </div>
-<p>The estimates are 0.063, 0.125, 0.097, 0.129, in age order. The paired oldest-minus-youngest confidence interval includes zero, so the apparent age difference is uncertain. <a href="https://public.websites.umich.edu/~gsolon/workingpapers/haider.pdf">Haider and Solon</a> explain that people with higher lifetime earnings can have faster earnings growth. An early reading can compress the eventual earnings gap. Our uncertain age profile cannot establish that mechanism or reveal the true lifetime elasticity.</p>
-<p>The sample requires positive selected annual earnings in every displayed band and enough repeated observations. These selected, unweighted comparisons are not national mobility estimates. Earnings include wages, salaries and military pay, excluding business income. Age and calendar periods also change together. Before interpreting an elasticity, check which people and income years enter it.</p>
+<p>The estimates are 0.063, 0.125, 0.097, 0.129, in age order. The oldest-minus-youngest confidence interval includes zero, so the apparent age difference is uncertain. <a href="https://public.websites.umich.edu/~gsolon/workingpapers/haider.pdf">Haider and Solon</a> explain the life-cycle problem: people with higher lifetime earnings can have faster earnings growth, so early earnings can understate eventual differences. Figure 2 checks sensitivity to age; it cannot measure bias against unobserved lifetime income.</p>
+<p>Check both how many income observations were used and when they were measured. Averaging addresses short-term fluctuations; it does not automatically fix life-cycle bias.</p>
+<p>These unweighted results describe selected families with repeated observations and positive selected annual earnings in every age band. They are not national mobility estimates. Earnings exclude self-employment, and age changes alongside calendar time.</p>
 </section>
-<section id="data-and-replication" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-replication">Data and replication</h2>
-<p><a href="https://github.com/Devinshen123/devinshen123-website/tree/main/blog/posts/post6">Full code and README</a> document exclusions, top-coding and the larger-sample sensitivity check. Sources: <a href="https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts">official NLS downloads</a>, <a href="https://www.nlsinfo.org/content/cohorts/nlsy79-children/using-and-understanding-the-data/linking-children-young-adults-and">mother–child linkage</a>, <a href="https://nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/income/introduction">income definitions</a>, and the Minneapolis Fed’s <a href="https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-">annual CPI-U table</a>.</p>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Sources</h2>
+<p><a href="https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts">NLS data</a>, <a href="https://www.nlsinfo.org/content/cohorts/nlsy79-children/using-and-understanding-the-data/linking-children-young-adults-and">family linkage</a>, <a href="https://nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/income/introduction">earnings definitions</a>, and <a href="https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-">annual CPI-U</a>.</p>
 
 
 </section>
@@ -664,7 +672,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="../../../images/UniversityofPennsylvania_FullLogo_RGB.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../../../images/UniversityofPennsylvania_FullLogo_RGB.png" class="img-fluid" width="100"></a></p>
 </div>   
     <div class="nav-footer-center">
-<p>© 2026 AEDS 6400 Blog</p>
+<p>© 2026 Defang Shen</p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
