@@ -1,0 +1,361 @@
+{
+  "children": 822,
+  "mothers": 669,
+  "child_birth_year_min": 1970,
+  "child_birth_year_max": 1985,
+  "female_share": 0.48418491484184917,
+  "estimates": [
+    {
+      "specification": "annual_both",
+      "label": "One annual income per generation",
+      "ige": 0.09719801613400754,
+      "standard_error": 0.029882488334758702,
+      "ci_low": 0.03852310414997715,
+      "ci_high": 0.15587292811803793,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_single",
+      "child_measure": "adult_single"
+    },
+    {
+      "specification": "average_mother",
+      "label": "Average mother; annual adult child",
+      "ige": 0.1132961190048655,
+      "standard_error": 0.036178011073472634,
+      "ci_low": 0.042259811997454946,
+      "ci_high": 0.18433242601227606,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "adult_single"
+    },
+    {
+      "specification": "average_both",
+      "label": "Average both generations",
+      "ige": 0.10315978839571781,
+      "standard_error": 0.030230190811044545,
+      "ci_low": 0.04380215508124952,
+      "ci_high": 0.1625174217101861,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "adult_mean"
+    },
+    {
+      "specification": "young_annual",
+      "label": "Child in twenties: annual",
+      "ige": 0.09019266594389438,
+      "standard_error": 0.03123051212072038,
+      "ci_low": 0.028870880108275168,
+      "ci_high": 0.15151445177951361,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "young_single"
+    },
+    {
+      "specification": "young_average",
+      "label": "Child in twenties: average",
+      "ige": 0.0870388808758886,
+      "standard_error": 0.022718406207224637,
+      "ci_low": 0.04243079905574659,
+      "ci_high": 0.1316469626960306,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "young_mean"
+    },
+    {
+      "specification": "age20",
+      "label": "Child ages20-24",
+      "ige": 0.06343185098605576,
+      "standard_error": 0.04112087555516904,
+      "ci_low": -0.017309877309018395,
+      "ci_high": 0.14417357928112992,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "age20"
+    },
+    {
+      "specification": "age25",
+      "label": "Child ages25-29",
+      "ige": 0.12459808293944433,
+      "standard_error": 0.02901756793317724,
+      "ci_low": 0.06762146086579446,
+      "ci_high": 0.1815747050130942,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "age25"
+    },
+    {
+      "specification": "age30",
+      "label": "Child ages30-34",
+      "ige": 0.09667838807663791,
+      "standard_error": 0.03548353038263684,
+      "ci_low": 0.027005708922199723,
+      "ci_high": 0.1663510672310761,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "age30"
+    },
+    {
+      "specification": "age35",
+      "label": "Child ages35-39",
+      "ige": 0.1289120215868278,
+      "standard_error": 0.036133159600417825,
+      "ci_low": 0.057963781416568286,
+      "ci_high": 0.19986026175708732,
+      "children": 822,
+      "mothers": 669,
+      "mother_measure": "mother_mean",
+      "child_measure": "age35"
+    }
+  ],
+  "differences": [
+    {
+      "comparison": "average_both minus annual_both",
+      "difference": 0.005961772261710269,
+      "standard_error": 0.02161015649851553,
+      "ci_low": -0.03647023729208045,
+      "ci_high": 0.04839378181550099
+    },
+    {
+      "comparison": "average_mother minus annual_both",
+      "difference": 0.016098102870857958,
+      "standard_error": 0.021025596196298228,
+      "ci_low": -0.025186109889783433,
+      "ci_high": 0.05738231563149935
+    },
+    {
+      "comparison": "average_both minus average_mother",
+      "difference": -0.01013633060914769,
+      "standard_error": 0.014816811135028364,
+      "ci_low": -0.03922945965156921,
+      "ci_high": 0.01895679843327383
+    },
+    {
+      "comparison": "average_mother minus young_annual",
+      "difference": 0.023103453060971113,
+      "standard_error": 0.03842246153944215,
+      "ci_low": -0.05233988096734836,
+      "ci_high": 0.09854678708929059
+    },
+    {
+      "comparison": "average_both minus young_average",
+      "difference": 0.01612090751982921,
+      "standard_error": 0.02278442406840411,
+      "ci_low": -0.02861680179822012,
+      "ci_high": 0.06085861683787854
+    },
+    {
+      "comparison": "age35 minus age20",
+      "difference": 0.06548017060077203,
+      "standard_error": 0.04533326984842325,
+      "ci_low": -0.02353268497225472,
+      "ci_high": 0.1544930261737988
+    }
+  ],
+  "age_and_observation_counts": {
+    "mother_n": {
+      "count": 822.0,
+      "mean": 6.534063260340632,
+      "std": 1.2682510369420488,
+      "min": 3.0,
+      "25%": 6.0,
+      "50%": 7.0,
+      "75%": 8.0,
+      "max": 8.0
+    },
+    "young_n": {
+      "count": 822.0,
+      "mean": 4.316301703163017,
+      "std": 0.8301281450008501,
+      "min": 2.0,
+      "25%": 4.0,
+      "50%": 5.0,
+      "75%": 5.0,
+      "max": 5.0
+    },
+    "adult_n": {
+      "count": 822.0,
+      "mean": 2.232360097323601,
+      "std": 0.461184226614952,
+      "min": 2.0,
+      "25%": 2.0,
+      "50%": 2.0,
+      "75%": 2.0,
+      "max": 4.0
+    },
+    "mother_mean_age": {
+      "count": 822.0,
+      "mean": 33.702113022824705,
+      "std": 0.5009045288611654,
+      "min": 31.0,
+      "25%": 33.42857142857143,
+      "50%": 33.625,
+      "75%": 33.875,
+      "max": 36.0
+    },
+    "young_mean_age": {
+      "count": 822.0,
+      "mean": 24.651865369018658,
+      "std": 0.7796669371865648,
+      "min": 22.666666666666668,
+      "25%": 24.0,
+      "50%": 24.833333333333336,
+      "75%": 25.0,
+      "max": 26.333333333333332
+    },
+    "adult_mean_age": {
+      "count": 822.0,
+      "mean": 34.647201946472016,
+      "std": 0.9062550175082964,
+      "min": 32.666666666666664,
+      "25%": 34.0,
+      "50%": 34.5,
+      "75%": 35.5,
+      "max": 36.333333333333336
+    },
+    "mother_single_age": {
+      "count": 822.0,
+      "mean": 34.63868613138686,
+      "std": 0.5940117136747584,
+      "min": 32.0,
+      "25%": 34.0,
+      "50%": 35.0,
+      "75%": 35.0,
+      "max": 37.0
+    },
+    "young_single_age": {
+      "count": 822.0,
+      "mean": 24.514598540145986,
+      "std": 0.832738184365691,
+      "min": 21.0,
+      "25%": 24.0,
+      "50%": 24.0,
+      "75%": 25.0,
+      "max": 28.0
+    },
+    "adult_single_age": {
+      "count": 822.0,
+      "mean": 34.7007299270073,
+      "std": 1.5826324306447073,
+      "min": 32.0,
+      "25%": 33.0,
+      "50%": 34.0,
+      "75%": 36.0,
+      "max": 38.0
+    }
+  },
+  "sample_flow": {
+    "raw_children": 11551,
+    "valid_maternal_cohort_and_child_sex": 11542,
+    "enough_annual_observations": 2146,
+    "positive_means": 1756,
+    "positive_broad_window_annuals": 1266,
+    "positive_annuals_all_four_age_bands": 822
+  },
+  "observed_income_coverage": [
+    {
+      "generation": "child",
+      "observed_years": 53827,
+      "zero_years": 13640,
+      "first_year": 1993.0,
+      "last_year": 2020.0
+    },
+    {
+      "generation": "mother",
+      "observed_years": 69831,
+      "zero_years": 17690,
+      "first_year": 1982.0,
+      "last_year": 2005.0
+    }
+  ],
+  "stage_summary": [
+    {
+      "stage": "child20s",
+      "people": 7979,
+      "observations": 27885
+    },
+    {
+      "stage": "child30s",
+      "people": 4273,
+      "observations": 7092
+    },
+    {
+      "stage": "mother30s",
+      "people": 4204,
+      "observations": 23444
+    }
+  ],
+  "duplicate_income_year_keys": 1,
+  "broad_window_sensitivity": [
+    {
+      "specification": "annual_both",
+      "label": "One annual income per generation",
+      "ige": 0.10262847684288401,
+      "standard_error": 0.0264643990053074,
+      "ci_low": 0.05069324864770628,
+      "ci_high": 0.15456370503806174,
+      "children": 1266,
+      "mothers": 954,
+      "mother_measure": "mother_single",
+      "child_measure": "adult_single"
+    },
+    {
+      "specification": "average_mother",
+      "label": "Average mother; annual adult child",
+      "ige": 0.12268834813087277,
+      "standard_error": 0.030504016314011236,
+      "ci_low": 0.06282554724807615,
+      "ci_high": 0.1825511490136694,
+      "children": 1266,
+      "mothers": 954,
+      "mother_measure": "mother_mean",
+      "child_measure": "adult_single"
+    },
+    {
+      "specification": "average_both",
+      "label": "Average both generations",
+      "ige": 0.12596683610671694,
+      "standard_error": 0.02961608116561519,
+      "ci_low": 0.06784656920495724,
+      "ci_high": 0.18408710300847664,
+      "children": 1266,
+      "mothers": 954,
+      "mother_measure": "mother_mean",
+      "child_measure": "adult_mean"
+    },
+    {
+      "specification": "young_annual",
+      "label": "Child in twenties: annual",
+      "ige": 0.13264516037911617,
+      "standard_error": 0.0389266385785107,
+      "ci_low": 0.056253330848405114,
+      "ci_high": 0.20903698990982722,
+      "children": 1266,
+      "mothers": 954,
+      "mother_measure": "mother_mean",
+      "child_measure": "young_single"
+    },
+    {
+      "specification": "young_average",
+      "label": "Child in twenties: average",
+      "ige": 0.10782013594155028,
+      "standard_error": 0.023186861931578148,
+      "ci_low": 0.06231693122849079,
+      "ci_high": 0.15332334065460979,
+      "children": 1266,
+      "mothers": 954,
+      "mother_measure": "mother_mean",
+      "child_measure": "young_mean"
+    }
+  ],
+  "age_band_design": "All four complete five-year bands20-24,25-29,30-34,35-39; nearest midpoint22,27,32,37. Same positive-earnings child-mother pairs across all bands and both figures. Exploratory age profile, not a true lifetime-income benchmark.",
+  "model": "OLS log child earnings on log mother earnings, common thirties-window mean ages for both generations, child sex and child birth year; unweighted; CR1 mother-clustered 95% t intervals.",
+  "annual_selection": "Nearest observed age35 in each thirties window, nearest25 in child twenties; earlier income year breaks ties. Chosen before positivity restriction.",
+  "averaging": "Arithmetic average of observed nonnegative real annual incomes; mother ages30-39>=3years, child20-29>=2years and30-39>=2years. These are not consecutive annual readings."
+}

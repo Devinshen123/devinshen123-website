@@ -1,0 +1,1511 @@
+{
+  "schema_version": 1,
+  "description": "Verified directly against full official release codebooks. Each variable object gives exact reference ID and CSV column (remove the decimal point). All codebook values are nominal annual US dollars unless stated. No microdata estimates are contained here.",
+  "sources": [
+    {
+      "url": "https://nlsinfo.org/cohort-data/nlsy79_all_1979-2022.zip",
+      "description": "Official NLSY79 public-use all-variable archive; included .cdb is authoritative variable-level source."
+    },
+    {
+      "url": "https://nlsinfo.org/cohort-data/nlscya_all_1979-2020.zip",
+      "description": "Official Child/Young Adult public-use all-variable archive; included .cdb is authoritative variable-level source."
+    },
+    {
+      "url": "https://www.nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/income/introduction",
+      "description": "YA income definitions, military scope changes, family-income limitations and public topcoding."
+    },
+    {
+      "url": "https://nlsinfo.org/content/cohorts/nlsy79/topical-guide/income/income",
+      "description": "Original NLSY79 income categories and topcoding history."
+    },
+    {
+      "url": "https://nlsinfo.org/content/cohorts/nlsy79/topical-guide/household/age",
+      "description": "Use 1981 original-cohort DOB, 1979 only as backup."
+    },
+    {
+      "url": "https://www.nlsinfo.org/content/cohorts/nlsy79-children/topical-guide/household/age",
+      "description": "YA created age definitions and child DOB."
+    },
+    {
+      "url": "https://www.nlsinfo.org/content/cohorts/nlsy79-children/using-and-understanding-the-data/sample-weights",
+      "description": "Round weights, custom longitudinal weights, and four-year fielding over age30 from2010."
+    },
+    {
+      "url": "https://www.nlsinfo.org/content/getting-started/introduction-to-the-nls/tutorials-and-videos/linking-nlsy79-mothers-and-their-children",
+      "description": "Official mother-child linking tutorial."
+    }
+  ],
+  "codebook_sha256": {
+    "mothers": "432a7050498892da20124ecbe3c6cb29c5f088c49aec2e1a87d041b1e83c8ee0",
+    "children": "275418247c9ae9807d96813f4f2981530d641cd5f96ffbd96566faeec8e35036"
+  },
+  "mothers": {
+    "id": {
+      "reference": "R00001.00",
+      "column": "R0000100",
+      "question": "CASEID",
+      "survey_year": "1979"
+    },
+    "birth_year_primary": {
+      "reference": "R04103.00",
+      "column": "R0410300",
+      "question": "Q1-3_A~Y",
+      "survey_year": "1981"
+    },
+    "birth_year_fallback": {
+      "reference": "R00005.00",
+      "column": "R0000500",
+      "question": "Q1-3_A~Y",
+      "survey_year": "1979"
+    },
+    "birth_month_primary": {
+      "reference": "R04101.00",
+      "column": "R0410100",
+      "question": "Q1-3_A~M",
+      "survey_year": "1981"
+    },
+    "birth_month_fallback": {
+      "reference": "R00003.00",
+      "column": "R0000300",
+      "question": "Q1-3_A~M",
+      "survey_year": "1979"
+    },
+    "sex": {
+      "reference": "R02148.00",
+      "column": "R0214800",
+      "question": "SAMPLE_SEX",
+      "survey_year": "1979"
+    },
+    "race_ethnicity": {
+      "reference": "R02147.00",
+      "column": "R0214700",
+      "question": "SAMPLE_RACE",
+      "survey_year": "78SCRN"
+    },
+    "sample_id": {
+      "reference": "R01736.00",
+      "column": "R0173600",
+      "question": "SAMPLE_ID",
+      "survey_year": "1979"
+    },
+    "birth_year_rule": "1981 Q1-3_A~Y if nonnegative, otherwise 1979 Q1-3_A~Y. These are TWO-DIGIT years: add1900. 1981 observed range55–65;1979 range57–64. Age at end of income calendar year=income_year−birth_year. Use corrected1981 birth date rather than the separate raw1981 information-sheet RDOB_Y.",
+    "wage_definition": "Civilian gross wages/salary/commissions/tips, excluding self-employment and transfers. Original survey asks military pay separately. To match YA2000+ scope add military receipts, using military receipt no=0 rule below.",
+    "waves": [
+      {
+        "survey_year": 1983,
+        "income_year": 1982,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R10240.01",
+          "column": "R1024001",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1983"
+        },
+        "military_received": {
+          "reference": "R10238.00",
+          "column": "R1023800",
+          "question": "Q13-2",
+          "survey_year": "1983"
+        },
+        "military_amount": {
+          "reference": "R10239.00",
+          "column": "R1023900",
+          "question": "Q13-3",
+          "survey_year": "1983"
+        },
+        "age_at_interview": {
+          "reference": "R11451.10",
+          "column": "R1145110",
+          "question": "AGEATINT",
+          "survey_year": "1983"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R10240.00",
+          "column": "R1024000",
+          "question": "Q13-5",
+          "survey_year": "1983"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1984,
+        "income_year": 1983,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R14107.01",
+          "column": "R1410701",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1984"
+        },
+        "military_received": {
+          "reference": "R14105.00",
+          "column": "R1410500",
+          "question": "Q13-2",
+          "survey_year": "1984"
+        },
+        "military_amount": {
+          "reference": "R14106.00",
+          "column": "R1410600",
+          "question": "Q13-3",
+          "survey_year": "1984"
+        },
+        "age_at_interview": {
+          "reference": "R15203.10",
+          "column": "R1520310",
+          "question": "AGEATINT",
+          "survey_year": "1984"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R14107.00",
+          "column": "R1410700",
+          "question": "Q13-5",
+          "survey_year": "1984"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1985,
+        "income_year": 1984,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R17785.01",
+          "column": "R1778501",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1985"
+        },
+        "military_received": {
+          "reference": "R17783.00",
+          "column": "R1778300",
+          "question": "Q13-2",
+          "survey_year": "1985"
+        },
+        "military_amount": {
+          "reference": "R17784.00",
+          "column": "R1778400",
+          "question": "Q13-3",
+          "survey_year": "1985"
+        },
+        "age_at_interview": {
+          "reference": "R18910.10",
+          "column": "R1891010",
+          "question": "AGEATINT",
+          "survey_year": "1985"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R17785.00",
+          "column": "R1778500",
+          "question": "Q13-5",
+          "survey_year": "1985"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1986,
+        "income_year": 1985,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R21416.01",
+          "column": "R2141601",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1986"
+        },
+        "military_received": {
+          "reference": "R21414.00",
+          "column": "R2141400",
+          "question": "Q13-2",
+          "survey_year": "1986"
+        },
+        "military_amount": {
+          "reference": "R21415.00",
+          "column": "R2141500",
+          "question": "Q13-3",
+          "survey_year": "1986"
+        },
+        "age_at_interview": {
+          "reference": "R22581.10",
+          "column": "R2258110",
+          "question": "AGEATINT",
+          "survey_year": "1986"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R21416.00",
+          "column": "R2141600",
+          "question": "Q13-5",
+          "survey_year": "1986"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1987,
+        "income_year": 1986,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R23503.01",
+          "column": "R2350301",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1987"
+        },
+        "military_received": {
+          "reference": "R23501.00",
+          "column": "R2350100",
+          "question": "Q13-2",
+          "survey_year": "1987"
+        },
+        "military_amount": {
+          "reference": "R23502.00",
+          "column": "R2350200",
+          "question": "Q13-3",
+          "survey_year": "1987"
+        },
+        "age_at_interview": {
+          "reference": "R24455.10",
+          "column": "R2445510",
+          "question": "AGEATINT",
+          "survey_year": "1987"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R23503.00",
+          "column": "R2350300",
+          "question": "Q13-5",
+          "survey_year": "1987"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1988,
+        "income_year": 1987,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R27225.01",
+          "column": "R2722501",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1988"
+        },
+        "military_received": {
+          "reference": "R27223.00",
+          "column": "R2722300",
+          "question": "Q13-2",
+          "survey_year": "1988"
+        },
+        "military_amount": {
+          "reference": "R27224.00",
+          "column": "R2722400",
+          "question": "Q13-3_TRUNC",
+          "survey_year": "1988"
+        },
+        "age_at_interview": {
+          "reference": "R28713.00",
+          "column": "R2871300",
+          "question": "AGEATINT",
+          "survey_year": "1988"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R27225.00",
+          "column": "R2722500",
+          "question": "Q13-5",
+          "survey_year": "1988"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1989,
+        "income_year": 1988,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R29714.01",
+          "column": "R2971401",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1989"
+        },
+        "military_received": {
+          "reference": "R29712.00",
+          "column": "R2971200",
+          "question": "Q13-2",
+          "survey_year": "1989"
+        },
+        "military_amount": {
+          "reference": "R29713.00",
+          "column": "R2971300",
+          "question": "Q13-3",
+          "survey_year": "1989"
+        },
+        "age_at_interview": {
+          "reference": "R30750.00",
+          "column": "R3075000",
+          "question": "AGEATINT",
+          "survey_year": "1989"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R29714.00",
+          "column": "R2971400",
+          "question": "Q13-5",
+          "survey_year": "1989"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1990,
+        "income_year": 1989,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R32794.01",
+          "column": "R3279401",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1990"
+        },
+        "military_received": {
+          "reference": "R32792.00",
+          "column": "R3279200",
+          "question": "Q13-2",
+          "survey_year": "1990"
+        },
+        "military_amount": {
+          "reference": "R32793.00",
+          "column": "R3279300",
+          "question": "Q13-3",
+          "survey_year": "1990"
+        },
+        "age_at_interview": {
+          "reference": "R34017.00",
+          "column": "R3401700",
+          "question": "AGEATINT",
+          "survey_year": "1990"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R32794.00",
+          "column": "R3279400",
+          "question": "Q13-5",
+          "survey_year": "1990"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1991,
+        "income_year": 1990,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R35590.01",
+          "column": "R3559001",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1991"
+        },
+        "military_received": {
+          "reference": "R35588.00",
+          "column": "R3558800",
+          "question": "Q13-2",
+          "survey_year": "1991"
+        },
+        "military_amount": {
+          "reference": "R35589.00",
+          "column": "R3558900",
+          "question": "Q13-3",
+          "survey_year": "1991"
+        },
+        "age_at_interview": {
+          "reference": "R36571.00",
+          "column": "R3657100",
+          "question": "AGEATINT",
+          "survey_year": "1991"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R35590.00",
+          "column": "R3559000",
+          "question": "Q13-5",
+          "survey_year": "1991"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1992,
+        "income_year": 1991,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R38971.01",
+          "column": "R3897101",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1992"
+        },
+        "military_received": {
+          "reference": "R38969.00",
+          "column": "R3896900",
+          "question": "Q13-2",
+          "survey_year": "1992"
+        },
+        "military_amount": {
+          "reference": "R38970.00",
+          "column": "R3897000",
+          "question": "Q13-3",
+          "survey_year": "1992"
+        },
+        "age_at_interview": {
+          "reference": "R40076.00",
+          "column": "R4007600",
+          "question": "AGEATINT",
+          "survey_year": "1992"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R38971.00",
+          "column": "R3897100",
+          "question": "Q13-5",
+          "survey_year": "1992"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1993,
+        "income_year": 1992,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R42951.01",
+          "column": "R4295101",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1993"
+        },
+        "military_received": {
+          "reference": "R42948.00",
+          "column": "R4294800",
+          "question": "Q13-2",
+          "survey_year": "1993"
+        },
+        "military_amount": {
+          "reference": "R42949.00",
+          "column": "R4294900",
+          "question": "Q13-3",
+          "survey_year": "1993"
+        },
+        "age_at_interview": {
+          "reference": "R44187.00",
+          "column": "R4418700",
+          "question": "AGEATINT",
+          "survey_year": "1993"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R42951.00",
+          "column": "R4295100",
+          "question": "Q13-5",
+          "survey_year": "1993"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1994,
+        "income_year": 1993,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R49828.01",
+          "column": "R4982801",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1994"
+        },
+        "military_received": {
+          "reference": "R49825.00",
+          "column": "R4982500",
+          "question": "Q13-2",
+          "survey_year": "1994"
+        },
+        "military_amount": {
+          "reference": "R49826.00",
+          "column": "R4982600",
+          "question": "Q13-3",
+          "survey_year": "1994"
+        },
+        "age_at_interview": {
+          "reference": "R50817.00",
+          "column": "R5081700",
+          "question": "AGEATINT",
+          "survey_year": "1994"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R49828.00",
+          "column": "R4982800",
+          "question": "Q13-5",
+          "survey_year": "1994"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1996,
+        "income_year": 1995,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R56262.01",
+          "column": "R5626201",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1996"
+        },
+        "military_received": {
+          "reference": "R56259.00",
+          "column": "R5625900",
+          "question": "Q13-2",
+          "survey_year": "1996"
+        },
+        "military_amount": {
+          "reference": "R56260.00",
+          "column": "R5626000",
+          "question": "Q13-3",
+          "survey_year": "1996"
+        },
+        "age_at_interview": {
+          "reference": "R51670.00",
+          "column": "R5167000",
+          "question": "AGEATINT",
+          "survey_year": "1996"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R56262.00",
+          "column": "R5626200",
+          "question": "Q13-5",
+          "survey_year": "1996"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 1998,
+        "income_year": 1997,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R63646.01",
+          "column": "R6364601",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "1998"
+        },
+        "military_received": {
+          "reference": "R63644.00",
+          "column": "R6364400",
+          "question": "Q13-2",
+          "survey_year": "1998"
+        },
+        "military_amount": {
+          "reference": "R63645.00",
+          "column": "R6364500",
+          "question": "Q13-3",
+          "survey_year": "1998"
+        },
+        "age_at_interview": {
+          "reference": "R64798.00",
+          "column": "R6479800",
+          "question": "AGEATINT",
+          "survey_year": "1998"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R63646.00",
+          "column": "R6364600",
+          "question": "Q13-5",
+          "survey_year": "1998"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 2000,
+        "income_year": 1999,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R69097.01",
+          "column": "R6909701",
+          "question": "Q13-5_TRUNC_REVISED",
+          "survey_year": "2000"
+        },
+        "military_received": {
+          "reference": "R69095.00",
+          "column": "R6909500",
+          "question": "Q13-2",
+          "survey_year": "2000"
+        },
+        "military_amount": {
+          "reference": "R69096.00",
+          "column": "R6909600",
+          "question": "Q13-3",
+          "survey_year": "2000"
+        },
+        "age_at_interview": {
+          "reference": "R70075.00",
+          "column": "R7007500",
+          "question": "AGEATINT",
+          "survey_year": "2000"
+        },
+        "includes_military_in_wage": false,
+        "legacy_wage_not_preferred": {
+          "reference": "R69097.00",
+          "column": "R6909700",
+          "question": "Q13-5",
+          "survey_year": "2000"
+        },
+        "topcoding": "Use revised topcode: top2% replaced by group mean."
+      },
+      {
+        "survey_year": 2002,
+        "income_year": 2001,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R76078.00",
+          "column": "R7607800",
+          "question": "Q13-5_TRUNC",
+          "survey_year": "2002"
+        },
+        "military_received": {
+          "reference": "R76069.00",
+          "column": "R7606900",
+          "question": "Q13-2",
+          "survey_year": "2002"
+        },
+        "military_amount": {
+          "reference": "R76071.00",
+          "column": "R7607100",
+          "question": "Q13-3_TRUNC",
+          "survey_year": "2002"
+        },
+        "age_at_interview": {
+          "reference": "R77048.00",
+          "column": "R7704800",
+          "question": "AGEATINT",
+          "survey_year": "2002"
+        },
+        "includes_military_in_wage": false,
+        "topcoding": "Use released public topcoded wage amount; see selected codebook notes."
+      },
+      {
+        "survey_year": 2004,
+        "income_year": 2003,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "R83163.00",
+          "column": "R8316300",
+          "question": "Q13-5_TRUNC",
+          "survey_year": "2004"
+        },
+        "military_received": {
+          "reference": "R83156.00",
+          "column": "R8315600",
+          "question": "Q13-2",
+          "survey_year": "2004"
+        },
+        "military_amount": {
+          "reference": "R83158.00",
+          "column": "R8315800",
+          "question": "Q13-3_TRUNC",
+          "survey_year": "2004"
+        },
+        "age_at_interview": {
+          "reference": "R84972.00",
+          "column": "R8497200",
+          "question": "AGEATINT",
+          "survey_year": "2004"
+        },
+        "includes_military_in_wage": false,
+        "topcoding": "Use released public topcoded wage amount; see selected codebook notes."
+      },
+      {
+        "survey_year": 2006,
+        "income_year": 2005,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "T09124.00",
+          "column": "T0912400",
+          "question": "Q13-5_TRUNC",
+          "survey_year": "2006"
+        },
+        "military_received": {
+          "reference": "T09116.00",
+          "column": "T0911600",
+          "question": "Q13-2",
+          "survey_year": "2006"
+        },
+        "military_amount": {
+          "reference": "T09118.00",
+          "column": "T0911800",
+          "question": "Q13-3_TRUNC",
+          "survey_year": "2006"
+        },
+        "age_at_interview": {
+          "reference": "T09890.00",
+          "column": "T0989000",
+          "question": "AGEATINT",
+          "survey_year": "2006"
+        },
+        "includes_military_in_wage": false,
+        "topcoding": "Use released public topcoded wage amount; see selected codebook notes."
+      }
+    ]
+  },
+  "children": {
+    "id": {
+      "reference": "C00001.00",
+      "column": "C0000100",
+      "question": "CPUBID",
+      "survey_year": "XRND"
+    },
+    "mother_id": {
+      "reference": "C00002.00",
+      "column": "C0000200",
+      "question": "MPUBID",
+      "survey_year": "XRND"
+    },
+    "birth_year": {
+      "reference": "C00057.00",
+      "column": "C0005700",
+      "question": "CYRB",
+      "survey_year": "XRND"
+    },
+    "birth_month": {
+      "reference": "C00055.00",
+      "column": "C0005500",
+      "question": "CMOB",
+      "survey_year": "XRND"
+    },
+    "sex": {
+      "reference": "C00054.00",
+      "column": "C0005400",
+      "question": "CSEX",
+      "survey_year": "XRND"
+    },
+    "birth_year_rule": "CYRB is a FOUR-DIGIT year. Age at end of income calendar year=income_year−CYRB. CPUBID is unique child identifier; explicitly join MPUBID to mothers CASEID. Do not infer birth order or mother ID by string slicing.",
+    "wage_definition": "Gross wages/salary/commissions/tips. Military is separate in1994–1998, included in Q15-5-TOP from2000. Excludes self-employment and transfers.",
+    "waves": [
+      {
+        "survey_year": 1994,
+        "income_year": 1993,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y03092.00",
+          "column": "Y0309200",
+          "question": "Q15-5",
+          "survey_year": "1994"
+        },
+        "age_at_interview": {
+          "reference": "Y03838.02",
+          "column": "Y0383802",
+          "question": "AGEINT94",
+          "survey_year": "1994"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y03838.03",
+          "column": "Y0383803",
+          "question": "AGEDEC94",
+          "survey_year": "1994"
+        },
+        "actual_interview_year": null,
+        "round_weight_optional": {
+          "reference": "Y03565.01",
+          "column": "Y0356501",
+          "question": "YA94WEIGHT_REVISED",
+          "survey_year": "1994"
+        },
+        "includes_military_in_wage": false,
+        "military_received": {
+          "reference": "Y03090.00",
+          "column": "Y0309000",
+          "question": "Q15-2",
+          "survey_year": "1994"
+        },
+        "military_amount": {
+          "reference": "Y03091.00",
+          "column": "Y0309100",
+          "question": "Q15-3",
+          "survey_year": "1994"
+        },
+        "topcoding": "Use released Q15-5; do not infer confidentiality thresholds from later wave rules."
+      },
+      {
+        "survey_year": 1996,
+        "income_year": 1995,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y06105.00",
+          "column": "Y0610500",
+          "question": "Q15-5",
+          "survey_year": "1996"
+        },
+        "age_at_interview": {
+          "reference": "Y06776.00",
+          "column": "Y0677600",
+          "question": "AGEINT96",
+          "survey_year": "1996"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y06777.00",
+          "column": "Y0677700",
+          "question": "AGEDEC96",
+          "survey_year": "1996"
+        },
+        "actual_interview_year": null,
+        "round_weight_optional": {
+          "reference": "Y06507.01",
+          "column": "Y0650701",
+          "question": "YA96WEIGHT_REVISED",
+          "survey_year": "1996"
+        },
+        "includes_military_in_wage": false,
+        "military_received": {
+          "reference": "Y06103.00",
+          "column": "Y0610300",
+          "question": "Q15-2",
+          "survey_year": "1996"
+        },
+        "military_amount": {
+          "reference": "Y06104.00",
+          "column": "Y0610400",
+          "question": "Q15-3",
+          "survey_year": "1996"
+        },
+        "topcoding": "Use released Q15-5; do not infer confidentiality thresholds from later wave rules."
+      },
+      {
+        "survey_year": 1998,
+        "income_year": 1997,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y09048.00",
+          "column": "Y0904800",
+          "question": "Q15-5",
+          "survey_year": "1998"
+        },
+        "age_at_interview": {
+          "reference": "Y09748.00",
+          "column": "Y0974800",
+          "question": "AGEINT98",
+          "survey_year": "1998"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y09749.00",
+          "column": "Y0974900",
+          "question": "AGEDEC98",
+          "survey_year": "1998"
+        },
+        "actual_interview_year": null,
+        "round_weight_optional": {
+          "reference": "Y09469.01",
+          "column": "Y0946901",
+          "question": "YA98WEIGHT_REVISED",
+          "survey_year": "1998"
+        },
+        "includes_military_in_wage": false,
+        "military_received": {
+          "reference": "Y09046.00",
+          "column": "Y0904600",
+          "question": "Q15-2",
+          "survey_year": "1998"
+        },
+        "military_amount": {
+          "reference": "Y09047.00",
+          "column": "Y0904700",
+          "question": "Q15-3",
+          "survey_year": "1998"
+        },
+        "topcoding": "Use released Q15-5; do not infer confidentiality thresholds from later wave rules."
+      },
+      {
+        "survey_year": 2000,
+        "income_year": 1999,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y11517.00",
+          "column": "Y1151700",
+          "question": "Q15-5-TOP",
+          "survey_year": "2000"
+        },
+        "age_at_interview": {
+          "reference": "Y11924.00",
+          "column": "Y1192400",
+          "question": "AGEINT2000",
+          "survey_year": "2000"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y11925.00",
+          "column": "Y1192500",
+          "question": "AGEDEC2000",
+          "survey_year": "2000"
+        },
+        "actual_interview_year": null,
+        "round_weight_optional": {
+          "reference": "Y11923.01",
+          "column": "Y1192301",
+          "question": "YA00WEIGHT_REVISED",
+          "survey_year": "2000"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2002,
+        "income_year": 2001,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y13867.00",
+          "column": "Y1386700",
+          "question": "Q15-5-TOP",
+          "survey_year": "2002"
+        },
+        "age_at_interview": {
+          "reference": "Y14343.00",
+          "column": "Y1434300",
+          "question": "AGEINT2002",
+          "survey_year": "2002"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y14344.00",
+          "column": "Y1434400",
+          "question": "AGEDEC2002",
+          "survey_year": "2002"
+        },
+        "actual_interview_year": null,
+        "round_weight_optional": {
+          "reference": "Y14350.00",
+          "column": "Y1435000",
+          "question": "YA02WEIGHT",
+          "survey_year": "2002"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2004,
+        "income_year": 2003,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y16384.00",
+          "column": "Y1638400",
+          "question": "Q15-5-TOP",
+          "survey_year": "2004"
+        },
+        "age_at_interview": {
+          "reference": "Y16727.00",
+          "column": "Y1672700",
+          "question": "AGEINT2004",
+          "survey_year": "2004"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y16728.00",
+          "column": "Y1672800",
+          "question": "AGEDEC2004",
+          "survey_year": "2004"
+        },
+        "actual_interview_year": {
+          "reference": "Y14502.02",
+          "column": "Y1450202",
+          "question": "CURDATE~Y",
+          "survey_year": "2004"
+        },
+        "round_weight_optional": {
+          "reference": "Y16726.00",
+          "column": "Y1672600",
+          "question": "YA04WEIGHT",
+          "survey_year": "2004"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2006,
+        "income_year": 2005,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y19087.00",
+          "column": "Y1908700",
+          "question": "Q15-5-TOP",
+          "survey_year": "2006"
+        },
+        "age_at_interview": {
+          "reference": "Y19485.00",
+          "column": "Y1948500",
+          "question": "AGEINT2006",
+          "survey_year": "2006"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y19486.00",
+          "column": "Y1948600",
+          "question": "AGEDEC2006",
+          "survey_year": "2006"
+        },
+        "actual_interview_year": {
+          "reference": "Y16956.02",
+          "column": "Y1695602",
+          "question": "CURDATE~Y",
+          "survey_year": "2006"
+        },
+        "round_weight_optional": {
+          "reference": "Y19484.00",
+          "column": "Y1948400",
+          "question": "YA06WEIGHT",
+          "survey_year": "2006"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2008,
+        "income_year": 2007,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y22241.00",
+          "column": "Y2224100",
+          "question": "Q15-5-TOP",
+          "survey_year": "2008"
+        },
+        "age_at_interview": {
+          "reference": "Y22671.00",
+          "column": "Y2267100",
+          "question": "AGEINT2008",
+          "survey_year": "2008"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y22672.00",
+          "column": "Y2267200",
+          "question": "AGEDEC2008",
+          "survey_year": "2008"
+        },
+        "actual_interview_year": {
+          "reference": "Y19816.02",
+          "column": "Y1981602",
+          "question": "CURDATE~Y",
+          "survey_year": "2008"
+        },
+        "round_weight_optional": {
+          "reference": "Y22669.00",
+          "column": "Y2266900",
+          "question": "YA08WEIGHT",
+          "survey_year": "2008"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2010,
+        "income_year": 2009,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y25739.00",
+          "column": "Y2573900",
+          "question": "Q15-5-TOP",
+          "survey_year": "2010"
+        },
+        "age_at_interview": {
+          "reference": "Y26160.00",
+          "column": "Y2616000",
+          "question": "AGEINT2010",
+          "survey_year": "2010"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y26161.00",
+          "column": "Y2616100",
+          "question": "AGEDEC2010",
+          "survey_year": "2010"
+        },
+        "actual_interview_year": {
+          "reference": "Y23004.02",
+          "column": "Y2300402",
+          "question": "CURDATE~Y",
+          "survey_year": "2010"
+        },
+        "round_weight_optional": {
+          "reference": "Y26159.00",
+          "column": "Y2615900",
+          "question": "YA10WEIGHT",
+          "survey_year": "2010"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2012,
+        "income_year": 2011,
+        "income_year_rule": "fixed calendar year explicitly printed in question text",
+        "wage": {
+          "reference": "Y29216.00",
+          "column": "Y2921600",
+          "question": "Q15-5-TOP",
+          "survey_year": "2012"
+        },
+        "age_at_interview": {
+          "reference": "Y29664.00",
+          "column": "Y2966400",
+          "question": "AGEINT2012",
+          "survey_year": "2012"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y29665.00",
+          "column": "Y2966500",
+          "question": "AGEDEC2012",
+          "survey_year": "2012"
+        },
+        "actual_interview_year": {
+          "reference": "Y26331.02",
+          "column": "Y2633102",
+          "question": "CURDATE~Y",
+          "survey_year": "2012"
+        },
+        "round_weight_optional": {
+          "reference": "Y29663.00",
+          "column": "Y2966300",
+          "question": "YA12WEIGHT",
+          "survey_year": "2012"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2014,
+        "income_year": null,
+        "income_year_rule": "actual CURDATE~Y minus1; do NOT use survey_year minus1",
+        "wage": {
+          "reference": "Y32914.00",
+          "column": "Y3291400",
+          "question": "Q15-5-TOP",
+          "survey_year": "2014"
+        },
+        "age_at_interview": {
+          "reference": "Y33319.00",
+          "column": "Y3331900",
+          "question": "AGEINT2014",
+          "survey_year": "2014"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y33320.00",
+          "column": "Y3332000",
+          "question": "AGEDEC2014",
+          "survey_year": "2014"
+        },
+        "actual_interview_year": {
+          "reference": "Y29905.02",
+          "column": "Y2990502",
+          "question": "CURDATE~Y",
+          "survey_year": "2014"
+        },
+        "round_weight_optional": {
+          "reference": "Y33318.00",
+          "column": "Y3331800",
+          "question": "YA14WEIGHT",
+          "survey_year": "2014"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Individual income>=100000 averaged and substituted (2000–2014)."
+      },
+      {
+        "survey_year": 2016,
+        "income_year": null,
+        "income_year_rule": "actual CURDATE~Y minus1; do NOT use survey_year minus1",
+        "wage": {
+          "reference": "Y36317.00",
+          "column": "Y3631700",
+          "question": "Q15-5-TOP",
+          "survey_year": "2016"
+        },
+        "age_at_interview": {
+          "reference": "Y36757.00",
+          "column": "Y3675700",
+          "question": "AGEINT2016",
+          "survey_year": "2016"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y36758.00",
+          "column": "Y3675800",
+          "question": "AGEDEC2016",
+          "survey_year": "2016"
+        },
+        "actual_interview_year": {
+          "reference": "Y33609.02",
+          "column": "Y3360902",
+          "question": "CURDATE~Y",
+          "survey_year": "2016"
+        },
+        "round_weight_optional": {
+          "reference": "Y36756.00",
+          "column": "Y3675600",
+          "question": "YA16WEIGHT",
+          "survey_year": "2016"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Top2% averaged and substituted (2016 onward)."
+      },
+      {
+        "survey_year": 2018,
+        "income_year": null,
+        "income_year_rule": "actual CURDATE~Y minus1; do NOT use survey_year minus1",
+        "wage": {
+          "reference": "Y42400.00",
+          "column": "Y4240000",
+          "question": "Q15-5-TOP",
+          "survey_year": "2018"
+        },
+        "age_at_interview": {
+          "reference": "Y42817.00",
+          "column": "Y4281700",
+          "question": "AGEINT2018",
+          "survey_year": "2018"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y42818.00",
+          "column": "Y4281800",
+          "question": "AGEDEC2018",
+          "survey_year": "2018"
+        },
+        "actual_interview_year": {
+          "reference": "Y40008.02",
+          "column": "Y4000802",
+          "question": "CURDATE~Y",
+          "survey_year": "2018"
+        },
+        "round_weight_optional": {
+          "reference": "Y42816.00",
+          "column": "Y4281600",
+          "question": "YA18WEIGHT",
+          "survey_year": "2018"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Top2% averaged and substituted (2016 onward)."
+      },
+      {
+        "survey_year": 2020,
+        "income_year": null,
+        "income_year_rule": "actual CURDATE~Y minus1; do NOT use survey_year minus1",
+        "wage": {
+          "reference": "Y45612.00",
+          "column": "Y4561200",
+          "question": "Q15-5-TOP",
+          "survey_year": "2020"
+        },
+        "age_at_interview": {
+          "reference": "Y46027.00",
+          "column": "Y4602700",
+          "question": "AGEINT2020",
+          "survey_year": "2020"
+        },
+        "age_at_target_year_end": {
+          "reference": "Y46028.00",
+          "column": "Y4602800",
+          "question": "AGEDEC2020",
+          "survey_year": "2020"
+        },
+        "actual_interview_year": {
+          "reference": "Y43104.02",
+          "column": "Y4310402",
+          "question": "CURDATE~Y",
+          "survey_year": "2020"
+        },
+        "round_weight_optional": {
+          "reference": "Y46026.00",
+          "column": "Y4602600",
+          "question": "YA20WEIGHT",
+          "survey_year": "2020"
+        },
+        "includes_military_in_wage": true,
+        "topcoding": "Top2% averaged and substituted (2016 onward)."
+      }
+    ]
+  },
+  "cleaning_rules": {
+    "negative_codes": {
+      "-1": "refusal",
+      "-2": "do not know",
+      "-3": "invalid skip",
+      "-4": "valid skip",
+      "-5": "noninterview",
+      "-7": "missing/not in relevant released universe (common in Child/YA file)"
+    },
+    "wages": "Keep amount>=0, including true reported zero. No separate wage-receipt screen Q13-4 or Q15-4 was found in selected waves. Do not turn any negative wage amount into0. Keep nonresponse/skip codes missing. Exclude missing annual readings from the observation count; never use them as zero in an average.",
+    "military": "When civilian and military are combined: military_screen=0 implies military component0. If military_screen=1, require a nonnegative military amount. Other negative/missing screens or amounts remain missing; do not blanket-recode -4. For YA2000+ do not add a second military component because it is already included.",
+    "inflation": "Deflate EACH annual income using its own actual income reference year before taking arithmetic means. Then take log of positive means; do not average annual logs if claiming log of average earnings.",
+    "logs": "Averaged incomes may include genuine zero years. Only a strictly positive income/mean can enter a log-log model. For annual-vs-average comparison require a positive selected annual observation on the same child-mother pairs, and report the selection.",
+    "deduplication": "Audit unique(person_id,income_year) before aggregation. YA2014+ uses actual interview_year−1; exceptionally late2016 interviews in2018 can overlap income2017 with a2018 interview. If duplicate annual readings exist use a documented deterministic rule and report counts; never count one calendar year twice.",
+    "sample_and_variance": "Any longitudinal complete-case estimates are not automatically nationally representative. Use custom longitudinal weights for a national claim; otherwise call this an unweighted linked-sample tutorial. Cluster uncertainty by mother for sibling dependence; this alone is not a complete original multistage survey-design adjustment.",
+    "fielding": "YA respondents older than30 are generally fielded every FOUR years from2010, not every2. Observation counts in age windows vary. Report number of observed annual incomes and do not call a3-wave average a3-consecutive-year average."
+  },
+  "header_validation": {
+    "mothers": {
+      "selected_columns": [
+        "R0000100",
+        "R0000300",
+        "R0000500",
+        "R0173600",
+        "R0214700",
+        "R0214800",
+        "R0410100",
+        "R0410300",
+        "R1023800",
+        "R1023900",
+        "R1024000",
+        "R1024001",
+        "R1145110",
+        "R1410500",
+        "R1410600",
+        "R1410700",
+        "R1410701",
+        "R1520310",
+        "R1778300",
+        "R1778400",
+        "R1778500",
+        "R1778501",
+        "R1891010",
+        "R2141400",
+        "R2141500",
+        "R2141600",
+        "R2141601",
+        "R2258110",
+        "R2350100",
+        "R2350200",
+        "R2350300",
+        "R2350301",
+        "R2445510",
+        "R2722300",
+        "R2722400",
+        "R2722500",
+        "R2722501",
+        "R2871300",
+        "R2971200",
+        "R2971300",
+        "R2971400",
+        "R2971401",
+        "R3075000",
+        "R3279200",
+        "R3279300",
+        "R3279400",
+        "R3279401",
+        "R3401700",
+        "R3558800",
+        "R3558900",
+        "R3559000",
+        "R3559001",
+        "R3657100",
+        "R3896900",
+        "R3897000",
+        "R3897100",
+        "R3897101",
+        "R4007600",
+        "R4294800",
+        "R4294900",
+        "R4295100",
+        "R4295101",
+        "R4418700",
+        "R4982500",
+        "R4982600",
+        "R4982800",
+        "R4982801",
+        "R5081700",
+        "R5167000",
+        "R5625900",
+        "R5626000",
+        "R5626200",
+        "R5626201",
+        "R6364400",
+        "R6364500",
+        "R6364600",
+        "R6364601",
+        "R6479800",
+        "R6909500",
+        "R6909600",
+        "R6909700",
+        "R6909701",
+        "R7007500",
+        "R7606900",
+        "R7607100",
+        "R7607800",
+        "R7704800",
+        "R8315600",
+        "R8315800",
+        "R8316300",
+        "R8497200",
+        "T0911600",
+        "T0911800",
+        "T0912400",
+        "T0989000"
+      ],
+      "count": 95,
+      "all_present": true
+    },
+    "children": {
+      "selected_columns": [
+        "C0000100",
+        "C0000200",
+        "C0005400",
+        "C0005500",
+        "C0005700",
+        "Y0309000",
+        "Y0309100",
+        "Y0309200",
+        "Y0356501",
+        "Y0383802",
+        "Y0383803",
+        "Y0610300",
+        "Y0610400",
+        "Y0610500",
+        "Y0650701",
+        "Y0677600",
+        "Y0677700",
+        "Y0904600",
+        "Y0904700",
+        "Y0904800",
+        "Y0946901",
+        "Y0974800",
+        "Y0974900",
+        "Y1151700",
+        "Y1192301",
+        "Y1192400",
+        "Y1192500",
+        "Y1386700",
+        "Y1434300",
+        "Y1434400",
+        "Y1435000",
+        "Y1450202",
+        "Y1638400",
+        "Y1672600",
+        "Y1672700",
+        "Y1672800",
+        "Y1695602",
+        "Y1908700",
+        "Y1948400",
+        "Y1948500",
+        "Y1948600",
+        "Y1981602",
+        "Y2224100",
+        "Y2266900",
+        "Y2267100",
+        "Y2267200",
+        "Y2300402",
+        "Y2573900",
+        "Y2615900",
+        "Y2616000",
+        "Y2616100",
+        "Y2633102",
+        "Y2921600",
+        "Y2966300",
+        "Y2966400",
+        "Y2966500",
+        "Y2990502",
+        "Y3291400",
+        "Y3331800",
+        "Y3331900",
+        "Y3332000",
+        "Y3360902",
+        "Y3631700",
+        "Y3675600",
+        "Y3675700",
+        "Y3675800",
+        "Y4000802",
+        "Y4240000",
+        "Y4281600",
+        "Y4281700",
+        "Y4281800",
+        "Y4310402",
+        "Y4561200",
+        "Y4602600",
+        "Y4602700",
+        "Y4602800"
+      ],
+      "count": 76,
+      "all_present": true
+    }
+  }
+}

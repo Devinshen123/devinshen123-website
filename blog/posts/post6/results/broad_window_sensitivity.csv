@@ -1,0 +1,6 @@
+specification,label,ige,standard_error,ci_low,ci_high,children,mothers,mother_measure,child_measure
+annual_both,One annual income per generation,0.10262847684288401,0.0264643990053074,0.05069324864770628,0.15456370503806174,1266,954,mother_single,adult_single
+average_mother,Average mother; annual adult child,0.12268834813087277,0.030504016314011236,0.06282554724807615,0.1825511490136694,1266,954,mother_mean,adult_single
+average_both,Average both generations,0.12596683610671694,0.02961608116561519,0.06784656920495724,0.18408710300847664,1266,954,mother_mean,adult_mean
+young_annual,Child in twenties: annual,0.13264516037911617,0.0389266385785107,0.056253330848405114,0.20903698990982722,1266,954,mother_mean,young_single
+young_average,Child in twenties: average,0.10782013594155028,0.023186861931578148,0.06231693122849079,0.15332334065460979,1266,954,mother_mean,young_mean

@@ -1,0 +1,9 @@
+data/source-cache/
+data/processed/*.sqlite
+data/raw/selected-codebook.txt
+__pycache__/
+.ipynb_checkpoints/
+
+data/raw/*.csv.gz
+results/matched_sample.csv
+results/duplicate_income_years.csv

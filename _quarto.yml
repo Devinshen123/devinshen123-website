@@ -5,6 +5,8 @@ project:
     - blog/posts/post4/results/quarterly.csv
     - blog/posts/post5/results/tract_results.csv
     - blog/posts/post5/results/rent_bands.csv
+    - blog/posts/post6/results/estimates.csv
+    - blog/posts/post6/code/tutorial.ipynb
   render:
     - index.qmd
     - blog/index.qmd
@@ -13,6 +15,7 @@ project:
     - blog/posts/post3/index.qmd
     - blog/posts/post4/index.qmd
     - blog/posts/post5/index.qmd
+    - blog/posts/post6/index.qmd
 
 website:
   title: "AEDS 6400 Blog"

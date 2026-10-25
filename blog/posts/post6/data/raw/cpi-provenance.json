@@ -1,0 +1,21 @@
+{
+  "source_url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-",
+  "publisher": "Federal Reserve Bank of Minneapolis",
+  "underlying_source": "U.S. Bureau of Labor Statistics",
+  "measure": "Annual average CPI-U, all items, U.S. city average",
+  "series_correspondence": "CUUR0000SA0 / CPIAUCNS annual averages",
+  "seasonal_adjustment": "Not seasonally adjusted annual averages",
+  "retrieved_utc": "2026-10-25T05:03:47.677429+00:00",
+  "http_last_modified": null,
+  "source_sha256": "f5ae2057969a99d36e642ea8f3bc45234adaa88c014332bcd9ff34fb5e0060dd",
+  "output_sha256": "7a943c399d9c948f15cc9e5f745d7f1ae419cd16825267d29ba2af46769ed794",
+  "precision": "One decimal place, as published in the annual table",
+  "aggregation": "Published annual averages; not independently recomputed from twelve monthly readings",
+  "checks": {
+    "unique_years": 41,
+    "first_year": 1980,
+    "last_year": 2020,
+    "cpi_2020": 258.8,
+    "missing_years": []
+  }
+}

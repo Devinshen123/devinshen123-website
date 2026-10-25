@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "unique_child_regression_rows": true,
+    "all_specifications_same_children": true,
+    "mother_join_preserves_children": true,
+    "observed_years_have_cpi": true,
+    "independent_ols_and_cluster_se_agreement": true
+  },
+  "input_sha256": {
+    "children.csv.gz": "ba6ed3325e3a9b0d9939208b55bf9f8fb1a0db3616434c5652f71c375693cad0",
+    "cpi-provenance.json": "b5129dd1a1a27dbb7d35efa9b6f0907d7079b1c6593e1166177c0b9032e13874",
+    "cpi_annual.csv": "7a943c399d9c948f15cc9e5f745d7f1ae419cd16825267d29ba2af46769ed794",
+    "mothers.csv.gz": "76c027fb7754992aac1c3916057bdfd2f846a53538477349ef05b50afdfd74f8",
+    "selected-codebook.txt": "84de03332adcc547fcc575730dbe38642dea23a1807084bb40551008d1f25dfa",
+    "source-provenance.json": "94a6e64a30dfdcf11f1f2ad5d549d2f244d5deeef4c22756accdf2cf08b34ffc",
+    "variable-crosswalk.json": "f9665e8696a3511bd24fb9916674d0b95142253fedaa66b4401b9ea94d59191f"
+  },
+  "versions": {
+    "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "statsmodels": "0.15.0"
+  },
+  "income_records": 250688,
+  "duplicate_income_year_keys": 1,
+  "unweighted_selected_sample": true
+}

@@ -1,0 +1,24 @@
+{
+  "retrieved_utc": "2026-10-25T05:06:08.840208+00:00",
+  "data_page": "https://www.nlsinfo.org/content/access-data-investigator/accessing-data-cohorts",
+  "sources": {
+    "mothers": {
+      "url": "https://nlsinfo.org/cohort-data/nlsy79_all_1979-2022.zip",
+      "sha256": "efb3bbd17ed602abf100be44802778ef88fad68aa80913cd07dce778ebda72d7"
+    },
+    "children": {
+      "url": "https://nlsinfo.org/cohort-data/nlscya_all_1979-2020.zip",
+      "sha256": "3c9834bcab972edf41413ce950590c4a39a76f9f034584c1adcae38163785c27"
+    }
+  },
+  "source_rows": {
+    "mothers_full_cohort": 12686,
+    "mothers_with_child_id": 4943,
+    "children": 11551
+  },
+  "selected_csv_sha256": {
+    "mothers": "884adaf431486cfae6f2f9e95696b676fa7e089df81cbd39a8de095b3ded1d01",
+    "children": "e494ec1cf75a3d51c3127f84aa7e5a0d2468b41802f05b17539011c59664cc86"
+  },
+  "selection": "Only documented columns; mothers retained when their public ID occurs in the child MPUBID column. No outcome-based selection at acquisition."
+}
