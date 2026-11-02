@@ -1,0 +1,7 @@
+{
+  "words": 731,
+  "prose_words_excluding_headings_and_captions": 636,
+  "included": "Page title, section headings, prose, figure captions and source/replication note",
+  "excluded": "YAML metadata, URLs, accessibility alt text and text inside chart graphics",
+  "method": "Regex tokenization; numbers with decimal points or thousands separators count as one token"
+}

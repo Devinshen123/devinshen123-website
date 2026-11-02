@@ -1,0 +1,93 @@
+{
+  "config": {
+    "root_seed": 20261101,
+    "population_mean_ml": 498.0,
+    "population_sd_ml": 10.0,
+    "null_mean_ml": 500.0,
+    "sample_size": 50,
+    "bootstrap_repetitions": 5000,
+    "coverage_repetitions": 5000,
+    "null_repetitions": 5000,
+    "alpha": 0.05,
+    "coverage_intervals_displayed": 100,
+    "data_status": "Entirely simulated; not measurements of a real product",
+    "sampling_assumption": "Independent normal observations from a stable process",
+    "interval_method": "Two-sided Student t interval with estimated sample SD, df = n - 1",
+    "test_alternative": "two-sided",
+    "random_stream_order": [
+      "original sample",
+      "bootstrap indices",
+      "coverage samples",
+      "null samples"
+    ]
+  },
+  "observed": {
+    "n": 50,
+    "mean_ml": 495.53683698680237,
+    "sd_ml": 9.921110688613224,
+    "standard_error_ml": 1.4030569289641497,
+    "ci95_lower_ml": 492.7172885260734,
+    "ci95_upper_ml": 498.35638544753135,
+    "t_statistic": -3.181027740971778,
+    "target_in_ci": false,
+    "reject_null": true
+  },
+  "bootstrap": {
+    "repetitions": 5000,
+    "mean_of_means_ml": 495.5129762786637,
+    "standard_error_ml": 1.3585955770182272,
+    "conditional_expected_sd_ml": 1.3889554964058513,
+    "minimum_unique_bottles_per_resample": 25
+  },
+  "coverage": {
+    "repetitions": 5000,
+    "covered_count": 4733,
+    "missed_count": 267,
+    "rate": 0.9466,
+    "mc_standard_error": 0.0031795735563122296,
+    "first_100_covered_count": 96,
+    "method": "Student t, not a bootstrap interval"
+  },
+  "null": {
+    "repetitions": 5000,
+    "critical_t": 2.0095752371292392,
+    "extreme_count": 15,
+    "monte_carlo_p": 0.003199360127974405,
+    "analytic_t_p": 0.0025464637940615306,
+    "mc_p_standard_error": 0.0007986393707733087,
+    "rejection_count": 259,
+    "rejection_rate": 0.0518,
+    "empirical_quantiles_025_975": [
+      -2.0115183851175584,
+      2.045521591995875
+    ]
+  },
+  "sources": [
+    {
+      "title": "NIST: Confidence Limits for the Mean",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+    },
+    {
+      "title": "SciPy: bootstrap",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
+    },
+    {
+      "title": "SciPy: ttest_1samp",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_1samp.html"
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "pandas": "3.0.6"
+  },
+  "original_sample_sha256": "d59a94160627c2e120b181fbc6c78b69b0e35f59281d3606b064c5d9bcfc2308",
+  "limitations": [
+    "Entirely simulated, not evidence about a real brand or legal compliance.",
+    "Independent normal fills and a stable process are assumptions, not verified industrial facts.",
+    "Coverage is for Student t intervals; the bootstrap distribution is a separate illustration.",
+    "A failure to reject does not prove the population mean equals the label.",
+    "Monte Carlo estimates have finite-simulation error; no seed was chosen for a desired result."
+  ]
+}

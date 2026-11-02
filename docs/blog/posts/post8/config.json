@@ -1,0 +1,17 @@
+{
+  "root_seed": 20261101,
+  "population_mean_ml": 498.0,
+  "population_sd_ml": 10.0,
+  "null_mean_ml": 500.0,
+  "sample_size": 50,
+  "bootstrap_repetitions": 5000,
+  "coverage_repetitions": 5000,
+  "null_repetitions": 5000,
+  "alpha": 0.05,
+  "coverage_intervals_displayed": 100,
+  "data_status": "Entirely simulated; not measurements of a real product",
+  "sampling_assumption": "Independent normal observations from a stable process",
+  "interval_method": "Two-sided Student t interval with estimated sample SD, df = n - 1",
+  "test_alternative": "two-sided",
+  "random_stream_order": ["original sample", "bootstrap indices", "coverage samples", "null samples"]
+}

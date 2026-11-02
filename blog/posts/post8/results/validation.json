@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bootstrap_rows_recomputed": 5000,
+  "coverage_intervals_recomputed": 5000,
+  "null_statistics_recomputed": 5000,
+  "independent_method": "Python statistics.mean/stdev on saved raw arrays plus scipy.stats.ttest_1samp and its confidence_interval",
+  "sample_ci_agrees_with_scipy": true,
+  "monte_carlo_p_agrees_with_analytic_within_simulation_error": true,
+  "normal_model_calibration_passed": true,
+  "all_samples_and_seed_retained": true
+}
