@@ -21,6 +21,7 @@ project:
     - blog/posts/post6/index.qmd
     - blog/posts/post7/index.qmd
     - blog/posts/post8/index.qmd
+    - blog/posts/post9/index.qmd
 
 website:
   title: "AEDS 6400 Blog"

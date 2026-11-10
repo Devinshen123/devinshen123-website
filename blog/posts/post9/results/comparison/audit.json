@@ -1,0 +1,21 @@
+{
+  "data_through": "2026-11-09",
+  "stocks": 95,
+  "training_rows": 33725,
+  "purged_rows": 1900,
+  "latest_training_exit": "2023-12-29",
+  "test_rows": 66215,
+  "test_signal_days": 697,
+  "first_test_signal": "2024-01-02",
+  "last_test_signal": "2026-10-12",
+  "portfolio_windows": 34,
+  "portfolio_signals_delayed": 0,
+  "first_portfolio_entry": "2024-01-03",
+  "last_portfolio_exit": "2026-10-29",
+  "fixed_training_forecast": 0.0133838909608263,
+  "features_original": ["open", "high", "low", "close", "volume", "adjusted", "return", "spy_ret", "mom_1m", "mom_3m", "mom_6m", "vol_1m", "ret_5d", "excess_ret"],
+  "feature_added": "relative_momentum_21",
+  "features_robustness": ["return", "spy_ret", "mom_1m", "mom_3m", "mom_6m", "vol_1m", "ret_5d", "excess_ret"],
+  "r": "4.6.2",
+  "xgboost": "3.2.1.1"
+}

@@ -25,3 +25,5 @@ Blog Post 6 uses Python with SQLite and statsmodels. Its acquisition script retr
 Blog Post 7 compares the extra cost of 15 gallons of regular gasoline in California with the U.S. average for 2020-2025. See [the interactive article](https://devinshen123.github.io/devinshen123-website/blog/posts/post7/) and [the code, EIA data and replication instructions](blog/posts/post7/README.md). Its saved-input build needs only Python and Node.js; Plotly.js is vendored locally.
 
 Blog Post 8 uses three simulation experiments to explain bootstrap distributions, confidence-interval coverage, rejection regions, and p-values. All bottle fills are simulated. See [the article](https://devinshen123.github.io/devinshen123-website/blog/posts/post8/) and [the Python code, executed notebook, and replication instructions](blog/posts/post8/README.md).
+
+Blog Post 9 compares a stock-return model with and without momentum relative to SPY. See [the article](https://devinshen123.github.io/devinshen123-website/blog/posts/post9/) and [the R code, results, and replication instructions](blog/posts/post9/README.md).

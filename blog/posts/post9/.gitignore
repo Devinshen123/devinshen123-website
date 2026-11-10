@@ -1,0 +1,6 @@
+/reference/
+/data/raw/
+/data/daily_prices*.csv
+/data/download_manifest.json
+/results/comparison/*test_predictions.csv
+/results/comparison/*portfolio_weights.csv

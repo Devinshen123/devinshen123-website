@@ -1,0 +1,13 @@
+{
+  "main": {
+    "daily_predictions_checked": 66215,
+    "nonoverlapping_windows_checked": 34,
+    "relative_momentum_windows_ahead_of_original": 18
+  },
+  "sensitivity_": {
+    "daily_predictions_checked": 66215,
+    "nonoverlapping_windows_checked": 34,
+    "relative_momentum_windows_ahead_of_original": 19
+  },
+  "purged_training_labels_checked": 1900
+}
